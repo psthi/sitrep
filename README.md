@@ -5,7 +5,11 @@
 [![Classification](https://img.shields.io/badge/Classification-UNCLASSIFIED_%2F%2F_OSINT-58a6ff?style=flat)](#)
 [![Cycle](https://img.shields.io/badge/Cycle-30_Minutes-orange?style=flat)](#)
 
-An autonomous, defense-grade **Situation Report (SITREP)** dashboard and multi-channel intelligence broadcast system. Operates 100% serverless via **GitHub Actions** and **GitHub Pages**, continuously synthesizing tactical open-source defense signals, macroeconomic stress indicators, and automated AI analysis for defense analysts and informed citizens.
+> 🌐 **Live Interactive Command Dashboard**: **[https://psthi.github.io/sitrep/](https://psthi.github.io/sitrep/)**
+
+An autonomous, defense-grade **Situation Report (SITREP)** dashboard and multi-channel intelligence broadcast system. Operates 100% serverless via **GitHub Actions** and **GitHub Pages**, continuously synthesizing tactical open-source defense signals, macroeconomic stress indicators, civilian household cost-of-living impacts, and automated AI analysis for defense analysts and informed citizens.
+
+![SITREP Strategic Intelligence Command Center](assets/sitrep-dashboard-preview.png)
 
 ---
 

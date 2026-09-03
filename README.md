@@ -60,6 +60,15 @@ SITREP ingests, deduplicates, and classifies signals from 18 specialized defense
 - **Al Jazeera English** & **Times of Israel**
 - **France 24**, **Deutsche Welle (DW)**, and **The Guardian World**
 
+## 🛒 Civilian & Household Impact Layer (Pocketbook Reality)
+
+SITREP bridges the gap between high-level geopolitical intelligence and everyday civilian life. On every run, the AI engine translates complex global events and macroeconomic metrics into 4 actionable takeaways:
+
+- ⛽ **Fuel & Utility Bills**: Translates oil price swings ($/bbl) and energy diplomacy into pump prices and home utility costs.
+- 🏠 **Mortgages & Debt**: Explains how Treasury yield spreads and Fed conditions affect mortgage rates, auto loans, and credit cards.
+- 🛒 **Groceries & Supply Chains**: Analyzes how maritime chokepoints and trade friction drive supermarket inflation and food supply stability.
+- 💼 **Jobs & Retirement Savings**: Assesses how corporate credit conditions and equity volatility (VIX) impact hiring and 401(k) balances.
+
 ---
 
 ## 📊 Geoeconomic & Financial Stability Surveillance

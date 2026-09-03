@@ -1,9 +1,10 @@
     import { readFileSync, writeFileSync, existsSync } from "fs";            
                                                                              
     async function main() {                                                  
-      const apiKey = process.env.OPENAI_API_KEY;                             
+      const apiKey = process.env.OPENROUTER_API_KEY;                         
       if (!apiKey) {                                                         
-        console.log("No OPENAI_API_KEY set — skipping briefing generation"); 
+        console.log("No OPENROUTER_API_KEY set — skipping briefing           
+  generation");                                                              
         return;                                                              
       }                                                                      
                                                                              
@@ -24,49 +25,59 @@
   paragraph morning briefing covering the most significant developments. Be  
   factual, analytical, and direct. No fluff.                                 
   \n\nHeadlines:\n${headlines}\n\nAlso provide the top 5 stories with a one- 
-  sentence significance note for each.\n\nRespond in JSON format:\n{\n       
-  "summary": "Three paragraph briefing...",\n  "topStories": [\n    {        
-  "headline": "...", "significance": "..." }\n  ]\n}`;                       
+  sentence significance note for each.\n\nRespond strictly with a valid JSON 
+  object in this format:\n{\n  "summary": "Three paragraph briefing...",\n   
+  "topStories": [\n    { "headline": "...", "significance": "..." }\n  ]\n}`;
                                                                              
-      // For OpenAI: "https://api.openai.com/v1/chat/completions" (model:    
-  "gpt-4o-mini" or "gpt-4o")                                                 
-      // For Groq:   "https://api.groq.com/openai/v1/chat/completions"       
-  (model: "llama-3.3-70b-versatile")                                         
-      // For DeepSeek: "https://api.deepseek.com/chat/completions" (model:   
-  "deepseek-chat")                                                           
-      const res = await fetch("https://api.openai.com/v1/chat/completions", {
+      // Default model (you can change this or pass OPENROUTER_MODEL in      
+  workflow)                                                                  
+      const model = process.env.OPENROUTER_MODEL || "anthropic/claude-3.5-   
+  sonnet";                                                                   
+                                                                             
+      const res = await fetch("https://openrouter.ai/api/v1/chat/completions",
+  {                                                                          
         method: "POST",                                                      
         headers: {                                                           
           "Content-Type": "application/json",                                
           "Authorization": `Bearer ${apiKey}`,                               
+          "HTTP-Referer": "https://github.com/psthi/sitrep",                 
+          "X-Title": "SITREP News Briefing",                                 
         },                                                                   
         body: JSON.stringify({                                               
-          model: "gpt-4o-mini",                                              
-          response_format: { type: "json_object" }, // Enforces clean JSON   
+          model: model,                                                      
+          response_format: { type: "json_object" },                          
           messages: [                                                        
-            { role: "system", content: "You are a helpful analyst that       
-  outputs JSON." },                                                          
+            { role: "system", content: "You are a senior geopolitical analyst.
+  Output valid JSON only." },                                                
             { role: "user", content: prompt }                                
           ],                                                                 
         }),                                                                  
       });                                                                    
                                                                              
       if (!res.ok) {                                                         
-        console.error(`LLM API error: ${res.status} ${await res.text()}`);   
+        console.error(`OpenRouter API error: ${res.status} ${await res.      
+  text()}`);                                                                 
         return;                                                              
       }                                                                      
                                                                              
       const data = await res.json();                                         
       const text = data.choices[0].message.content;                          
                                                                              
-      const briefing = JSON.parse(text);                                     
+      // Extract JSON from response                                          
+      const jsonMatch = text.match(/\{[\s\S]*\}/);                           
+      if (!jsonMatch) {                                                      
+        console.error("Could not parse briefing JSON from response:", text); 
+        return;                                                              
+      }                                                                      
+                                                                             
+      const briefing = JSON.parse(jsonMatch[0]);                             
       briefing.date = new Date().toISOString().split("T")[0];                
       briefing.generatedAt = new Date().toISOString();                       
                                                                              
       writeFileSync("data/briefing.json", JSON.stringify(briefing, null, 2));
-      console.log("Wrote data/briefing.json");                               
+      console.log(`Successfully generated data/briefing.json using ${model}`);
     }                                                                        
                                                                              
     main().catch((err) => {                                                  
       console.error("Briefing generation failed:", err.message);             
-    });  
+    });

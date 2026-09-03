@@ -24,10 +24,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Fetch and process news
+      - name: Fetch and process defense signals
         run: node scripts/fetch-news.mjs
 
-      - name: Generate briefing (optional)
+      - name: Fetch macroeconomic & financial surveillance
+        run: node scripts/fetch-economic.mjs
+
+      - name: Generate intelligence SITREP (optional)
         run: node scripts/generate-briefing.mjs
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
@@ -46,5 +49,5 @@ jobs:
           git config user.name "News Bot"
           git config user.email "bot@sitrep.dev"
           git add data/
-          git diff --staged --quiet || git commit -m "Update news $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git diff --staged --quiet || git commit -m "Update intelligence data $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push

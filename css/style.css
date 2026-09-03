@@ -266,6 +266,67 @@ body {
   letter-spacing: 0.05em;
 }
 
+/* ========== GEOECONOMIC BAR ========== */
+.economic-bar {
+  background: #090c12;
+  border-bottom: 1px solid var(--border);
+  padding: 0.4rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+}
+
+.economic-bar::-webkit-scrollbar { display: none; }
+
+.econ-bar-label {
+  color: var(--text-accent);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  font-size: 0.68rem;
+}
+
+.econ-ticker-items {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  white-space: nowrap;
+}
+
+.econ-item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
+}
+
+.econ-name {
+  color: var(--text-secondary);
+}
+
+.econ-val {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.econ-change {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
+
+.econ-tag {
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 1px 5px;
+  border-radius: 2px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+
 /* ========== LAYOUT WRAPPER ========== */
 .layout-container {
   max-width: 1560px;

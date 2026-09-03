@@ -19,13 +19,26 @@ async function main() {
     .map((a, i) => `${i + 1}. [${a.source} | ${a.sourceType || "WIRE"}] ${a.title} - ${a.snippet || ""}`)
     .join("\n");
 
-  const prompt = `You are a Senior Geopolitical and Military Intelligence Analyst producing an unclassified Situation Report (SITREP).
+  let economicSummary = "No active macroeconomic metrics available.";
+  if (existsSync("data/economic.json")) {
+    try {
+      const econData = JSON.parse(readFileSync("data/economic.json", "utf-8"));
+      economicSummary = (econData.metrics || [])
+        .map(m => `${m.name}: ${m.value} ${m.unit} (${m.assessment}, Change: ${m.change > 0 ? '+' : ''}${m.change})`)
+        .join("\n");
+    } catch (_) {}
+  }
+
+  const prompt = `You are a Senior Geopolitical, Defense, and Macroeconomic Intelligence Analyst producing an unclassified Situation Report (SITREP).
 Your audience includes defense/policy analysts who demand operational rigor and strategic precision, as well as informed citizens who need clear, accessible explanations without bureaucratic fluff.
 
 Review these latest ingested signals from the past 24-48 hours:
 ${headlinesList}
 
-Synthesize these signals into an analytical intelligence briefing adhering strictly to the JSON schema below.
+Review current macroeconomic and financial stability indicators:
+${economicSummary}
+
+Synthesize these defense signals and economic indicators into a unified intelligence briefing adhering strictly to the JSON schema below.
 
 JSON SCHEMA REQUIREMENT:
 {
@@ -59,13 +72,13 @@ JSON SCHEMA REQUIREMENT:
       "theater": "Global Energy & Trade Chokepoints",
       "status": "CRITICAL" | "HIGH" | "ELEVATED" | "GUARDED" | "MODERATE",
       "trend": "ESCALATING" | "VOLATILE" | "STABLE" | "DE-ESCALATING",
-      "summary": "1-sentence summary of maritime transit, sanctions impact, or critical commodity security."
+      "summary": "1-sentence summary of energy prices (oil/gas), maritime transit, sanctions impact, or critical commodity security."
     }
   ],
   "operationalSummary": [
     "Paragraph 1: Kinetic & Frontline Operations — specific strikes, ground maneuvering, air/drone activity, naval engagements, and weapons employment.",
     "Paragraph 2: Strategic Alliances & Diplomatic Posturing — defense pacts, munitions pipelines, sanctions enforcement, deterrence signals, and political pressures.",
-    "Paragraph 3: Macro & Cascading Impacts — implications for regional civilians, supply chain vulnerability, energy chokepoints, and cross-border escalation risks."
+    "Paragraph 3: Geoeconomic & Market Stability — integration of current oil/commodity prices, credit spreads, currency pressures, and supply chain vulnerabilities caused by ongoing conflict."
   ],
   "keyDevelopments": [
     {
@@ -80,10 +93,10 @@ JSON SCHEMA REQUIREMENT:
   ]
 }
 
-Ensure all fields are fully populated based on the ingested signals. Output valid JSON only with NO markdown code fences or conversational text.`;
+Ensure all fields are fully populated based on the ingested signals and economic indicators. Output valid JSON only with NO markdown code fences or conversational text.`;
 
   const model = process.env.OPENROUTER_MODEL || "z-ai/glm-5.3-flash";
-  console.log(`[INFO] Querying OpenRouter (${model}) for military-grade SITREP synthesis...`);
+  console.log(`[INFO] Querying OpenRouter (${model}) for unified SITREP synthesis...`);
 
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 40000);
@@ -106,7 +119,7 @@ Ensure all fields are fully populated based on the ingested signals. Output vali
         messages: [
           {
             role: "system",
-            content: "You are an elite geopolitical and military intelligence watch officer. You output strictly valid, well-formed JSON conforming to the requested schema. No commentary, no preamble."
+            content: "You are an elite geopolitical, military, and macroeconomic intelligence watch officer. You output strictly valid, well-formed JSON conforming to the requested schema. No commentary, no preamble."
           },
           { role: "user", content: prompt }
         ],

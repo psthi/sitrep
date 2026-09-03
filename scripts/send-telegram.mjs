@@ -38,6 +38,31 @@ async function sendTelegramBriefing() {
     .map(t => `• <b>${t.theater}</b>: <code>[${t.status}]</code> ${t.trend ? `<i>(${t.trend})</i>` : ''}`)
     .join("\n");
 
+  // Build Macro & Commodity Ticker
+  let econBlock = "";
+  if (existsSync("data/economic.json")) {
+    try {
+      const econData = JSON.parse(readFileSync("data/economic.json", "utf-8"));
+      const metrics = econData.metrics || [];
+      const brent = metrics.find(m => m.id === "DCOILBRENTEU");
+      const vix = metrics.find(m => m.id === "VIXCLS");
+      const yield10y2y = metrics.find(m => m.id === "T10Y2Y");
+      const dxy = metrics.find(m => m.id === "DTWEXBGS");
+      const hySpread = metrics.find(m => m.id === "BAMLH0A0HYM2");
+
+      const parts = [];
+      if (brent) parts.push(`🛢️ <b>Brent:</b> $${brent.value}/bbl`);
+      if (vix) parts.push(`📈 <b>VIX:</b> ${vix.value}`);
+      if (yield10y2y) parts.push(`📊 <b>10Y2Y:</b> ${yield10y2y.value > 0 ? '+' : ''}${yield10y2y.value}%`);
+      if (hySpread) parts.push(`💳 <b>HY OAS:</b> ${hySpread.value}%`);
+      if (dxy) parts.push(`💵 <b>DXY:</b> ${dxy.value}`);
+
+      if (parts.length > 0) {
+        econBlock = `📉 <b><u>GEOECONOMIC & MARKET STABILITY</u>:</b>\n${parts.join(" • ")}\n`;
+      }
+    } catch (_) {}
+  }
+
   // Build Key Developments
   const devLines = (briefing.keyDevelopments || briefing.topStories || []).slice(0, 4)
     .map(d => `▫️ <b>${d.headline}</b>\n   ↳ <i>${d.significance}</i>`)
@@ -59,7 +84,7 @@ ${briefing.bluf || briefing.summary || "No active summary available."}
 📊 <b><u>REGIONAL THREAT MATRIX</u>:</b>
 ${threatLines || "• No active threat indicators"}
 
-📍 <b><u>KEY DEVELOPMENTS</u>:</b>
+${econBlock ? `${econBlock}\n` : ''}📍 <b><u>KEY DEVELOPMENTS</u>:</b>
 ${devLines || "• No active developments listed"}
 
 ${iwLines ? `🚨 <b><u>INDICATORS & WARNINGS (24–72H)</u>:</b>\n${iwLines}\n` : ''}

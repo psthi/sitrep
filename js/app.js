@@ -130,6 +130,46 @@ async function fetchIntelligence() {
   } catch (err) {
     console.warn("No active briefing.json available:", err.message);
   }
+
+  // Fetch Macroeconomic Surveillance
+  try {
+    const res = await fetch(`data/economic.json?t=${cacheBuster}`);
+    if (res.ok) {
+      const econData = await res.json();
+      renderEconomicBar(econData);
+    }
+  } catch (err) {
+    console.warn("No active economic.json available:", err.message);
+  }
+}
+
+// ========== RENDER GEOECONOMIC SURVEILLANCE BAR ==========
+function renderEconomicBar(econData) {
+  const bar = document.getElementById("economic-bar");
+  const container = document.getElementById("econ-ticker-items");
+  if (!bar || !container) return;
+
+  if (!econData || !econData.metrics || econData.metrics.length === 0) {
+    bar.style.display = "none";
+    return;
+  }
+
+  bar.style.display = "flex";
+  container.innerHTML = econData.metrics.map(m => {
+    const changeSign = m.change > 0 ? "+" : "";
+    const changeText = m.change !== 0 ? `(${changeSign}${m.change})` : "";
+    const prefix = (m.unit && m.unit.startsWith("$")) ? "$" : "";
+    const suffix = m.unit === "%" ? "%" : "";
+
+    return `
+      <div class="econ-item" title="${escapeHtml(m.category)}: ${escapeHtml(m.assessment)} (as of ${m.date})">
+        <span class="econ-name">${escapeHtml(m.name)}:</span>
+        <span class="econ-val">${prefix}${m.value}${suffix}</span>
+        ${changeText ? `<span class="econ-change">${changeText}</span>` : ""}
+        <span class="econ-tag">${escapeHtml(m.assessment)}</span>
+      </div>
+    `;
+  }).join("");
 }
 
 // ========== RENDER THREAT MATRIX TOP BAR ==========

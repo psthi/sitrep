@@ -30,9 +30,10 @@
                                                                              
           - name: Generate briefing (optional)                               
             run: node scripts/generate-briefing.mjs                          
-            env:
-              ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}            
-            continue-on-error: true
+            env:                                                             
+              OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }} # or             
+  GEMINI_API_KEY                                                             
+            continue-on-error: true 
   
           - name: Commit updated data
             run: |

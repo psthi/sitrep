@@ -1,5 +1,30 @@
 import { readFileSync, existsSync } from "fs";
 
+function splitMessage(text, maxLen = 3800) {
+  if (text.length <= maxLen) return [text];
+
+  const chunks = [];
+  const lines = text.split("\n");
+  let currentChunk = "";
+
+  for (const line of lines) {
+    if ((currentChunk.length + line.length + 1) > maxLen) {
+      if (currentChunk.trim()) {
+        chunks.push(currentChunk.trim());
+      }
+      currentChunk = line;
+    } else {
+      currentChunk = currentChunk ? `${currentChunk}\n${line}` : line;
+    }
+  }
+
+  if (currentChunk.trim()) {
+    chunks.push(currentChunk.trim());
+  }
+
+  return chunks;
+}
+
 async function sendTelegramBriefing() {
   const botToken = process.env.TELEGRAM_BOT_TOKEN;
   const rawChatIds = process.env.TELEGRAM_CHAT_ID;
@@ -43,9 +68,9 @@ async function sendTelegramBriefing() {
   if (briefing.householdImpact) {
     const h = briefing.householdImpact;
     const items = [];
-    if (h.energyAndFuel) items.push(`⛽ <b>Fuel & Energy:</b> ${h.energyAndFuel}`);
-    if (h.borrowingAndMortgages) items.push(`🏠 <b>Mortgages & Loans:</b> ${h.borrowingAndMortgages}`);
-    if (h.groceriesAndSupplyChain) items.push(`🛒 <b>Groceries & Goods:</b> ${h.groceriesAndSupplyChain}`);
+    if (h.energyAndFuel) items.push(`⛽ <b>Fuel & Utilities:</b> ${h.energyAndFuel}`);
+    if (h.borrowingAndMortgages) items.push(`🏠 <b>Mortgages & Debt:</b> ${h.borrowingAndMortgages}`);
+    if (h.groceriesAndSupplyChain) items.push(`🛒 <b>Groceries & Food:</b> ${h.groceriesAndSupplyChain}`);
     if (h.jobsAndSavings) items.push(`💼 <b>Jobs & Savings:</b> ${h.jobsAndSavings}`);
 
     if (items.length > 0) {
@@ -88,8 +113,8 @@ async function sendTelegramBriefing() {
     .map(w => `⚠️ <i>${w}</i>`)
     .join("\n");
 
-  // Format the Telegram message
-  const message = `
+  // Format full message
+  const fullMessage = `
 🎯 <b>SITREP // OPERATIONAL INTELLIGENCE BRIEFING</b>
 📅 <i>${briefing.date || new Date().toISOString().split("T")[0]}</i> • <code>UNCLASSIFIED // OSINT</code>
 
@@ -106,29 +131,48 @@ ${iwLines ? `\n🚨 <b><u>INDICATORS & WARNINGS (24–72H)</u>:</b>\n${iwLines}\
 🔗 <a href="https://psthi.github.io/sitrep/">View Live Command Dashboard</a>
 `.trim();
 
+  const chunks = splitMessage(fullMessage, 3800);
+
   // Send to each configured chat ID
   for (const chatId of chatIds) {
-    try {
-      console.log(`[INFO] Sending SITREP dispatch to Telegram chat ${chatId}...`);
-      const res = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          chat_id: chatId,
-          text: message,
-          parse_mode: "HTML",
-          disable_web_page_preview: true,
-        }),
-      });
+    for (let i = 0; i < chunks.length; i++) {
+      const chunkText = chunks.length > 1 ? `<b>[Part ${i + 1}/${chunks.length}]</b>\n\n${chunks[i]}` : chunks[i];
+      try {
+        console.log(`[INFO] Sending SITREP part ${i + 1}/${chunks.length} to Telegram chat ${chatId}...`);
+        let res = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            chat_id: chatId,
+            text: chunkText,
+            parse_mode: "HTML",
+            disable_web_page_preview: true,
+          }),
+        });
 
-      if (!res.ok) {
-        const err = await res.text();
-        console.error(`[ERROR] Telegram API failed for chat ${chatId} (${res.status}): ${err}`);
-      } else {
-        console.log(`[SUCCESS] SITREP dispatched to Telegram chat ${chatId} successfully!`);
+        // Fallback: If HTML formatting has a tag error, retry with plain text
+        if (!res.ok) {
+          console.warn(`[WARN] HTML send failed (${res.status}), retrying as plain text...`);
+          res = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              chat_id: chatId,
+              text: chunkText.replace(/<[^>]*>/g, ""),
+              disable_web_page_preview: true,
+            }),
+          });
+        }
+
+        if (res.ok) {
+          console.log(`[SUCCESS] SITREP delivered to Telegram chat ${chatId} (Part ${i + 1}/${chunks.length})!`);
+        } else {
+          const err = await res.text();
+          console.error(`[ERROR] Telegram API failed for chat ${chatId} (${res.status}): ${err}`);
+        }
+      } catch (sendErr) {
+        console.error(`[ERROR] Failed sending to chat ${chatId}:`, sendErr.message);
       }
-    } catch (sendErr) {
-      console.error(`[ERROR] Failed sending to chat ${chatId}:`, sendErr.message);
     }
   }
 }

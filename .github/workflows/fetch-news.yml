@@ -9,7 +9,6 @@
       contents: write                                                        
                                                                              
     env:                                                                     
-      # Opts into Node 24 runner execution for GitHub Actions                
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'                             
                                                                              
     jobs:                                                                    
@@ -31,15 +30,16 @@
           - name: Generate briefing (optional)                               
             run: node scripts/generate-briefing.mjs                          
             env:                                                             
-              OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }} # or             
-  GEMINI_API_KEY                                                             
-            continue-on-error: true 
-  
-          - name: Commit updated data
-            run: |
-              git config user.name "News Bot"
-              git config user.email "bot@sitrep.dev"
-              git add data/
+              OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}          
+              OPENROUTER_MODEL: "z-ai/glm-5.3-flash" # e.g.         
+  "deepseek/deepseek-chat" or "meta-llama/llama-3.3-70b-instruct"            
+            continue-on-error: true                                          
+                                                                             
+          - name: Commit updated data                                        
+            run: |                                                           
+              git config user.name "News Bot"                                
+              git config user.email "bot@sitrep.dev"                         
+              git add data/                                                  
               git diff --staged --quiet || git commit -m "Update news $(date 
-  -u +'%Y-%m-%d %H:%M UTC')"
-              git push
+  -u +'%Y-%m-%d %H:%M UTC')"                                                 
+              git push  

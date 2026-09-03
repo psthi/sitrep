@@ -85,27 +85,39 @@ Ensure all fields are fully populated based on the ingested signals. Output vali
   const model = process.env.OPENROUTER_MODEL || "z-ai/glm-5.3-flash";
   console.log(`[INFO] Querying OpenRouter (${model}) for military-grade SITREP synthesis...`);
 
-  const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "Authorization": `Bearer ${apiKey}`,
-      "HTTP-Referer": "https://github.com/psthi/sitrep",
-      "X-Title": "SITREP Intelligence Synthesis",
-    },
-    body: JSON.stringify({
-      model: model,
-      response_format: { type: "json_object" },
-      temperature: 0.2,
-      messages: [
-        {
-          role: "system",
-          content: "You are an elite geopolitical and military intelligence watch officer. You output strictly valid, well-formed JSON conforming to the requested schema. No commentary, no preamble."
-        },
-        { role: "user", content: prompt }
-      ],
-    }),
-  });
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 40000);
+
+  let res;
+  try {
+    res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+      signal: controller.signal,
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${apiKey}`,
+        "HTTP-Referer": "https://github.com/psthi/sitrep",
+        "X-Title": "SITREP Intelligence Synthesis",
+      },
+      body: JSON.stringify({
+        model: model,
+        response_format: { type: "json_object" },
+        temperature: 0.2,
+        messages: [
+          {
+            role: "system",
+            content: "You are an elite geopolitical and military intelligence watch officer. You output strictly valid, well-formed JSON conforming to the requested schema. No commentary, no preamble."
+          },
+          { role: "user", content: prompt }
+        ],
+      }),
+    });
+  } catch (fetchErr) {
+    clearTimeout(timeout);
+    console.error("[ERROR] OpenRouter request failed or timed out:", fetchErr.message);
+    return;
+  }
+  clearTimeout(timeout);
 
   if (!res.ok) {
     const errText = await res.text();

@@ -225,6 +225,8 @@ function renderBriefing(briefing) {
 
   section.style.display = "block";
   const body = document.getElementById("briefing-body");
+  const toggleBtn = document.getElementById("briefing-toggle-btn") || document.querySelector(".briefing-toggle");
+  const header = document.getElementById("briefing-header") || document.getElementById("briefing-toggle");
 
   const paragraphs = briefing.summary.split("\n\n").filter(Boolean);
   let html = paragraphs.map(p => `<p>${escapeHtml(p)}</p>`).join("");
@@ -238,11 +240,21 @@ function renderBriefing(briefing) {
   }
 
   body.innerHTML = html;
+  body.classList.add("open");
 
-  document.getElementById("briefing-toggle").addEventListener("click", () => {
-    body.classList.toggle("open");
-    document.getElementById("briefing-toggle").textContent = body.classList.contains("open") ? "[ COLLAPSE ]" : "[ EXPAND ]";
-  });
+  if (toggleBtn) {
+    toggleBtn.textContent = "[ COLLAPSE ]";
+  }
+
+  if (header && !header.dataset.hasListener) {
+    header.dataset.hasListener = "true";
+    header.addEventListener("click", () => {
+      body.classList.toggle("open");
+      if (toggleBtn) {
+        toggleBtn.textContent = body.classList.contains("open") ? "[ COLLAPSE ]" : "[ EXPAND ]";
+      }
+    });
+  }
 }
 
 // ========== CLOCK ==========

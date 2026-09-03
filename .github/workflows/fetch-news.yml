@@ -1,45 +1,43 @@
-    name: Fetch News                                                         
-                                                                             
-    on:                                                                      
-      schedule:                                                              
-        - cron: '*/30 * * * *'                                               
-      workflow_dispatch:                                                     
-                                                                             
-    permissions:                                                             
-      contents: write                                                        
-                                                                             
-    env:                                                                     
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'                             
-                                                                             
-    jobs:                                                                    
-      fetch:                                                                 
-        runs-on: ubuntu-latest                                               
-        steps:                                                               
-          - uses: actions/checkout@v4                                        
-                                                                             
-          - uses: actions/setup-node@v4                                      
-            with:                                                            
-              node-version: '22'                                             
-                                                                             
-          - name: Install dependencies                                       
-            run: npm ci                                                      
-                                                                             
-          - name: Fetch and process news                                     
-            run: node scripts/fetch-news.mjs                                 
-                                                                             
-          - name: Generate briefing (optional)                               
-            run: node scripts/generate-briefing.mjs                          
-            env:                                                             
-              OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}          
-              OPENROUTER_MODEL: "z-ai/glm-5.3-flash" # e.g.         
-  "deepseek/deepseek-chat" or "meta-llama/llama-3.3-70b-instruct"            
-            continue-on-error: true                                          
-                                                                             
-          - name: Commit updated data                                        
-            run: |                                                           
-              git config user.name "News Bot"                                
-              git config user.email "bot@sitrep.dev"                         
-              git add data/                                                  
-              git diff --staged --quiet || git commit -m "Update news $(date 
-  -u +'%Y-%m-%d %H:%M UTC')"                                                 
-              git push  
+name: Fetch News
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch and process news
+        run: node scripts/fetch-news.mjs
+
+      - name: Generate briefing (optional)
+        run: node scripts/generate-briefing.mjs
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: "z-ai/glm-5.3-flash"
+        continue-on-error: true
+
+      - name: Commit updated data
+        run: |
+          git config user.name "News Bot"
+          git config user.email "bot@sitrep.dev"
+          git add data/
+          git diff --staged --quiet || git commit -m "Update news $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push

@@ -2,9 +2,9 @@ import { readFileSync, existsSync } from "fs";
 
 async function sendTelegramBriefing() {
   const botToken = process.env.TELEGRAM_BOT_TOKEN;
-  const chatId = process.env.TELEGRAM_CHAT_ID;
+  const rawChatIds = process.env.TELEGRAM_CHAT_ID;
 
-  if (!botToken || !chatId) {
+  if (!botToken || !rawChatIds) {
     console.log("[INFO] TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID not set — skipping Telegram dispatch.");
     return;
   }
@@ -19,6 +19,17 @@ async function sendTelegramBriefing() {
     briefing = JSON.parse(readFileSync("data/briefing.json", "utf-8"));
   } catch (err) {
     console.error("[ERROR] Failed to parse data/briefing.json:", err.message);
+    return;
+  }
+
+  // Parse comma-separated or single chat IDs
+  const chatIds = rawChatIds
+    .split(",")
+    .map(id => id.trim())
+    .filter(Boolean);
+
+  if (chatIds.length === 0) {
+    console.log("[WARN] No valid chat IDs found in TELEGRAM_CHAT_ID.");
     return;
   }
 
@@ -55,24 +66,30 @@ ${iwLines ? `🚨 <b><u>INDICATORS & WARNINGS (24–72H)</u>:</b>\n${iwLines}\n`
 🔗 <a href="https://psthi.github.io/sitrep/">View Live Command Dashboard</a>
 `.trim();
 
-  // Send via Telegram Bot API
-  console.log(`[INFO] Sending SITREP dispatch to Telegram chat ${chatId}...`);
-  const res = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      chat_id: chatId,
-      text: message,
-      parse_mode: "HTML",
-      disable_web_page_preview: true,
-    }),
-  });
+  // Send to each configured chat ID
+  for (const chatId of chatIds) {
+    try {
+      console.log(`[INFO] Sending SITREP dispatch to Telegram chat ${chatId}...`);
+      const res = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          chat_id: chatId,
+          text: message,
+          parse_mode: "HTML",
+          disable_web_page_preview: true,
+        }),
+      });
 
-  if (!res.ok) {
-    const err = await res.text();
-    console.error(`[ERROR] Telegram API failed (${res.status}): ${err}`);
-  } else {
-    console.log("[SUCCESS] SITREP dispatched to Telegram successfully!");
+      if (!res.ok) {
+        const err = await res.text();
+        console.error(`[ERROR] Telegram API failed for chat ${chatId} (${res.status}): ${err}`);
+      } else {
+        console.log(`[SUCCESS] SITREP dispatched to Telegram chat ${chatId} successfully!`);
+      }
+    } catch (sendErr) {
+      console.error(`[ERROR] Failed sending to chat ${chatId}:`, sendErr.message);
+    }
   }
 }
 

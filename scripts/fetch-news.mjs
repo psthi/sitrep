@@ -1,20 +1,30 @@
 import { XMLParser } from "fast-xml-parser";
 import { createHash } from "crypto";
 import { writeFileSync, readFileSync, existsSync, mkdirSync } from "fs";
-import { categorizeArticle } from "./categorize.mjs";
+import { categorizeArticle, SOURCE_TYPES } from "./categorize.mjs";
 
 const RSS_FEEDS = [
-  { url: "https://feeds.bbci.co.uk/news/world/rss.xml", source: "BBC", category: "world" },
-  { url: "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml", source: "BBC", category: "middle-east" },
-  { url: "https://feeds.bbci.co.uk/news/world/europe/rss.xml", source: "BBC", category: "europe" },
-  { url: "https://feeds.bbci.co.uk/news/world/asia/rss.xml", source: "BBC", category: "asia" },
-  { url: "https://feeds.bbci.co.uk/news/world/africa/rss.xml", source: "BBC", category: "africa" },
-  { url: "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml", source: "BBC", category: "us-politics" },
-  { url: "https://rss.nytimes.com/services/xml/rss/nyt/World.xml", source: "NYT", category: "world" },
-  { url: "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml", source: "NYT", category: "us-politics" },
-  { url: "https://www.aljazeera.com/xml/rss/all.xml", source: "Al Jazeera", category: "world" },
-  { url: "https://www.politico.com/rss/politics08.xml", source: "Politico", category: "us-politics" },
-  { url: "https://feeds.reuters.com/reuters/worldNews", source: "Reuters", category: "world" },
+  // Specialized Defense & Military
+  { url: "https://www.defenseone.com/rss/all/", source: "Defense One", priority: "high" },
+  { url: "https://breakingdefense.com/feed/", source: "Breaking Defense", priority: "high" },
+  { url: "https://www.defensenews.com/arc/outboundfeeds/rss/category/global/?outputType=xml", source: "Defense News", priority: "high" },
+  { url: "https://www.twz.com/feed", source: "The War Zone", priority: "high" },
+  { url: "https://news.usni.org/feed", source: "USNI News", priority: "high" },
+  { url: "https://www.navalnews.com/feed/", source: "Naval News", priority: "medium" },
+  { url: "https://ukdefencejournal.org.uk/feed/", source: "UK Defense Journal", priority: "medium" },
+  { url: "https://warontherocks.com/feed/", source: "War on the Rocks", priority: "medium" },
+  
+  // Geopolitical & Regional Wire Feeds
+  { url: "https://feeds.bbci.co.uk/news/world/rss.xml", source: "BBC", priority: "high" },
+  { url: "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml", source: "BBC", priority: "high" },
+  { url: "https://feeds.bbci.co.uk/news/world/europe/rss.xml", source: "BBC", priority: "high" },
+  { url: "https://feeds.bbci.co.uk/news/world/asia/rss.xml", source: "BBC", priority: "medium" },
+  { url: "https://feeds.bbci.co.uk/news/world/africa/rss.xml", source: "BBC", priority: "medium" },
+  { url: "https://www.aljazeera.com/xml/rss/all.xml", source: "Al Jazeera", priority: "high" },
+  { url: "https://www.timesofisrael.com/feed/", source: "Times of Israel", priority: "medium" },
+  { url: "https://rss.dw.com/rdf/rss-en-all", source: "DW World", priority: "medium" },
+  { url: "https://www.france24.com/en/rss", source: "France 24", priority: "medium" },
+  { url: "https://www.theguardian.com/world/rss", source: "The Guardian", priority: "medium" }
 ];
 
 const parser = new XMLParser({
@@ -28,7 +38,7 @@ function makeId(url) {
 
 function stripHtml(str) {
   if (!str) return "";
-  return str.replace(/<[^>]*>/g, "").replace(/&[^;]+;/g, " ").trim();
+  return str.replace(/<[^>]*>/g, "").replace(/&[^;]+;/g, " ").replace(/\s+/g, " ").trim();
 }
 
 function parseDate(dateStr) {
@@ -40,133 +50,137 @@ function parseDate(dateStr) {
 async function fetchFeed(feed) {
   try {
     const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 15000);
+    const timeout = setTimeout(() => controller.abort(), 12000);
 
     const res = await fetch(feed.url, {
       signal: controller.signal,
-      headers: { "User-Agent": "SITREP-News-Bot/1.0" },
+      headers: {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) SITREP-OSINT-Ingester/2.0",
+        "Accept": "application/rss+xml, application/xml, text/xml, */*",
+      },
     });
     clearTimeout(timeout);
 
     if (!res.ok) {
-      console.error(`[FAIL] ${feed.source} (${feed.url}): HTTP ${res.status}`);
+      console.warn(`[WARN] ${feed.source} returned HTTP ${res.status}`);
       return [];
     }
 
     const xml = await res.text();
     const parsed = parser.parse(xml);
 
-    // Handle both RSS and Atom formats
+    // Handle RSS 2.0 and Atom feeds
     let items = [];
-    if (parsed.rss?.channel?.item) {
+    if (parsed.rss && parsed.rss.channel && parsed.rss.channel.item) {
       items = Array.isArray(parsed.rss.channel.item)
         ? parsed.rss.channel.item
         : [parsed.rss.channel.item];
-    } else if (parsed.feed?.entry) {
+    } else if (parsed.feed && parsed.feed.entry) {
       items = Array.isArray(parsed.feed.entry)
         ? parsed.feed.entry
         : [parsed.feed.entry];
+    } else if (parsed["rdf:RDF"] && parsed["rdf:RDF"].item) {
+      items = Array.isArray(parsed["rdf:RDF"].item)
+        ? parsed["rdf:RDF"].item
+        : [parsed["rdf:RDF"].item];
     }
 
-    const articles = items.map((item) => {
+    return items.map((item) => {
       const title = stripHtml(item.title || "");
-      const description = stripHtml(item.description || item.summary || item["media:description"] || "");
-      const link = item.link?.["@_href"] || item.link || item.guid || "";
-      const pubDate = item.pubDate || item.published || item.updated || "";
+      const description = stripHtml(
+        item.description || item.summary || item["content:encoded"] || ""
+      );
+      const url =
+        item.link?.["@_href"] ||
+        (typeof item.link === "string" ? item.link : "") ||
+        item.guid?.["#text"] ||
+        (typeof item.guid === "string" ? item.guid : "") ||
+        "";
+      const pubDate = parseDate(item.pubDate || item.published || item.updated || item["dc:date"]);
 
-      const url = typeof link === "object" ? (link["@_href"] || "") : String(link);
       const categories = categorizeArticle(title, description);
+      const sourceType = SOURCE_TYPES[feed.source] || "OPEN SOURCE";
 
       return {
         id: makeId(url || title),
         title,
+        snippet: description.slice(0, 240) + (description.length > 240 ? "..." : ""),
+        url,
         source: feed.source,
-        url: url,
-        publishedAt: parseDate(pubDate).toISOString(),
+        sourceType,
+        priority: feed.priority,
+        publishedAt: pubDate.toISOString(),
         categories,
-        primaryCategory: categories[0],
-        snippet: description.slice(0, 250),
       };
-    });
-
-    console.log(`[OK]   ${feed.source}: ${articles.length} articles`);
-    return articles.filter((a) => a.title.length > 0);
+    }).filter((a) => a.title && a.url);
   } catch (err) {
-    console.error(`[FAIL] ${feed.source}: ${err.message}`);
+    console.warn(`[WARN] Failed to ingest ${feed.source}: ${err.message}`);
     return [];
   }
 }
 
-function deduplicateArticles(articles) {
-  const seen = new Map();
+async function main() {
+  console.log(`[INFO] Beginning ingestion from ${RSS_FEEDS.length} defense and intelligence feeds...`);
 
-  for (const article of articles) {
-    const normTitle = article.title.toLowerCase().replace(/[^a-z0-9 ]/g, "").trim();
-    const words = normTitle.split(/\s+/).slice(0, 8).join(" ");
+  const results = await Promise.allSettled(RSS_FEEDS.map(fetchFeed));
+  let allArticles = [];
 
-    if (!seen.has(words)) {
-      seen.set(words, article);
+  for (const r of results) {
+    if (r.status === "fulfilled") {
+      allArticles.push(...r.value);
     }
   }
 
-  return Array.from(seen.values());
-}
+  console.log(`[INFO] Ingested ${allArticles.length} raw intelligence signals`);
 
-async function main() {
-  console.log("=== SITREP NEWS FETCH ===");
-  console.log(`Time: ${new Date().toISOString()}`);
-  console.log(`Feeds: ${RSS_FEEDS.length}\n`);
+  // Deduplicate by URL and Title similarity
+  const seenUrls = new Set();
+  const seenTitles = new Set();
+  const deduped = [];
 
-  const results = await Promise.allSettled(
-    RSS_FEEDS.map((feed) => fetchFeed(feed))
-  );
+  // Sort newest first
+  allArticles.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 
-  let allArticles = results
-    .filter((r) => r.status === "fulfilled")
-    .flatMap((r) => r.value);
+  for (const a of allArticles) {
+    const normTitle = a.title.toLowerCase().replace(/[^a-z0-9]/g, "").slice(0, 40);
+    if (!seenUrls.has(a.url) && !seenTitles.has(normTitle)) {
+      seenUrls.add(a.url);
+      seenTitles.add(normTitle);
+      deduped.push(a);
+    }
+  }
 
-  console.log(`\nTotal raw articles: ${allArticles.length}`);
+  // Keep past 48 hours, up to 150 items
+  const cutoff = Date.now() - 48 * 60 * 60 * 1000;
+  const recent = deduped
+    .filter((a) => new Date(a.publishedAt).getTime() > cutoff)
+    .slice(0, 150);
 
-  // Deduplicate
-  allArticles = deduplicateArticles(allArticles);
-  console.log(`After dedup: ${allArticles.length}`);
+  console.log(`[INFO] Deduplicated to ${recent.length} verified signals`);
 
-  // Sort by date (newest first)
-  allArticles.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+  if (!existsSync("data")) {
+    mkdirSync("data", { recursive: true });
+  }
 
-  // Keep latest 150
-  allArticles = allArticles.slice(0, 150);
-
-  // Mark breaking (< 1 hour old)
-  const now = Date.now();
-  allArticles = allArticles.map((a) => ({
-    ...a,
-    isBreaking: (now - new Date(a.publishedAt).getTime()) < 3600000,
-  }));
-
-  const output = {
-    lastUpdated: new Date().toISOString(),
-    articleCount: allArticles.length,
-    articles: allArticles,
+  const payload = {
+    updatedAt: new Date().toISOString(),
+    signalCount: recent.length,
+    articles: recent,
   };
 
-  // Ensure data directory exists
-  if (!existsSync("data")) mkdirSync("data", { recursive: true });
-  if (!existsSync("data/archive")) mkdirSync("data/archive", { recursive: true });
+  writeFileSync("data/news.json", JSON.stringify(payload, null, 2));
+  console.log(`[SUCCESS] Output written to data/news.json (${recent.length} articles)`);
 
-  // Write current data
-  writeFileSync("data/news.json", JSON.stringify(output, null, 2));
-  console.log(`\nWrote data/news.json (${allArticles.length} articles)`);
-
-  // Write daily archive
+  // Daily Archive
   const today = new Date().toISOString().split("T")[0];
-  writeFileSync(`data/archive/${today}.json`, JSON.stringify(output, null, 2));
-  console.log(`Wrote data/archive/${today}.json`);
-
-  console.log("\n=== DONE ===");
+  const archiveDir = "data/archive";
+  if (!existsSync(archiveDir)) {
+    mkdirSync(archiveDir, { recursive: true });
+  }
+  writeFileSync(`${archiveDir}/${today}.json`, JSON.stringify(payload, null, 2));
 }
 
 main().catch((err) => {
-  console.error("Fatal error:", err);
+  console.error("[FATAL] News ingestion encountered an error:", err);
   process.exit(1);
 });

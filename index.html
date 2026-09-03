@@ -3,86 +3,211 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SITREP | Live Geopolitical Intelligence</title>
-  <meta name="description" content="Live geopolitical news tracker. War room terminal dashboard updated every 30 minutes.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+  <title>SITREP | Strategic Defense & Geopolitical Intelligence</title>
+  <meta name="description" content="Operational Situation Report (SITREP) and real-time defense intelligence dashboard updated continuously via GitHub Actions.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+  <!-- CLASSIFICATION & SECURITY BANNER -->
+  <div class="security-banner">
+    <span class="security-tag">UNCLASSIFIED</span>
+    <span class="security-desc">OPEN SOURCE INTELLIGENCE (OSINT) &bull; REL TO PUBLIC DOMAIN</span>
+    <span class="security-cycle" id="auto-cycle-tag">CYCLE: 30M</span>
+  </div>
+
   <!-- TOP BAR -->
   <header class="topbar">
     <div class="topbar-left">
-      <div class="logo">SITREP<span>.</span></div>
-      <div class="classification">OPEN SOURCE INTEL</div>
+      <div class="logo">
+        <span class="radar-dot"></span>
+        SITREP<span class="logo-accent">.INTEL</span>
+      </div>
+      <div class="mission-tag">STRATEGIC SITUATION REPORT</div>
     </div>
+
+    <!-- Quick Search -->
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search signals, weapons, theaters..." autocomplete="off">
+      <span class="search-icon">&#x1F50D;</span>
+    </div>
+
     <div class="topbar-right">
-      <span class="article-count" id="article-count"></span>
+      <div class="clock-cluster">
+        <div class="clock-item">
+          <span class="clock-val" id="utc-clock">00:00:00</span>
+          <span class="clock-lbl">ZULU / UTC</span>
+        </div>
+        <div class="clock-item">
+          <span class="clock-val" id="local-clock">00:00:00</span>
+          <span class="clock-lbl">LOCAL</span>
+        </div>
+      </div>
       <div class="status-indicator">
         <span class="pulse-dot"></span>
-        <span id="last-updated">CONNECTING...</span>
+        <span id="last-updated">SYNCHRONIZING...</span>
       </div>
     </div>
   </header>
 
-  <!-- DAILY BRIEFING -->
-  <section class="briefing-section" id="briefing-section" style="display:none">
-    <div class="briefing-card">
-      <div class="briefing-header" id="briefing-header">
-        <h2>Daily Intelligence Briefing</h2>
-        <button class="briefing-toggle" id="briefing-toggle-btn">[ COLLAPSE ]</button>
-      </div>
-      <div class="briefing-body open" id="briefing-body"></div>
-    </div>
+  <!-- REGIONAL THREAT MATRIX BAR -->
+  <section class="threat-matrix-bar" id="threat-matrix-bar">
+    <!-- Populated dynamically via JS -->
   </section>
 
-  <!-- CONTROLS -->
-  <nav class="controls">
-    <div class="filter-group" id="category-filters">
-      <!-- JS populated -->
-    </div>
-    <div class="time-filters">
-      <button class="time-btn" data-hours="6">6h</button>
-      <button class="time-btn" data-hours="12">12h</button>
-      <button class="time-btn active" data-hours="24">24h</button>
-      <button class="time-btn" data-hours="48">48h</button>
-    </div>
-  </nav>
+  <!-- MAIN WRAPPER -->
+  <div class="layout-container">
 
-  <!-- MAIN -->
-  <div class="main-layout">
-    <!-- FEED -->
-    <main>
-      <div class="feed-header">LIVE FEED &mdash; GLOBAL</div>
-      <div class="feed" id="feed">
-        <div class="loading">
-          <div class="loading-spinner"></div>
-          <div class="loading-text">Acquiring signals...</div>
+    <!-- EXECUTIVE BRIEFING SECTION -->
+    <section class="briefing-section" id="briefing-section" style="display:none">
+      <div class="briefing-card">
+        
+        <!-- Header -->
+        <div class="briefing-header" id="briefing-header">
+          <div class="briefing-header-left">
+            <span class="briefing-badge">EXECUTIVE SITREP</span>
+            <h2 id="briefing-title">Global Strategic Intelligence Briefing</h2>
+            <span class="briefing-date" id="briefing-date">--</span>
+          </div>
+          <button class="briefing-toggle-btn" id="briefing-toggle-btn" aria-label="Toggle briefing">[ COLLAPSE ]</button>
+        </div>
+
+        <!-- Body -->
+        <div class="briefing-body open" id="briefing-body">
+          
+          <!-- BLUF Box -->
+          <div class="bluf-container" id="bluf-container">
+            <div class="bluf-tag">BOTTOM LINE UP FRONT (BLUF)</div>
+            <p class="bluf-text" id="bluf-text">Generating intelligence assessment...</p>
+          </div>
+
+          <!-- Theater Status Cards -->
+          <div class="theaters-grid" id="theaters-grid"></div>
+
+          <!-- Strategic Operational Summary -->
+          <div class="summary-block" id="summary-block">
+            <h3 class="section-subtitle">Operational & Strategic Assessment</h3>
+            <div class="summary-paragraphs" id="summary-paragraphs"></div>
+          </div>
+
+          <!-- Key Developments Grid -->
+          <div class="developments-block" id="developments-block">
+            <h3 class="section-subtitle">Key Tactical & Policy Developments</h3>
+            <div class="developments-grid" id="developments-grid"></div>
+          </div>
+
+          <!-- Indicators & Warnings (I&W) -->
+          <div class="iw-block" id="iw-block">
+            <div class="iw-header">
+              <span class="iw-icon">&#x26A0;</span>
+              <h3 class="section-subtitle iw-title">Indicators & Warnings (Next 24–72 Hours)</h3>
+            </div>
+            <ul class="iw-list" id="iw-list"></ul>
+          </div>
+
         </div>
       </div>
-    </main>
+    </section>
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-      <!-- Clock -->
-      <div class="sidebar-section">
-        <div class="clock" id="clock">00:00:00</div>
-        <div class="clock-label">UTC</div>
+    <!-- CONTROLS & FILTER BAR -->
+    <nav class="controls-bar">
+      
+      <!-- Theater / Category Filters -->
+      <div class="filter-group" id="category-filters">
+        <!-- JS populated -->
       </div>
 
-      <!-- Regions -->
-      <div class="sidebar-section">
-        <div class="sidebar-title">Regions</div>
-        <ul class="region-list" id="region-list"></ul>
+      <!-- Source Type & Time Horizon Controls -->
+      <div class="controls-aux">
+        <div class="source-type-filters" id="source-type-filters">
+          <button class="type-pill active" data-type="all">ALL SOURCES</button>
+          <button class="type-pill" data-type="DEFENSE">DEFENSE / TECH</button>
+          <button class="type-pill" data-type="NAVAL">NAVAL / MARITIME</button>
+          <button class="type-pill" data-type="WIRE">GLOBAL WIRES</button>
+        </div>
+
+        <div class="time-filters">
+          <button class="time-btn" data-hours="6">6H</button>
+          <button class="time-btn" data-hours="12">12H</button>
+          <button class="time-btn active" data-hours="24">24H</button>
+          <button class="time-btn" data-hours="48">48H</button>
+        </div>
       </div>
 
-      <!-- Sources -->
-      <div class="sidebar-section">
-        <div class="sidebar-title">Sources</div>
-        <ul class="source-list" id="source-list"></ul>
-      </div>
-    </aside>
+    </nav>
+
+    <!-- CONTENT GRID: FEED + INTEL SIDEBAR -->
+    <div class="main-grid">
+
+      <!-- LIVE SIGNALS FEED -->
+      <main class="feed-container">
+        <div class="feed-header-bar">
+          <div class="feed-title-wrap">
+            <span class="feed-title">TACTICAL SIGNAL STREAM</span>
+            <span class="feed-subtitle" id="active-filter-label">ALL THEATERS &bull; PAST 24 HOURS</span>
+          </div>
+          <span class="signal-count" id="article-count">0 SIGNALS</span>
+        </div>
+
+        <div class="feed" id="feed">
+          <div class="loading">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">INTERCEPTING & PARSING SIGNALS...</div>
+          </div>
+        </div>
+      </main>
+
+      <!-- INTELLIGENCE SIDEBAR -->
+      <aside class="intel-sidebar">
+
+        <!-- Theater Breakdown Widget -->
+        <div class="sidebar-panel">
+          <div class="panel-header">
+            <span class="panel-title">THEATER BREAKDOWN</span>
+            <span class="panel-badge" id="theater-total-count">0</span>
+          </div>
+          <ul class="theater-stat-list" id="theater-stat-list"></ul>
+        </div>
+
+        <!-- Intel Sources Widget -->
+        <div class="sidebar-panel">
+          <div class="panel-header">
+            <span class="panel-title">MONITORED SOURCES</span>
+            <span class="panel-badge" id="source-total-count">0</span>
+          </div>
+          <ul class="source-stat-list" id="source-stat-list"></ul>
+        </div>
+
+        <!-- Threat Level Matrix Legend -->
+        <div class="sidebar-panel legend-panel">
+          <div class="panel-header">
+            <span class="panel-title">THREAT LEVEL REFERENCE</span>
+          </div>
+          <div class="threat-legend">
+            <div class="legend-row"><span class="badge-tag status-critical">CRITICAL</span> Severe kinetic action / direct war risk</div>
+            <div class="legend-row"><span class="badge-tag status-high">HIGH</span> Active strikes / major escalation</div>
+            <div class="legend-row"><span class="badge-tag status-elevated">ELEVATED</span> Maneuvering / heightened posture</div>
+            <div class="legend-row"><span class="badge-tag status-guarded">GUARDED</span> Standby / regular monitoring</div>
+          </div>
+        </div>
+
+      </aside>
+
+    </div>
+
   </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <span>SITREP &bull; Automated Open-Source Geopolitical & Defense Intelligence</span>
+      <span>Engineered with GitHub Actions &amp; OpenRouter</span>
+    </div>
+  </footer>
 
   <script src="js/app.js"></script>
 </body>

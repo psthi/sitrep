@@ -234,6 +234,66 @@ function renderBriefing(briefing) {
     }).join("");
   }
 
+  // Civilian & Household Impact (What This Means For You)
+  const householdBlock = document.getElementById("household-block");
+  const householdGrid = document.getElementById("household-grid");
+  if (householdBlock && householdGrid) {
+    if (briefing.householdImpact) {
+      householdBlock.style.display = "block";
+      const h = briefing.householdImpact;
+      const cards = [];
+
+      if (h.energyAndFuel) {
+        cards.push(`
+          <div class="household-card">
+            <div class="household-card-header">
+              <span class="household-card-icon">⛽</span>
+              <span>Gas Pump & Energy Bills</span>
+            </div>
+            <p class="household-card-desc">${escapeHtml(h.energyAndFuel)}</p>
+          </div>
+        `);
+      }
+      if (h.borrowingAndMortgages) {
+        cards.push(`
+          <div class="household-card">
+            <div class="household-card-header">
+              <span class="household-card-icon">🏠</span>
+              <span>Mortgages, Loans & Debt</span>
+            </div>
+            <p class="household-card-desc">${escapeHtml(h.borrowingAndMortgages)}</p>
+          </div>
+        `);
+      }
+      if (h.groceriesAndSupplyChain) {
+        cards.push(`
+          <div class="household-card">
+            <div class="household-card-header">
+              <span class="household-card-icon">🛒</span>
+              <span>Groceries & Supermarket Prices</span>
+            </div>
+            <p class="household-card-desc">${escapeHtml(h.groceriesAndSupplyChain)}</p>
+          </div>
+        `);
+      }
+      if (h.jobsAndSavings) {
+        cards.push(`
+          <div class="household-card">
+            <div class="household-card-header">
+              <span class="household-card-icon">💼</span>
+              <span>Job Security & 401(k) Savings</span>
+            </div>
+            <p class="household-card-desc">${escapeHtml(h.jobsAndSavings)}</p>
+          </div>
+        `);
+      }
+
+      householdGrid.innerHTML = cards.join("");
+    } else {
+      householdBlock.style.display = "none";
+    }
+  }
+
   // Summary Paragraphs
   const summaryEl = document.getElementById("summary-paragraphs");
   if (summaryEl) {

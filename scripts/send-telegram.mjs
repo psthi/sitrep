@@ -38,6 +38,21 @@ async function sendTelegramBriefing() {
     .map(t => `• <b>${t.theater}</b>: <code>[${t.status}]</code> ${t.trend ? `<i>(${t.trend})</i>` : ''}`)
     .join("\n");
 
+  // Build Household Impact
+  let householdBlock = "";
+  if (briefing.householdImpact) {
+    const h = briefing.householdImpact;
+    const items = [];
+    if (h.energyAndFuel) items.push(`⛽ <b>Fuel & Energy:</b> ${h.energyAndFuel}`);
+    if (h.borrowingAndMortgages) items.push(`🏠 <b>Mortgages & Loans:</b> ${h.borrowingAndMortgages}`);
+    if (h.groceriesAndSupplyChain) items.push(`🛒 <b>Groceries & Goods:</b> ${h.groceriesAndSupplyChain}`);
+    if (h.jobsAndSavings) items.push(`💼 <b>Jobs & Savings:</b> ${h.jobsAndSavings}`);
+
+    if (items.length > 0) {
+      householdBlock = `🛒 <b><u>CIVILIAN & HOUSEHOLD IMPACT (WHAT THIS MEANS FOR YOU)</u>:</b>\n${items.join("\n\n")}\n\n`;
+    }
+  }
+
   // Build Macro & Commodity Ticker
   let econBlock = "";
   if (existsSync("data/economic.json")) {
@@ -58,7 +73,7 @@ async function sendTelegramBriefing() {
       if (dxy) parts.push(`💵 <b>DXY:</b> ${dxy.value}`);
 
       if (parts.length > 0) {
-        econBlock = `📉 <b><u>GEOECONOMIC & MARKET STABILITY</u>:</b>\n${parts.join(" • ")}\n`;
+        econBlock = `📉 <b><u>GEOECONOMIC SURVEILLANCE</u>:</b>\n${parts.join(" • ")}\n\n`;
       }
     } catch (_) {}
   }
@@ -84,10 +99,10 @@ ${briefing.bluf || briefing.summary || "No active summary available."}
 📊 <b><u>REGIONAL THREAT MATRIX</u>:</b>
 ${threatLines || "• No active threat indicators"}
 
-${econBlock ? `${econBlock}\n` : ''}📍 <b><u>KEY DEVELOPMENTS</u>:</b>
+${householdBlock}${econBlock}📍 <b><u>KEY DEVELOPMENTS</u>:</b>
 ${devLines || "• No active developments listed"}
 
-${iwLines ? `🚨 <b><u>INDICATORS & WARNINGS (24–72H)</u>:</b>\n${iwLines}\n` : ''}
+${iwLines ? `\n🚨 <b><u>INDICATORS & WARNINGS (24–72H)</u>:</b>\n${iwLines}\n` : ''}
 🔗 <a href="https://psthi.github.io/sitrep/">View Live Command Dashboard</a>
 `.trim();
 

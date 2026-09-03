@@ -30,7 +30,7 @@ async function main() {
   }
 
   const prompt = `You are a Senior Geopolitical, Defense, and Macroeconomic Intelligence Analyst producing an unclassified Situation Report (SITREP).
-Your audience includes defense/policy analysts who demand operational rigor and strategic precision, as well as informed citizens who need clear, accessible explanations without bureaucratic fluff.
+Your audience includes defense/policy analysts who demand operational rigor and strategic precision, as well as informed everyday citizens who need clear, plain-English explanations of how global events directly impact their household, wallet, and daily life.
 
 Review these latest ingested signals from the past 24-48 hours:
 ${headlinesList}
@@ -43,6 +43,12 @@ Synthesize these defense signals and economic indicators into a unified intellig
 JSON SCHEMA REQUIREMENT:
 {
   "bluf": "2-3 sentence Bottom Line Up Front. State the single most significant strategic reality and immediate risk trajectory clearly and authoritatively.",
+  "householdImpact": {
+    "energyAndFuel": "1-2 plain-English sentences explaining what current oil/gas prices and geopolitical tensions mean for filling up a car at the gas pump and home electric/heating utility bills.",
+    "borrowingAndMortgages": "1-2 plain-English sentences explaining how current bond yields and borrowing conditions affect mortgage rates, auto loans, and credit card interest.",
+    "groceriesAndSupplyChain": "1-2 plain-English sentences explaining how maritime chokepoints, trade friction, or energy costs are impacting food prices, grocery bills, and everyday consumer goods.",
+    "jobsAndSavings": "1-2 plain-English sentences explaining what market volatility and corporate credit conditions mean for job security, hiring, and 401(k)/retirement savings."
+  },
   "threatMatrix": [
     {
       "theater": "Eastern Europe / Ukraine",
@@ -93,10 +99,10 @@ JSON SCHEMA REQUIREMENT:
   ]
 }
 
-Ensure all fields are fully populated based on the ingested signals and economic indicators. Output valid JSON only with NO markdown code fences or conversational text.`;
+Ensure all fields including householdImpact are fully populated. Output valid JSON only with NO markdown code fences or conversational text.`;
 
   const model = process.env.OPENROUTER_MODEL || "z-ai/glm-5.3-flash";
-  console.log(`[INFO] Querying OpenRouter (${model}) for unified SITREP synthesis...`);
+  console.log(`[INFO] Querying OpenRouter (${model}) for unified SITREP synthesis with Household Impact...`);
 
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 40000);
@@ -158,7 +164,7 @@ Ensure all fields are fully populated based on the ingested signals and economic
     briefing.modelUsed = model;
 
     writeFileSync("data/briefing.json", JSON.stringify(briefing, null, 2));
-    console.log(`[SUCCESS] Intelligence SITREP written to data/briefing.json using ${model}`);
+    console.log(`[SUCCESS] Intelligence SITREP with Household Impact written to data/briefing.json using ${model}`);
   } catch (parseErr) {
     console.error("[ERROR] JSON parse error:", parseErr.message);
   }

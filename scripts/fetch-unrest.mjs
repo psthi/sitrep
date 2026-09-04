@@ -14,7 +14,7 @@ async function fetchAcled() {
   startDate.setDate(startDate.getDate() - daysBack);
   const startDateStr = startDate.toISOString().split("T")[0];
 
-  const url = new URL("https://api.acleddata.com/acled/read");
+  const url = new URL("https://acleddata.com/api/acled/read");
   url.searchParams.append("key", ACLED_API_KEY);
   url.searchParams.append("email", ACLED_EMAIL);
   url.searchParams.append("country", "United States");

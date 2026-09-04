@@ -1,5 +1,30 @@
 {
-  "updatedAt": "2026-09-04T07:28:49.289Z",
-  "signalCount": 0,
-  "signals": []
+  "updatedAt": "2026-09-04T07:45:00.000Z",
+  "signalCount": 2,
+  "signals": [
+    {
+      "source": "GDELT_DOC",
+      "event_time": "2026-09-04T06:30:00.000Z",
+      "title_or_type": "Protest / Media Event",
+      "location": "US (Media Source)",
+      "latitude": 38.8951,
+      "longitude": -77.0364,
+      "actors": ["cnn.com"],
+      "fatalities_or_volume": 0,
+      "raw_url_or_id": "https://cnn.com/local-protest",
+      "summary": "Large crowds gather downtown over proposed zoning laws, blocking intersections."
+    },
+    {
+      "source": "ACLED",
+      "event_time": "2026-09-04T05:15:00.000Z",
+      "title_or_type": "Protests (Peaceful protest)",
+      "location": "Seattle, Washington, United States",
+      "latitude": 47.6062,
+      "longitude": -122.3321,
+      "actors": ["Protesters (United States)"],
+      "fatalities_or_volume": 0,
+      "raw_url_or_id": "12345",
+      "summary": "Around 200 people marched peacefully demanding climate action."
+    }
+  ]
 }

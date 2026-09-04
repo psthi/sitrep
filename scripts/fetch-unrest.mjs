@@ -115,6 +115,12 @@ async function main() {
     mkdirSync("data", { recursive: true });
   }
 
+  // Fallback to previous data if APIs failed (e.g. Rate Limit 429)
+  if (allSignals.length === 0 && existsSync("data/unrest.json")) {
+    console.log("[WARN] APIs returned 0 signals. Retaining previous unrest data.");
+    return; // Don't overwrite with empty
+  }
+
   const payload = {
     updatedAt: new Date().toISOString(),
     signalCount: allSignals.length,

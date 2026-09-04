@@ -4,7 +4,9 @@
   "description": "Live geopolitical news tracker dashboard",
   "type": "module",
   "scripts": {
-    "fetch": "node scripts/fetch-news.mjs",
+    "fetch": "node scripts/fetch-news.mjs && node scripts/fetch-unrest.mjs",
+    "fetch:news": "node scripts/fetch-news.mjs",
+    "fetch:unrest": "node scripts/fetch-unrest.mjs",
     "briefing": "node scripts/generate-briefing.mjs"
   },
   "dependencies": {

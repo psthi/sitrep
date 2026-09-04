@@ -29,6 +29,16 @@ async function main() {
     } catch (_) {}
   }
 
+  let unrestSummary = "No active civil unrest metrics available.";
+  if (existsSync("data/unrest.json")) {
+    try {
+      const unrestData = JSON.parse(readFileSync("data/unrest.json", "utf-8"));
+      unrestSummary = (unrestData.signals || []).slice(0, 15)
+        .map(s => `[${s.source}] ${s.title_or_type} at ${s.location}: ${s.summary.slice(0, 80)}...`)
+        .join("\n");
+    } catch (_) {}
+  }
+
   const prompt = `You are a Senior Geopolitical, Defense, and Macroeconomic Intelligence Analyst producing an unclassified Situation Report (SITREP).
 Your audience includes defense/policy analysts who demand operational rigor and strategic precision, as well as informed everyday citizens who need clear, plain-English explanations of how global events directly impact their household, wallet, and daily life.
 
@@ -38,7 +48,10 @@ ${headlinesList}
 Review current macroeconomic and financial stability indicators:
 ${economicSummary}
 
-Synthesize these defense signals and economic indicators into a unified intelligence briefing adhering strictly to the JSON schema below.
+Review recent civil unrest and demonstration indicators:
+${unrestSummary}
+
+Synthesize these defense signals, economic indicators, and civil unrest metrics into a unified intelligence briefing adhering strictly to the JSON schema below.
 
 JSON SCHEMA REQUIREMENT:
 {
@@ -75,6 +88,12 @@ JSON SCHEMA REQUIREMENT:
       "summary": "1-sentence summary of cyber/electronic warfare, space, or major arms transfers."
     },
     {
+      "theater": "Domestic Civil Unrest & Demonstrations",
+      "status": "CRITICAL" | "HIGH" | "ELEVATED" | "GUARDED" | "MODERATE",
+      "trend": "ESCALATING" | "VOLATILE" | "STABLE" | "DE-ESCALATING",
+      "summary": "1-sentence summary of recent protests, riots, or social mobilization trends."
+    },
+    {
       "theater": "Global Energy & Trade Chokepoints",
       "status": "CRITICAL" | "HIGH" | "ELEVATED" | "GUARDED" | "MODERATE",
       "trend": "ESCALATING" | "VOLATILE" | "STABLE" | "DE-ESCALATING",
@@ -84,7 +103,7 @@ JSON SCHEMA REQUIREMENT:
   "operationalSummary": [
     "Paragraph 1: Kinetic & Frontline Operations — specific strikes, ground maneuvering, air/drone activity, naval engagements, and weapons employment.",
     "Paragraph 2: Strategic Alliances & Diplomatic Posturing — defense pacts, munitions pipelines, sanctions enforcement, deterrence signals, and political pressures.",
-    "Paragraph 3: Geoeconomic & Market Stability — integration of current oil/commodity prices, credit spreads, currency pressures, and supply chain vulnerabilities caused by ongoing conflict."
+    "Paragraph 3: Geoeconomic, Market & Social Stability — integration of current oil/commodity prices, credit spreads, currency pressures, supply chain vulnerabilities, and domestic civil unrest."
   ],
   "keyDevelopments": [
     {

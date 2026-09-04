@@ -2,6 +2,7 @@
 
 const CATEGORIES = {
   "all": { label: "🌐 All Theaters", shortLabel: "ALL", color: "#58a6ff" },
+  "unrest": { label: "🔥 Civil Unrest", shortLabel: "UNREST", color: "#f59f00" },
   "ukraine-eur": { label: "🇺🇦 Eastern Europe / Ukraine", shortLabel: "EUR / UKR", color: "#fbbf24" },
   "middle-east": { label: "🇵🇸 Middle East & Levant", shortLabel: "MIDEAST", color: "#f97316" },
   "indo-pacific": { label: "🇨🇳 Indo-Pacific & China", shortLabel: "INDO-PAC", color: "#ef4444" },
@@ -106,10 +107,6 @@ async function fetchIntelligence() {
       const data = await res.json();
       allArticles = data.articles || [];
       updateLastUpdated(data.updatedAt);
-      renderFilters();
-      renderFeed();
-      renderSidebar();
-      updateArticleCount();
     } else {
       throw new Error(`HTTP ${res.status}`);
     }
@@ -118,6 +115,34 @@ async function fetchIntelligence() {
     document.getElementById("feed").innerHTML =
       '<div class="empty-state">SIGNAL LOSS -- RE-ESTABLISHING INGESTION STREAM...</div>';
   }
+
+  // Fetch Unrest Feed and append to allArticles
+  try {
+    const res = await fetch(`data/unrest.json?t=${cacheBuster}`);
+    if (res.ok) {
+      const unrestData = await res.json();
+      const unrestArticles = (unrestData.signals || []).map(s => ({
+        title: s.summary || s.title_or_type,
+        snippet: `Location: ${s.location} | Actors: ${(s.actors || []).join(", ")}`,
+        source: s.source,
+        sourceType: "CIVIL UNREST",
+        url: s.raw_url_or_id || "#",
+        publishedAt: s.event_time,
+        categories: ["all", "unrest"] // added "unrest" category
+      }));
+      allArticles = allArticles.concat(unrestArticles);
+      // Sort by date descending
+      allArticles.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+    }
+  } catch (err) {
+    console.warn("No active unrest.json available:", err.message);
+  }
+
+  // Once news and unrest are loaded, render feed
+  renderFilters();
+  renderFeed();
+  renderSidebar();
+  updateArticleCount();
 
   // Fetch AI Briefing
   try {

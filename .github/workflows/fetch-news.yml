@@ -37,6 +37,15 @@ jobs:
           ACLED_API_KEY: ${{ secrets.ACLED_API_KEY }}
           ACLED_EMAIL: ${{ secrets.ACLED_EMAIL }}
 
+      - name: Fetch FIRMS Thermal Anomalies
+        run: node scripts/fetch-firms.mjs
+
+      - name: Fetch Maritime AIS Data
+        run: node scripts/fetch-maritime.mjs
+
+      - name: Fetch Aviation Data
+        run: node scripts/fetch-aviation.mjs
+
       - name: Generate intelligence SITREP (optional)
         run: node scripts/generate-briefing.mjs
         env:

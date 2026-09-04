@@ -1,12 +1,12 @@
 :root {
-  --bg-main: #0a0c10;
-  --bg-card: #0f131a;
-  --bg-card-hover: #151a24;
-  --bg-card-active: #1c2230;
-  --bg-header: #07090d;
-  --bg-panel: #0d1117;
+  --bg-main: transparent;
+  --bg-card: rgba(10,20,32,0.55);
+  --bg-card-hover: rgba(10,20,32,0.75);
+  --bg-card-active: rgba(10,20,32,0.9);
+  --bg-header: rgba(6,14,22,0.82);
+  --bg-panel: rgba(10,20,32,0.55);
   
-  --border: #21262d;
+  --border: rgba(100,240,200,0.12);
   --border-subtle: #161b22;
   --border-focus: #388bfd;
   
@@ -26,8 +26,8 @@
   --accent-purple: #9254de;
   --accent-green: #238636;
   
-  --font-mono: 'JetBrains Mono', monospace;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-sans: 'Space Grotesk', sans-serif;
 }
 
 * {
@@ -78,6 +78,7 @@ body {
 /* ========== TOP BAR ========== */
 .topbar {
   background: var(--bg-header);
+  backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
   padding: 0.75rem 1.5rem;
   display: flex;
@@ -143,6 +144,7 @@ body {
 .search-container input {
   width: 100%;
   background: var(--bg-card);
+  backdrop-filter: blur(16px);
   border: 1px solid var(--border);
   border-radius: 4px;
   padding: 0.4rem 2rem 0.4rem 0.75rem;
@@ -221,7 +223,8 @@ body {
 
 /* ========== THREAT MATRIX BAR ========== */
 .threat-matrix-bar {
-  background: #0d1017;
+  background: rgba(6,14,22,0.82);
+  backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
   padding: 0.5rem 1.5rem;
   display: flex;
@@ -238,6 +241,7 @@ body {
   align-items: center;
   gap: 0.5rem;
   background: var(--bg-card);
+  backdrop-filter: blur(16px);
   border: 1px solid var(--border);
   padding: 0.35rem 0.75rem;
   border-radius: 4px;
@@ -268,7 +272,8 @@ body {
 
 /* ========== GEOECONOMIC BAR ========== */
 .economic-bar {
-  background: #090c12;
+  background: rgba(6,14,22,0.82);
+  backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
   padding: 0.4rem 1.5rem;
   display: flex;
@@ -341,6 +346,7 @@ body {
 
 .briefing-card {
   background: var(--bg-panel);
+  backdrop-filter: blur(16px);
   border: 1px solid var(--border);
   border-left: 4px solid var(--status-critical);
   border-radius: 6px;
@@ -453,6 +459,7 @@ body {
 
 .theater-card {
   background: var(--bg-card);
+  backdrop-filter: blur(16px);
   border: 1px solid var(--border);
   padding: 0.85rem 1rem;
   border-radius: 4px;
@@ -519,6 +526,7 @@ body {
 
 .household-card {
   background: var(--bg-card);
+  backdrop-filter: blur(16px);
   border: 1px solid var(--border);
   padding: 0.85rem 1rem;
   border-radius: 4px;
@@ -593,6 +601,7 @@ body {
 
 .dev-card {
   background: var(--bg-card);
+  backdrop-filter: blur(16px);
   border: 1px solid var(--border);
   padding: 0.9rem 1rem;
   border-radius: 4px;
@@ -690,6 +699,7 @@ body {
 /* ========== CONTROLS BAR ========== */
 .controls-bar {
   background: var(--bg-panel);
+  backdrop-filter: blur(16px);
   border: 1px solid var(--border);
   border-radius: 6px;
   padding: 0.85rem 1.25rem;
@@ -714,6 +724,7 @@ body {
   align-items: center;
   gap: 0.4rem;
   background: var(--bg-card);
+  backdrop-filter: blur(16px);
   border: 1px solid var(--border);
   color: var(--text-secondary);
   padding: 0.35rem 0.75rem;
@@ -794,6 +805,7 @@ body {
 
 .time-btn {
   background: var(--bg-card);
+  backdrop-filter: blur(16px);
   border: 1px solid var(--border);
   color: var(--text-secondary);
   font-family: var(--font-mono);
@@ -821,6 +833,7 @@ body {
 /* Feed Container */
 .feed-container {
   background: var(--bg-panel);
+  backdrop-filter: blur(16px);
   border: 1px solid var(--border);
   border-radius: 6px;
   padding: 1.25rem;
@@ -875,6 +888,7 @@ body {
 
 .signal-card {
   background: var(--bg-card);
+  backdrop-filter: blur(16px);
   border: 1px solid var(--border);
   border-radius: 4px;
   padding: 0.9rem 1.1rem;
@@ -1008,6 +1022,7 @@ body {
 
 .sidebar-panel {
   background: var(--bg-panel);
+  backdrop-filter: blur(16px);
   border: 1px solid var(--border);
   border-radius: 6px;
   padding: 1rem 1.15rem;
@@ -1174,4 +1189,26 @@ body {
   .theaters-grid, .developments-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.scanline {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  opacity: 1;
+  z-index: 9999;
+}
+.scanline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(100, 240, 200, 0.12), transparent);
+  animation: scanMove 4s linear infinite;
+}
+@keyframes scanMove {
+  0% { top: -2px; }
+  100% { top: 100%; }
 }

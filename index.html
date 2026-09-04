@@ -8,10 +8,14 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/globe.gl@2.33.0"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div id="globeViz" style="position: fixed; inset: 0; z-index: -1;"></div>
+  <div class="scanline" id="scanline"></div>
 
   <!-- CLASSIFICATION & SECURITY BANNER -->
   <div class="security-banner">
@@ -222,5 +226,29 @@
   </footer>
 
   <script src="js/app.js"></script>
+  <script>
+    const globe = Globe()
+      (document.getElementById('globeViz'))
+      .globeImageUrl('//unpkg.com/three-globe/example/img/earth-dark.jpg')
+      .bumpImageUrl('//unpkg.com/three-globe/example/img/earth-topology.png')
+      .backgroundColor('rgba(0,0,0,0)')
+      .width(window.innerWidth)
+      .height(window.innerHeight);
+
+    // Make it cyberpunk
+    const globeMaterial = globe.globeMaterial();
+    globeMaterial.color = new THREE.Color(0x0a1420);
+    globeMaterial.emissive = new THREE.Color(0x002244);
+    globeMaterial.emissiveIntensity = 0.5;
+    globeMaterial.wireframe = true;
+    
+    // Add some rotation
+    globe.controls().autoRotate = true;
+    globe.controls().autoRotateSpeed = 0.5;
+
+    window.addEventListener('resize', () => {
+      globe.width(window.innerWidth).height(window.innerHeight);
+    });
+  </script>
 </body>
 </html>

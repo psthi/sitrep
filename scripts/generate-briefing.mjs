@@ -39,6 +39,32 @@ async function main() {
     } catch (_) {}
   }
 
+  let firmsSummary = "No thermal anomalies detected.";
+  if (existsSync("data/firms.json")) {
+    try {
+      const firmsData = JSON.parse(readFileSync("data/firms.json", "utf-8"));
+      firmsSummary = `Detected ${firmsData.length} high-confidence thermal/fire anomalies worldwide in the last 24h via NASA FIRMS.`;
+    } catch (_) {}
+  }
+
+  let maritimeSummary = "No maritime choke point data available.";
+  if (existsSync("data/maritime.json")) {
+    try {
+      const maritimeData = JSON.parse(readFileSync("data/maritime.json", "utf-8"));
+      maritimeSummary = (maritimeData.chokepoints || [])
+        .map(c => `[Maritime] ${c.name}: ${c.status} (${c.vessel_count} vessels) - ${c.note}`)
+        .join("\n");
+    } catch (_) {}
+  }
+
+  let aviationSummary = "No aviation tracking data available.";
+  if (existsSync("data/aviation.json")) {
+    try {
+      const aviationData = JSON.parse(readFileSync("data/aviation.json", "utf-8"));
+      aviationSummary = `Tracking ${aviationData.total_tracked || 0} flights globally via OpenSky (Military/Specialized: ${aviationData.special_interest || 0}).`;
+    } catch (_) {}
+  }
+
   const prompt = `You are a Senior Geopolitical, Defense, and Macroeconomic Intelligence Analyst producing an unclassified Situation Report (SITREP).
 Your audience includes defense/policy analysts who demand operational rigor and strategic precision, as well as informed everyday citizens who need clear, plain-English explanations of how global events directly impact their household, wallet, and daily life.
 
@@ -50,6 +76,15 @@ ${economicSummary}
 
 Review recent civil unrest and demonstration indicators:
 ${unrestSummary}
+
+Review NASA FIRMS thermal/fire anomaly detections:
+${firmsSummary}
+
+Review Maritime/AIS chokepoint tracking:
+${maritimeSummary}
+
+Review Aviation/OpenSky global tracking:
+${aviationSummary}
 
 Synthesize these defense signals, economic indicators, and civil unrest metrics into a unified intelligence briefing adhering strictly to the JSON schema below.
 

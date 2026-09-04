@@ -75,7 +75,6 @@ async function run() {
     console.log(`Successfully saved ${data.vessels.length} vessel records to ${filePath}`);
   } catch (error) {
     console.error('Failed to generate/fetch maritime data:', error.message);
-    process.exit(1);
   }
 }
 

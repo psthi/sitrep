@@ -27,7 +27,14 @@ async function fetchAviation() {
     console.log(`Aviation data saved to data/aviation.json`);
   } catch (error) {
     console.error('Error fetching aviation data:', error);
-    process.exit(1);
+    // Don't crash workflow, just preserve old data or write empty object
+    const outputPath = path.join(path.join(projectRoot, 'data'), 'aviation.json');
+    try {
+      await fs.access(outputPath);
+      console.log('[WARN] Preserving existing aviation data.');
+    } catch {
+      await fs.writeFile(outputPath, JSON.stringify({}, null, 2));
+    }
   }
 }
 

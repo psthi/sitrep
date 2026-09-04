@@ -61,7 +61,13 @@ async function fetchFirmsData() {
     
   } catch (error) {
     console.error('Error fetching FIRMS data:', error.message);
-    process.exitCode = 1;
+    // Don't crash workflow, just preserve old data or write empty array
+    try {
+      await fs.access(OUTPUT_FILE);
+      console.log('[WARN] Preserving existing FIRMS data.');
+    } catch {
+      await fs.writeFile(OUTPUT_FILE, JSON.stringify([], null, 2));
+    }
   }
 }
 

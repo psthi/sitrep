@@ -1,5 +1,5 @@
 :root {
-  --bg-main: transparent;
+  --bg-main: radial-gradient(circle at top right, #0d1b2a, #040814);
   --bg-card: rgba(10,20,32,0.55);
   --bg-card-hover: rgba(10,20,32,0.75);
   --bg-card-active: rgba(10,20,32,0.9);
@@ -37,7 +37,8 @@
 }
 
 body {
-  background-color: var(--bg-main);
+  background: var(--bg-main);
+  background-attachment: fixed;
   color: var(--text-primary);
   font-family: var(--font-sans);
   line-height: 1.5;

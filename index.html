@@ -9,12 +9,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
-  <script src="https://unpkg.com/globe.gl@2.33.0"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div id="globeViz" style="position: fixed; inset: 0; z-index: -1;"></div>
   <div class="scanline" id="scanline"></div>
 
   <!-- CLASSIFICATION & SECURITY BANNER -->
@@ -227,75 +224,6 @@
   </footer>
 
   <script src="js/app.js"></script>
-  <script>
-    const globe = Globe()
-      (document.getElementById('globeViz'))
-      .globeImageUrl('//unpkg.com/three-globe/example/img/earth-dark.jpg')
-      .bumpImageUrl('//unpkg.com/three-globe/example/img/earth-topology.png')
-      .backgroundColor('rgba(0,0,0,0)')
-      .width(window.innerWidth)
-      .height(window.innerHeight);
 
-    // Make it cyberpunk
-    const globeMaterial = globe.globeMaterial();
-    globeMaterial.color = new THREE.Color(0x0a1420);
-    globeMaterial.emissive = new THREE.Color(0x002244);
-    globeMaterial.emissiveIntensity = 0.5;
-    globeMaterial.wireframe = true;
-    
-    // Add some rotation
-    globe.controls().autoRotate = true;
-    globe.controls().autoRotateSpeed = 0.5;
-
-    window.addEventListener('resize', () => {
-      globe.width(window.innerWidth).height(window.innerHeight);
-    });
-
-    // Load FIRMS, Maritime, and Unrest data for interactive mapping
-    Promise.all([
-      fetch('data/firms.json').then(res => res.json()).catch(() => []),
-      fetch('data/maritime.json').then(res => res.json()).catch(() => ({ chokepoints: [] })),
-      fetch('data/unrest.json').then(res => res.json()).catch(() => ({ signals: [] }))
-    ]).then(([firmsData, maritimeData, unrestData]) => {
-      
-      // Hexbin for FIRMS thermal anomalies (Heatmap style)
-      if (firmsData && firmsData.length > 0) {
-        globe
-          .hexBinPointsData(firmsData)
-          .hexBinPointWeight('confidence')
-          .hexBinResolution(4)
-          .hexMargin(0.2)
-          .hexBinPointLat(d => d.latitude)
-          .hexBinPointLng(d => d.longitude)
-          .hexTopColor(() => '#ff4d4f')
-          .hexSideColor(() => 'rgba(255, 77, 79, 0.4)')
-          .hexBinMerge(true);
-      }
-
-      // Labels/Points for Maritime and Unrest
-      const mPoints = (maritimeData.vessels || []).map(d => ({
-        lat: d.location.lat, lon: d.location.lon, name: d.name, type: 'maritime', color: '#13c2c2'
-      }));
-      
-      const uPoints = (unrestData.signals || []).filter(d => d.latitude && d.longitude).map(d => ({
-        lat: d.latitude, lon: d.longitude, name: d.title_or_type, type: 'unrest', color: '#f59f00'
-      }));
-      
-      const combinedPoints = [...mPoints, ...uPoints];
-
-      if (combinedPoints.length > 0) {
-        globe
-          .labelsData(combinedPoints)
-          .labelLat(d => d.lat)
-          .labelLng(d => d.lon)
-          .labelText(d => d.name)
-          .labelSize(d => d.type === 'unrest' ? 1.0 : 1.5)
-          .labelDotRadius(0.5)
-          .labelColor(d => d.color)
-          .labelResolution(2)
-          .labelAltitude(0.01);
-      }
-    });
-  </script>
 </body>
 </html>

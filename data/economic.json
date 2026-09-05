@@ -1,7 +1,31 @@
 {
-  "updatedAt": "2026-09-05T06:01:09.907Z",
-  "metricsCount": 5,
+  "updatedAt": "2026-09-05T10:48:08.964Z",
+  "metricsCount": 12,
   "metrics": [
+    {
+      "id": "T10Y2Y",
+      "name": "10Y-2Y Treasury Spread",
+      "category": "Yield Curve",
+      "unit": "%",
+      "value": 0.41,
+      "previousValue": 0.43,
+      "change": -0.02,
+      "pctChange": -4.7,
+      "date": "2026-09-04",
+      "assessment": "NORMALIZING"
+    },
+    {
+      "id": "BAMLH0A0HYM2",
+      "name": "US High-Yield OAS Spread",
+      "category": "Credit Stress",
+      "unit": "%",
+      "value": 2.65,
+      "previousValue": 2.66,
+      "change": -0.01,
+      "pctChange": -0.4,
+      "date": "2026-09-03",
+      "assessment": "COMPLACENT / TIGHT"
+    },
     {
       "id": "NFCI",
       "name": "National Financial Conditions Index",
@@ -27,6 +51,18 @@
       "assessment": "ACCOMMODATIVE"
     },
     {
+      "id": "VIXCLS",
+      "name": "CBOE Volatility Index (VIX)",
+      "category": "Market Volatility",
+      "unit": "pts",
+      "value": 14.32,
+      "previousValue": 15.2,
+      "change": -0.88,
+      "pctChange": -5.8,
+      "date": "2026-09-03",
+      "assessment": "SUBDUED / CALM"
+    },
+    {
       "id": "DCOILBRENTEU",
       "name": "Brent Crude Oil",
       "category": "Energy",
@@ -37,6 +73,30 @@
       "pctChange": 7,
       "date": "2026-09-01",
       "assessment": "ELEVATED (WAR PREMIUM)"
+    },
+    {
+      "id": "DCOILWTICO",
+      "name": "WTI Crude Oil",
+      "category": "Energy",
+      "unit": "$/bbl",
+      "value": 91.48,
+      "previousValue": 87.03,
+      "change": 4.45,
+      "pctChange": 5.1,
+      "date": "2026-09-01",
+      "assessment": "ELEVATED (WAR PREMIUM)"
+    },
+    {
+      "id": "DHHNGSP",
+      "name": "Henry Hub Natural Gas",
+      "category": "Energy",
+      "unit": "$/MMBtu",
+      "value": 2.9,
+      "previousValue": 2.9,
+      "change": 0,
+      "pctChange": 0,
+      "date": "2026-09-01",
+      "assessment": "NORMAL"
     },
     {
       "id": "DTWEXBGS",
@@ -51,6 +111,18 @@
       "assessment": "NORMAL"
     },
     {
+      "id": "DEXUSEU",
+      "name": "EUR / USD Exchange Rate",
+      "category": "Currencies",
+      "unit": "rate",
+      "value": 1.16,
+      "previousValue": 1.17,
+      "change": -0.01,
+      "pctChange": -0.5,
+      "date": "2026-08-28",
+      "assessment": "NORMAL"
+    },
+    {
       "id": "DEXJPUS",
       "name": "USD / JPY Exchange Rate",
       "category": "Currencies",
@@ -59,6 +131,18 @@
       "previousValue": 159.26,
       "change": 0.71,
       "pctChange": 0.4,
+      "date": "2026-08-28",
+      "assessment": "NORMAL"
+    },
+    {
+      "id": "DEXCHUS",
+      "name": "USD / CNY Exchange Rate",
+      "category": "Currencies",
+      "unit": "rate",
+      "value": 6.73,
+      "previousValue": 6.72,
+      "change": 0.01,
+      "pctChange": 0.1,
       "date": "2026-08-28",
       "assessment": "NORMAL"
     }

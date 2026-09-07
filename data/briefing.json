@@ -1,126 +1,121 @@
 {
-  "bluf": "US shuttle diplomacy between Moscow and Kyiv has produced high symbolism but no breakthrough, with President Zelensky explicitly warning the war will grind on into winter while crude oil spiked ~7% on a war premium even as equity volatility and credit spreads signal unusual market complacency — a divergence that leaves households exposed to a sudden energy-inflation shock. In Europe, the AfD's record ~44% win in Saxony-Anhalt — Germany's strongest far-right result since WWII — shakes Chancellor Merz's federal coalition and threatens EU cohesion on Ukraine and migration policy. The primary 72-hour risk vectors are oil holding above $95, the convening (or collapse) of trilateral US-Ukraine-Europe talks, and coalition maneuvering in Saxony-Anhalt.",
+  "bluf": "The defining strategic reality this cycle is a widening gap between geopolitical stress and market complacency: crude oil has surged on a war premium to $96 Brent following direct US strikes on Iranian tankers and Tehran's threatened Strait of Hormuz countermeasures, while equities (VIX 14.3) and credit spreads remain at placid levels that leave disruption dangerously underpriced. Simultaneously, the highest-level US peace push to date has failed to break the Ukraine deadlock, with Zelensky explicitly forecasting the war continues into winter, and Germany's AfD scoring a historic ~44% result that deepens European political fragmentation. The immediate risk trajectory is escalation-prone: any Iranian interference with Hormuz tanker traffic or collapse of the Ukraine talks would force abrupt repricing across energy, defense, and risk assets within hours.",
   "householdImpact": {
-    "energyAndFuel": "Crude oil surged roughly $4.50-$6.30 per barrel on war-risk premium (Brent now ~$96), which typically reaches the gas pump within one to two weeks as noticeably higher gasoline and diesel prices. Home electricity bills should stay steady for now because natural gas — the main power-plant fuel — remains cheap at $2.90, but heating oil and propane costs will climb with crude.",
-    "borrowingAndMortgages": "Financial conditions remain easy and calm — credit spreads are tight and market volatility is low — so mortgage, auto loan, and credit card rates should hold roughly steady in the near term. The key risk is that sustained $90+ oil reignites inflation and keeps the Federal Reserve from cutting rates, which would put upward pressure on longer-term mortgage and loan rates.",
-    "groceriesAndSupplyChain": "No major maritime chokepoint is currently reported blocked, so grocery shelves are secure, but every sustained rise in crude feeds into trucking, fertilizer, and packaging costs, meaning gradually higher food prices over the coming months rather than a sudden spike. The Amazon cargo plane crash temporarily disrupts operations at Miami's major air-freight hub, but this is a localized logistics event, not a systemic supply shock.",
-    "jobsAndSavings": "With volatility subdued (VIX ~14) and corporate borrowing cheap, companies face little pressure to lay off workers, and 401(k) balances remain supported by calm markets. The danger is complacency — if Ukraine diplomacy fails or oil keeps climbing, markets could reprice abruptly, denting retirement savings and cooling hiring within weeks."
+    "energyAndFuel": "Crude oil jumped roughly 6-7% to about $96 a barrel on Middle East war risk, which typically flows into US gasoline pump prices within one to two weeks, so expect noticeably higher fill-up costs at the pump. US natural gas remains cheap near $2.90, meaning home heating and most electricity bills are insulated for now, though a Gulf shipping disruption would change that quickly.",
+    "borrowingAndMortgages": "With financial markets calm and credit flowing freely, mortgage, auto loan, and credit card rates are likely to hold steady rather than spike, and the bond market's recession warning light is effectively off now that the yield curve has normalized. The caveat: if the oil war premium persists, it could firm inflation and push borrowing costs back up within a quarter or two.",
+    "groceriesAndSupplyChain": "Rising crude means rising diesel, and diesel is what trucks, tractors, and freight run on, so expect gradual upward pressure on grocery bills and shipped goods over the coming weeks. The Strait of Hormuz carries roughly a fifth of the world's oil, and Iran is openly signaling a new shipping arrangement there, so any actual disruption would hit shipping costs and supermarket prices fast.",
+    "jobsAndSavings": "Calm markets and easy credit conditions are currently supportive of hiring and steady 401(k) balances, so there is no immediate alarm for jobs or retirement savings. However, credit spreads this tight suggest investors are complacent about war and political risk, meaning a geopolitical shock could hit stock-heavy retirement portfolios abruptly rather than gradually."
   },
   "threatMatrix": [
     {
       "theater": "Eastern Europe / Ukraine",
       "status": "HIGH",
       "trend": "VOLATILE",
-      "summary": "Intensified US dual-track diplomacy (Witkoff/Kushner shuttling Putin-Kyiv) has produced no breakthrough, with Kyiv bracing for continued combat and likely strikes on energy infrastructure through winter."
+      "summary": "US shuttle diplomacy has produced 'more effective' proposals but no ceasefire, and with Kyiv explicitly planning for winter combat, frontline and deep-strike tempo remains high even as talk channels stay open."
     },
     {
       "theater": "Middle East & Red Sea",
-      "status": "ELEVATED",
-      "trend": "STABLE",
-      "summary": "No new kinetic strikes in the reporting window, but the persistent war premium embedded in oil prices and cultural-political friction (Adidas boycott, Israeli election polling against Netanyahu) indicate unresolved regional volatility."
+      "status": "HIGH",
+      "trend": "ESCALATING",
+      "summary": "US strikes on Iranian oil tankers, Tehran's promised 'heavier responses,' and an imminent Iranian announcement of a new Hormuz shipping route have opened a direct US-Iran escalation ladder at the world's most important oil chokepoint."
     },
     {
       "theater": "Indo-Pacific & Taiwan",
-      "status": "GUARDED",
+      "status": "ELEVATED",
       "trend": "STABLE",
-      "summary": "A Guardian investigation documenting US control or access to 100+ Australian defense facilities underscores deepening allied posture and deterrence infrastructure in the southern Indo-Pacific, with no adverse Chinese naval activity reported."
+      "summary": "North Korea's commissioning of a warship explicitly assigned to nuclear retaliatory strike missions, combined with deepening US basing integration across Australian facilities, sustains a firming deterrence posture without an imminent Taiwan-specific flashpoint."
     },
     {
       "theater": "Defense & Cyber Domains",
       "status": "GUARDED",
       "trend": "STABLE",
-      "summary": "Identification of a mysterious classified-profile black jet at Long Beach Airport indicates active next-generation US flight-test activity, while the Miami B767 crash is assessed as accidental rather than hostile."
+      "summary": "EU satellite-communications and critical-mineral investment in Greenland and continued allied arms-pipeline activity proceed amid no major new cyber, space, or electronic-warfare incidents in the reporting window."
     },
     {
       "theater": "Domestic Civil Unrest & Demonstrations",
       "status": "ELEVATED",
       "trend": "ESCALATING",
-      "summary": "Far-right activists physically blockaded asylum-seeker transports at Portsmouth and the Dover ferry port in the UK, while Germany's AfD surge, Ibiza overtourism occupations, and polarized US protest planning point to rising identity-driven mobilization across Western democracies."
+      "summary": "Far-right blockades at UK ports (Dover, Portsmouth), Germany's record AfD result, a physical armed assault on an Ohio gubernatorial candidate, and sustained Middle East-related protest mobilization mark rising political violence and street volatility across Western democracies."
     },
     {
       "theater": "Global Energy & Trade Chokepoints",
       "status": "HIGH",
       "trend": "ESCALATING",
-      "summary": "Brent crude jumped $6.27 to $96.02 on war premium — the sharpest stress signal in the dataset — while Anak Krakatau ash disrupted hundreds of flights and no AIS chokepoint telemetry is currently available, creating a monitoring gap."
+      "summary": "Brent crude spiked $6.27 to $96.02 on a war premium tied to US-Iran tanker strikes and Hormuz risk, while Anak Krakatau's ash clouds and Indonesian peat-fire haze add secondary air-freight and logistics friction in Southeast Asia."
     }
   ],
   "operationalSummary": [
-    "Kinetic & Frontline Operations: No major frontline shifts reported in the last 24-48 hours; the decisive activity is diplomatic, with Zelensky explicitly forecasting continued combat into winter — implying an expected renewal of Russian long-range strikes against Ukrainian power and heating infrastructure as temperatures drop. The Amazon Prime Air Boeing 767 runway overrun at Miami International (at least five dead, operations halted) is assessed as an accident at a critical US cargo hub, not a hostile act, but it temporarily degrades e-commerce air-freight throughput. Concurrent non-conflict mass-casualty events — a fireworks effigy blast in central Mexico (10 dead, ~60 wounded) and a building collapse in New Delhi (5 dead) — plus Anak Krakatau eruptions disrupting hundreds of flights round out the global incident picture; no military engagements, naval actions, or drone-strike activity were flagged in this window.",
-    "Strategic Alliances & Diplomatic Posturing: The Witkoff-Kushner mission — meeting Putin, then making their first joint Kyiv visit — represents the most concentrated US mediation effort in months, with Witkoff floating trilateral US-Ukraine-Europe talks 'in short order,' though fundamental territorial and security gaps remain unresolved. Germany's political earthquake looms as the AfD's ~44% Saxony-Anhalt result (versus ~17% for Merz's CDU) creates a credible pathway toward the first far-right state government since WWII, with party leaders declaring a 'signal to Berlin' and election-fraud disinformation already circulating despite fact-check debunking — a direct pressure test for federal stability and EU consensus on Ukraine funding and migration. The Guardian's exclusive that US-controlled firms and forces hold access to 100+ Australian military facilities deepens the alliance-posture picture in the Indo-Pacific while fueling sovereignty debates in Canberra; secondary signals include Argentina reviving Falklands claims, Israeli polls showing the opposition bloc ahead of Netanyahu, and the Trump administration's renewed Supreme Court bid on mail-in voting shaping the US midterm landscape.",
-    "Geoeconomic, Market & Social Stability: The macro signal of the cycle is divergence — Brent surged $6.27 to $96.02 (WTI $91.48) on war premium while the VIX fell to 14.32, high-yield spreads sit at a complacent 2.65%, and both financial-condition indices remain deeply accommodative, meaning bond and equity markets are not yet pricing the energy shock that consumers will feel at the pump within weeks; the normalized 10Y-2Y spread (+0.41%) removes the recession signal but the oil impulse risks stalling central-bank easing. Currency pressure is building at USD/JPY 159.97 — squarely in historical Japanese intervention territory — while the broad dollar firmed and the euro slipped, tightening imported-inflation dynamics for Europe and Japan precisely as their energy costs rise. Social stability indicators are flashing alongside the AfD result: physical blockades of asylum transports at Portsmouth and the Dover ferry port mark an escalation from protest to infrastructure disruption in the UK, Ibiza residents occupied beaches over overtourism, Chile marked the coup anniversary with mass marches, and US protest planning around the Charlie Kirk memorial signals persistent polarization; NASA FIRMS registered 5,248 thermal anomalies (routine seasonal fire load, no strategic-infrastructure fires flagged), and the absence of maritime AIS data is itself a collection gap requiring immediate coverage restoration."
+    "Kinetic activity remains concentrated in two theaters. In Ukraine, frontline fighting continues unabated despite the highest-level US diplomatic engagement of the season, with Kyiv openly planning for winter operations and no ceasefire architecture in sight. In the Gulf, the US has conducted strikes on Iranian oil tankers, and Tehran has warned of 'heavier responses' to any new attacks while preparing to announce an alternative Hormuz shipping arrangement within days — a direct US-Iran kinetic exchange around the world's most critical oil artery that materially raises miscalculation risk. North Korea has commissioned a new warship explicitly designated as part of its nuclear response system, adding a mobile naval leg to Pyongyang's deterrence posture. Separately, an Amazon Prime Air Boeing 767 overran the runway at Miami International, killing at least five and halting operations at a top-tier US cargo hub; this is assessed as an accident, not hostile action.",
+    "Diplomatically, the Witkoff-Kushner mission to Kyiv — following direct talks with Putin — yielded proposals described as 'more effective' but no breakthrough, with Witkoff floating trilateral US-Ukraine-Europe talks 'in short order' while independent reporting stresses that fundamental Russia-Ukraine differences remain unresolved. The EU is executing a strategic counter-move in the Arctic, with von der Leyen announcing expanded Greenland investment in critical minerals, satellite communications, and renewables amid repeated US annexation rhetoric. In Germany, the AfD's ~44% first-place finish in Saxony-Anhalt — potentially the first far-right state government since WWII and accompanied by circulating election-fraud disinformation — puts acute pressure on Chancellor Merz's coalition and Berlin's future willingness to sustain Ukraine support. The Guardian's finding that the US now controls or accesses more than half of Australia's military bases underscores accelerating Indo-Pacific basing consolidation, while Israeli polling showing the opposition bloc ahead of Netanyahu's coalition points to potential regional leadership churn.",
+    "Geoeconomically, markets are pricing calm while energy prices war: VIX sits at a subdued 14.32, high-yield spreads are a complacent 2.65%, and both financial stress indices remain accommodative — even as Brent spiked to $96.02 and WTI to $91.48 on an explicit war premium. That divergence is the cycle's defining macro risk, because it means any Hormuz incident would force violent catch-up repricing. The dollar firmed (broad index +0.39) with USD/JPY near 160, keeping yen-carry unwinding and Asian export dynamics fragile, while EUR/USD at 1.16 reflects a politically distracted Europe. Physical disruptions are compounding: Anak Krakatau's eruptions disrupted hundreds of flights, Indonesian peat 'carbon bomb' fires are degrading Southeast Asian air quality and carbon sinks, and Hurricane Lowell has forced a Hawaii state of emergency. Social stability indicators are deteriorating on multiple fronts — coordinated far-right port blockades in the UK, the AfD surge with fraud-claim disinformation, an armed attack on a US statewide candidate, and sustained Palestine-related protest culture — indicating elevated and rising social volatility across Western democracies heading into election cycles."
   ],
   "keyDevelopments": [
     {
-      "headline": "US envoys Witkoff and Kushner hold first Kyiv talks with Zelensky after Putin meeting; no breakthrough, trilateral with Europe floated (DW/BBC/The Guardian)",
+      "headline": "US envoys Witkoff and Kushner hold first Kyiv talks after Putin meeting; no breakthrough, Zelensky expects war to continue into winter (DW/BBC/France 24)",
       "theater": "Eastern Europe / Ukraine",
-      "significance": "The most concentrated US mediation sequence of the war to date — Moscow then Kyiv in rapid succession — with Witkoff claiming trilateral talks could be announced 'in short order.'",
-      "impact": "Keeps a diplomatic off-ramp open, but with fundamental differences unresolved and Zelensky expecting winter fighting, near-term de-escalation is unlikely and strikes on Ukrainian cities and energy assets remain probable."
+      "significance": "The highest-level US engagement to date produced 'more effective' proposals but no ceasefire framework, confirming that diplomacy has not yet begun to constrain military operations on either side.",
+      "impact": "Fighting and mutual deep strikes continue through winter; civilians face sustained bombardment risk, and European energy, defense budgets, and Ukraine funding decisions stay locked on a war footing."
     },
     {
-      "headline": "Zelensky says he expects the war to continue into winter following US envoy talks (BBC)",
-      "theater": "Eastern Europe / Ukraine",
-      "significance": "An explicit senior-leader forecast of sustained kinetic tempo through the winter campaign season.",
-      "impact": "Points to renewed Russian strikes on power and heating infrastructure, sustained civilian hardship, continued European air-defense and energy-resilience demands, and prolonged oil war premium."
+      "headline": "US strikes hit Iranian oil tankers; Iran to announce new Hormuz shipping route and warns of heavier responses to new attacks (Al Jazeera)",
+      "theater": "Middle East & Red Sea",
+      "significance": "This is a direct US-Iran kinetic exchange centered on the Strait of Hormuz, the transit point for roughly 20% of global oil, with Tehran preparing a formal counter-arrangement within days.",
+      "impact": "Raises the probability of tanker warfare, insurance and freight spikes, and an oil super-spike; Gulf shipping lanes and global energy consumers bear immediate and rising risk."
     },
     {
-      "headline": "AfD wins Saxony-Anhalt state election with ~44% (CDU ~17%), hails 'historic result' but may fall short of a governing majority; fraud claims debunked (BBC/DW/The Guardian)",
-      "theater": "Europe / Germany domestic politics",
-      "significance": "Strongest far-right state showing in postwar German history and a direct rebuke of Chancellor Merz, with an open question of the first far-right state government since WWII.",
-      "impact": "Risks destabilizing Berlin's federal coalition, fracturing EU consensus on Ukraine support and migration, and emboldening far-right mobilization across Europe; election-fraud disinformation raises unrest risk."
+      "headline": "AfD wins Saxony-Anhalt with ~44%, positioned for Germany's first far-right state government since WWII amid election-fraud disinformation (DW/BBC)",
+      "theater": "Europe / Political Stability",
+      "significance": "A record result far ahead of Merz's conservatives (17%), driven by dissatisfaction with the federal government, that directly contests the political sustainability of Germany's Ukraine and EU leadership role.",
+      "impact": "Pressures Berlin's coalition stability and future Ukraine support; normalizes far-right governance in Europe's largest economy and fuels populist momentum across the EU."
     },
     {
-      "headline": "Amazon Prime Air Boeing 767 overruns runway at Miami International Airport, killing at least five and halting operations (The Guardian/Al Jazeera/BBC)",
-      "theater": "North America / Aviation-Logistics",
-      "significance": "A fatal accident at one of the busiest US airports and a top cargo hub, with initial reporting indicating no hostile cause.",
-      "impact": "Temporary degradation of US e-commerce air-freight capacity; NTSB investigation; underscores ground-collision risk around major transport nodes without altering the threat assessment."
+      "headline": "North Korea deploys new warship designated to form part of Pyongyang's nuclear response system (Al Jazeera)",
+      "theater": "Indo-Pacific & Taiwan",
+      "significance": "Kim Jong Un has explicitly assigned the vessel to nuclear retaliatory strike missions, extending nuclear signaling into the naval domain.",
+      "impact": "Adds a mobile, harder-to-track nuclear delivery element that complicates US-ROK-Japan maritime ISR, targeting, and deterrence planning."
     },
     {
-      "headline": "Guardian exclusive: US weapons corporations and forces hold control or access to more than 100 Australian military facilities (The Guardian)",
+      "headline": "EU to boost Greenland investment in critical minerals, satellite communications and renewables amid Trump annexation claims (France 24)",
+      "theater": "Arctic / Transatlantic Relations",
+      "significance": "Von der Leyen's two-day visit is a deliberate strategic counter to US Arctic ambitions, securitizing Greenland's resources and communications infrastructure for Europe.",
+      "impact": "Intensifies US-EU friction over Arctic influence and critical mineral supply chains; Greenlanders face accelerating great-power competition over sovereignty and resources."
+    },
+    {
+      "headline": "Amazon Prime Air Boeing 767 overruns runway at Miami International, killing at least five and halting hub operations (DW/BBC/Al Jazeera)",
+      "theater": "US Homeland / Aviation",
+      "significance": "The aircraft struck ground vehicles and caught fire at one of America's busiest airports; the cause is under investigation and assessed as accidental, not hostile.",
+      "impact": "Temporary air-cargo disruption in a critical southeast US logistics node, with immediate regulatory scrutiny likely for the e-commerce air-freight sector."
+    },
+    {
+      "headline": "Armed assailant attacks Ohio Democratic gubernatorial candidate Amy Acton at campaign event, injuring several (The Guardian)",
+      "theater": "US Domestic / Political Violence",
+      "significance": "A direct physical attack on a major-party statewide candidate amid a charged pre-election environment represents an escalation in US political violence.",
+      "impact": "Forces upgraded security postures for political figures nationwide and risks normalizing political violence heading into the 2026 cycle."
+    },
+    {
+      "headline": "Far-right protesters block Dover ferry port and descend on Portsmouth after small-boat arrival; AfD surge resonates across Europe (The Guardian/GDELT)",
+      "theater": "Europe / Civil Unrest",
+      "significance": "Coordinated anti-immigration mobilization is now physically disrupting critical trade infrastructure — Dover handles a major share of UK-EU freight.",
+      "impact": "Threatens port throughput and supply-chain flow, strains UK policing resources, and signals immigration-driven unrest will keep flaring across Western Europe."
+    },
+    {
+      "headline": "US forces and controlled defense corporations now have control or access to more than half of Australia's military bases (The Guardian)",
       "theater": "Indo-Pacific / Alliances",
-      "significance": "Documents the depth of US force posture and defense-industrial integration in Australia, described by some analysts as a de facto 'colonisation' of Australian military infrastructure.",
-      "impact": "Strengthens southern-hemisphere deterrence depth against China while fueling sovereignty debates in Canberra and raising alliance-entanglement questions should Indo-Pacific tensions escalate."
-    },
-    {
-      "headline": "Brent crude jumps $6.27 to $96.02 and WTI to $91.48 on war premium while VIX falls to 14.32 and credit spreads stay tight (market data)",
-      "theater": "Global Energy & Markets",
-      "significance": "Energy markets are pricing persistent geopolitical risk even as equities and corporate credit remain unusually complacent — a classic pre-shock divergence.",
-      "impact": "Gasoline and diesel prices rise within weeks; if Brent holds above $95-100, inflation expectations reprice, central-bank easing stalls, and the calm in equity markets likely proves temporary."
-    },
-    {
-      "headline": "Far-right protesters block asylum-seeker coaches in Portsmouth; anti-immigration activists blockade Dover ferry port (The Guardian/GDELT)",
-      "theater": "UK / Civil Unrest",
-      "significance": "Escalation from street demonstration to physical interdiction of border logistics and migrant transport, amplified by influencer livestream mobilization.",
-      "impact": "Disruption to port and asylum-processing operations, likely police and government response, and elevated risk of copycat blockades at other Channel ports."
-    },
-    {
-      "headline": "Hawaii declares state of emergency as Hurricane Lowell approaches; Anak Krakatau eruptions disrupt hundreds of flights (The Guardian/Al Jazeera)",
-      "theater": "Pacific / Environmental Disruption",
-      "significance": "Concurrent natural disruptions stress civil aviation networks and emergency-management capacity across two ocean regions.",
-      "impact": "Hawaii bracing for impact as soon as Monday; Asia-Australasia flight rerouting, delays, and potential tourism and cargo knock-on effects."
-    },
-    {
-      "headline": "Trump administration again petitions Supreme Court over mail-in voting rules ahead of midterms (Al Jazeera)",
-      "theater": "US Domestic / Election Integrity",
-      "significance": "A second-front legal escalation over ballot procedures with nationwide implications for midterm administration.",
-      "impact": "Prolonged litigation and contested rules risk amplifying public distrust and polarization around the midterms, feeding the domestic unrest trend line."
-    },
-    {
-      "headline": "Argentina revives Falklands sovereignty claim 44 years after the war with Britain (Al Jazeera)",
-      "theater": "South Atlantic / Diplomacy",
-      "significance": "Renewed assertion of a frozen territorial dispute, likely driven by domestic politics and resource interests.",
-      "impact": "Low near-term military risk, but sustained diplomatic friction with the UK; monitor for any naval or fishing-zone posturing in the South Atlantic."
+      "significance": "Documentation of a US footprint across 100+ Australian facilities confirms the depth of Indo-Pacific basing consolidation underpinning allied deterrence against China.",
+      "impact": "Strengthens forward positioning but deepens sovereign-control debates in Australia and entangles Canberra in potential conflict scenarios without independent veto clarity."
     }
   ],
   "indicatorsAndWarnings": [
-    "Watch for the announcement — or conspicuous failure — of trilateral US-Ukraine-Europe talks within 72 hours (Witkoff: 'in short order'); a collapse paired with renewed Russian mass strikes on Ukrainian power infrastructure would confirm diplomacy has failed and the winter escalation phase has begun.",
-    "Monitor Saxony-Anhalt coalition formation: AfD maneuvering toward the first far-right state government since WWII, CDU red-line decisions, and any federal no-confidence pressure on Chancellor Merz; escalation of election-fraud disinformation could trigger street mobilization on the German far right and left.",
-    "Oil trigger: sustained Brent above $95-100, or any confirmed disruption to Strait of Hormuz or Red Sea transit (maritime AIS telemetry is currently DARK — a monitoring gap that must be restored immediately), would force inflation repricing and probable equity volatility.",
-    "USD/JPY at 159.97 sits at the historical Japanese intervention threshold; watch for sudden Ministry of Finance/BOJ action, which could unwind carry trades and transmit volatility to global markets within hours.",
-    "Hurricane Lowell landfall in Hawaii expected as soon as Monday — monitor evacuation orders, and track Krakatau ash-cloud drift for further Australia-Asia air-route disruptions.",
-    "Watch for repeat or expanded far-right blockades at UK ports (Dover, Portsmouth, Hull) and any government emergency response (police powers, port closures), which would mark a new escalation stage in immigration-driven civil unrest.",
-    "Track Miami International cargo throughput recovery and the NTSB's preliminary findings on the Amazon Air B767 overrun for any indication of mechanical fleet-wide issues affecting the 767 freighter fleet."
+    "Monitor Iran's formal Hormuz shipping-route announcement expected within days, and any IRGC Navy fast-boat, drone, or missile activity against tanker transits; a single successful strike on a laden tanker would likely push Brent above $100 within hours.",
+    "Watch for announcement of trilateral US-Ukraine-Europe talks 'in short order' (per Witkoff); absent visible progress, assess heightened risk of Russian winter-campaign strikes on Ukrainian energy infrastructure to maximize negotiating leverage.",
+    "North Korea may stage a naval launch event, missile test, or torpedo exercise tied to the new nuclear-strike warship's operational debut within the next 72 hours.",
+    "Track Berlin fallout from the Saxony-Anhalt result: coalition defiance motions, Merz government instability, or AfD government-formation moves would ripple directly into EU Ukraine funding and sanctions consensus.",
+    "Assess copycat far-right port blockades across UK ferry and freight gateways (Dover-Hull-Portsmouth pattern) and potential counter-protests; Dover disruption constitutes a direct UK fuel and freight-flow risk.",
+    "Hurricane Lowell may impact Hawaii as soon as Monday under a declared state of emergency — monitor port closures, flight cancellations, and federal emergency resourcing.",
+    "Track gasoline futures and retail pump prices over the next 7-10 days for pass-through of the $96 Brent war premium; sustained pass-through becomes both an inflation input and a political liability.",
+    "Maritime AIS chokepoint tracking and OpenSky aviation feeds returned zero data this cycle — treat as a collection gap and re-establish coverage before the next reporting window to avoid blind spots in the Gulf and South China Sea."
   ],
-  "date": "2026-09-06",
-  "generatedAt": "2026-09-06T22:39:25.565Z",
+  "date": "2026-09-07",
+  "generatedAt": "2026-09-07T00:41:30.215Z",
   "modelUsed": "z-ai/glm-5.3-flash"
 }

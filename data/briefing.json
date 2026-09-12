@@ -1,133 +1,121 @@
 {
-  "bluf": "The single most significant strategic reality is the near-simultaneous activation of Iran's proxy network across three contiguous fronts: Houthi ground offensives seizing Yemen's Red Sea littoral at Mocha and threatening the Bab al-Mandeb chokepoint, Iraqi militias conducting kinetic drone strikes into Saudi territory, and a Strait of Hormuz that Tehran explicitly will not immediately reopen despite an Iran-Oman understanding. Oil at ~$110 Brent reflects a widening war, yet equity volatility (VIX 17.8) and junk-bond spreads (2.7%) signal dangerous market complacency with almost no cushion priced in for coalition retaliation or a Saudi-triggered regionalization of the conflict. The decisive watch-item over the next 72 hours is Riyadh's response calculus to the pipeline strike and whether activation of the Mecca Pact draws Pakistan and Türkiye directly into the theater.",
+  "bluf": "Iran's proxy network has opened a coordinated multi-front pressure campaign — Houthi forces consolidating Yemen's Red Sea littoral and threatening the Bab al-Mandeb chokepoint while Iran-backed militias struck Saudi energy infrastructure from Iraqi soil — forcing Riyadh to shut its East-West pipeline and driving Brent crude to $109.51/bbl on a widening war premium. The US is responding with carrier-based naval presence (USS George Washington operating under active destroyer defense) and pressure on Baghdad, while Iran simultaneously courts Russia and China at BRICS to diplomatically shield its escalation. Despite the kinetic trajectory, financial markets remain complacent (VIX 17.84, high-yield spreads at 2.7%), leaving substantial repricing risk if chokepoint disruption or Saudi-Iranian escalation materializes over the next 24-72 hours.",
   "householdImpact": {
-    "energyAndFuel": "Oil is trading at war-premium levels (Brent ~$110, up $3+ in a day) because the Strait of Hormuz is effectively closed and Red Sea shipping is under fire, so expect gasoline at the pump roughly $1 or more per gallon above recent norms and still climbing. Home heating and electric bills are cushioned for now by cheap natural gas ($2.81), but utilities and transport networks that rely on oil-derived fuel will pass higher costs into your bills within one to two billing cycles.",
-    "borrowingAndMortgages": "Credit conditions remain unusually easy — banks are lending, bond-market stress is low, and the yield curve has normalized — so mortgage, auto loan, and credit card rates have not yet spiked despite the war. That calm is fragile: if oil keeps rising and inflation re-accelerates, expect mortgage rates and credit card APRs to climb quickly as lenders reprice the risk.",
-    "groceriesAndSupplyChain": "With Hormuz shut and Houthi forces pressing toward Bab al-Mandeb, a huge share of global tanker and container traffic is stalled or rerouting, driving up shipping and insurance costs that flow straight into imported food, cooking oils, and everyday goods. Expect grocery bills to creep upward over the coming weeks, especially for sea-freighted items, grains, and anything with energy-intensive production or transport costs.",
-    "jobsAndSavings": "Financial markets are strangely calm, which is supporting 401(k) balances right now, but that calm is out of step with an expanding multi-front war and could reverse sharply in a single news cycle. Energy, defense, and shipbuilding employers are adding workers, while airlines, shipping, and fuel-heavy industries face cost squeezes that could slow hiring or produce layoffs if the conflict persists into the winter."
+    "energyAndFuel": "Crude oil's war premium (Brent ~$110, WTI ~$97 per barrel) means expect noticeably higher prices at the gas pump over the coming weeks, since retail gasoline and diesel follow crude upward with a lag. Home heating and electric bills are largely shielded for now because US natural gas remains cheap (~$2.81/MMBtu), but a sustained Middle East disruption would push up transport and refined-product costs that feed into utility rates.",
+    "borrowingAndMortgages": "Credit conditions remain easy — tight corporate bond spreads and an accommodative financial-stress backdrop are keeping auto loans and credit card rates from climbing, and mortgage rates are holding steady rather than spiking. The main risk is that a prolonged oil spike re-ignites inflation, pressuring the Federal Reserve to keep rates higher for longer and delaying any relief on mortgages and consumer borrowing.",
+    "groceriesAndSupplyChain": "Houthi consolidation of Yemen's Red Sea coast raises the odds that shippers avoid the Bab al-Mandeb strait and reroute around Africa, adding freight time, fuel surcharges, and war-risk insurance costs that eventually land on grocery and consumer-goods prices. Higher diesel also feeds directly into food transport and fertilizer costs, so expect gradual — not sudden — upward pressure on the weekly grocery bill.",
+    "jobsAndSavings": "Markets are calm (VIX ~18) and corporate borrowing is cheap, which supports steady hiring and stable 401(k) balances for now. The danger is complacency: if the Red Sea or Gulf situation deteriorates further, an oil-driven market correction could dent retirement portfolios and make employers more cautious about hiring."
   },
   "threatMatrix": [
     {
       "theater": "Eastern Europe / Ukraine",
       "status": "HIGH",
-      "trend": "STABLE",
-      "summary": "Russia continues strategic strikes degrading Ukraine's economy and grid ahead of a projected winter crisis, while Ukraine achieves a historic first by destroying an hostile uncrewed surface vessel with its own naval drone in the Black Sea theater."
+      "trend": "ESCALATING",
+      "summary": "Russian strikes hit Odesa residential areas and Kovel infrastructure near the Polish logistics corridor (five wounded), while Ukraine achieved the first-ever drone-boat-on-drone-boat kill in the Black Sea, marking rapid maturation of uncrewed naval warfare."
     },
     {
       "theater": "Middle East & Red Sea",
       "status": "CRITICAL",
       "trend": "ESCALATING",
-      "summary": "Houthi ground forces have seized Mocha on Yemen's Red Sea coast amid surging civilian displacement, Iraqi militias struck a Saudi pipeline from Maysan province, and Iran confirms the Strait of Hormuz will not immediately reopen, placing two global chokepoints in play simultaneously."
+      "summary": "Houthi forces seized Yemen's Red Sea coastline and struck Saudi territory (two wounded), an Iran-backed militia attack launched from Iraq forced Saudi pipeline closure, Israel bombed southern Lebanon as US-mediated talks stalled, and the USS George Washington carrier group operated under active destroyer defense."
     },
     {
       "theater": "Indo-Pacific & Taiwan",
       "status": "GUARDED",
       "trend": "STABLE",
-      "summary": "No direct kinetic or naval signaling detected in the past 24-48 hours; the theater is quiet but attention is constrained as US naval and air assets remain weighted toward CENTCOM and the Red Sea."
+      "summary": "No significant kinetic or naval signaling detected in the past 24-48 hours; the theater remains quiet, though US carrier availability is being consumed by Middle East tasking, subtly thinning Pacific deterrence posture."
     },
     {
       "theater": "Defense & Cyber Domains",
       "status": "ELEVATED",
-      "trend": "ESCALATING",
-      "summary": "A suspected sabotage fire at a Bulgarian weapons site points to gray-zone targeting of NATO munitions supply chains, the UK is accelerating its War Books/home defence rewrite, and the historic USV-versus-USV engagement confirms autonomous systems are now kill-capable on both sides."
+      "trend": "VOLATILE",
+      "summary": "Ukraine's uncrewed surface vessel milestone signals accelerating autonomous naval warfare with global proliferation implications, while UK Type 31 frigate schedule slippage and Anthropic's CEO calling for slower frontier AI development highlight allied defense-industrial strain and technology governance friction."
     },
     {
       "theater": "Domestic Civil Unrest & Demonstrations",
-      "status": "ELEVATED",
-      "trend": "ESCALATING",
-      "summary": "The UK has seen at least 28 anti-migrant vigilante groups form in 18 months with fresh street disorders in Portsmouth and Home Secretary pressure on police, while ~150,000 demonstrators marched against the AfD across 20 German cities; the US is normalizing wartime domestic security tools, including the first-ever use of the Alien Terrorist Removal Court."
+      "status": "GUARDED",
+      "trend": "STABLE",
+      "summary": "GDELT monitoring shows only low-intensity mobilization (rallies at the Israeli embassy in Bangkok, UK anti-migrant protest policing directives, Indian Dalit justice protests) with no mass unrest, while US domestic strain manifests more as infrastructure stress — Georgia, Memphis, and Louisiana power outages — than street mobilization."
     },
     {
       "theater": "Global Energy & Trade Chokepoints",
       "status": "CRITICAL",
       "trend": "ESCALATING",
-      "summary": "Brent crude at $109.51 (+$3.39) and WTI at $97.26 (+$3.05) price a hard war premium as Hormuz remains shut pending an Iran-Oman framework and Bab al-Mandeb faces Houthi consolidation on the adjacent coastline, compounding freight, insurance, and food-import cost inflation globally."
+      "summary": "Brent surged to $109.51/bbl (+$3.39) on a war premium as Saudi Arabia shut the East-West pipeline, Houthis tightened their grip on Bab al-Mandeb approaches, and Bahrain's refusal to attend Iran's Hormuz meeting signals Gulf fragmentation over transit security."
     }
   ],
   "operationalSummary": [
-    "Kinetic activity is concentrated on three Iranian-aligned axes. In Yemen, Houthi forces have advanced into Mocha on the Red Sea coast, with Saudi-backed government forces conducting strikes against them and civilian displacement accelerating — this constitutes direct ground maneuver toward the Arabian side of the Bab al-Mandeb approaches, converting the chokepoint from a missile-threat problem into a territorial-control problem. In Iraq, Iran-backed militias executed a drone strike on Saudi energy infrastructure (pipeline), with Baghdad formally confirming the launch origin, dismissing the Maysan operations commander, shutting three border crossings with Iran, and opening an investigation under heavy US pressure — indicating the militia network retains strike capability against GCC energy targets despite official Iraqi restraint. In the Black Sea, the Ukrainian Navy's Sargan-3000 USV, cued by HUR intelligence, destroyed an adversary uncrewed surface vessel in the first USV-on-USV combat engagement in history, while continued Russian deep strikes are degrading Ukraine's economy and energy resilience ahead of winter.",
-    "Diplomatically, the BRICS summit in India exposed bloc strain: leaders issued a 'maximum restraint' appeal on the Middle East war and condemned unilateral sanctions, while Iran's President held the highest-level talks with Abu Dhabi's Crown Prince since the war began — the first tangible GCC-Iran de-escalation channel. The Iran-Oman understanding reportedly establishes a basis for reopening the Strait of Hormuz but explicitly does not provide for immediate reopening, giving Tehran a controlled leverage mechanism over global oil flows. The Mecca Pact framework is now live as a contingency: analysts assess Pakistan and Türkiye would intervene if Saudi Arabia formally requests support, though not directly in the Yemen war. In parallel, the UK is accelerating war-preparedness measures (rewriting the War Books by year-end under an accelerated Home Defence Programme, studying private finance for the defence estate), Bulgaria is investigating an apparent sabotage fire at a weapons site, and Washington is deploying exceptional domestic legal instruments — first-ever use of the 1996 Alien Terrorist Removal Court against an Afghan national — amid internal administration difficulties sustaining political support for the war.",
-    "Geoeconomically, the war premium is now firmly embedded in commodities: Brent at $109.51 and WTI at $97.26 (both up >$3 intraday) reflect Hormuz closure and Red Sea risk, while Henry Hub natural gas at $2.81 remains normal, muting near-term utility inflation in gas-heavy markets. Financial conditions are strikingly accommodative — NFCI at -0.56, STLFSI at -0.79, high-yield spreads at a complacent 2.7%, and the Treasury curve normalizing at +0.33% — with the VIX at just 17.84 despite a $110 oil tape, a disconnect that implies a large repricing gap if coalition retaliation or a Saudi request for Mecca Pact activation materializes. The dollar complex is stable (DXY 118.07, USD/JPY 156.11), and commodity-dependent Australia is openly debating the end of its 35-year resource-driven expansion. Social stability indicators are deteriorating at the margins: surging UK anti-migrant vigilantism and policing pressure, mass German counter-AfD mobilization, localized infrastructure failures (Savar tannery estate power outage, Joliet grid disruption), and a worsening DRC Ebola epidemic (7,000+ cases) add diffuse stressors to global resilience."
+    "Kinetic activity concentrated on two axes. In the Middle East, a Houthi projectile struck Saudi territory wounding two civilians (Saudi Civil Defence), while Saudi-backed Yemeni government forces struck Houthi positions in the Red Sea city of Mocha as civilian displacement surged; separately, the attack on Saudi Arabia's East-West pipeline was confirmed by Baghdad to have originated from Iraqi soil. Israel bombed southern Lebanon as the next round of US-mediated talks was postponed, and guided-missile destroyers actively defended the USS George Washington in the region — a clear indicator the carrier is operating inside the threat envelope. In Ukraine, Russian missile and drone strikes struck Odesa (direct hit on a residential apartment) and Kovel infrastructure near the Polish border (five wounded), while Ukraine claimed the first-ever kill of a drone boat by another drone boat, a milestone in uncrewed surface vessel combat.",
+    "Strategically, Iran joined Russia and China at the BRICS conference calling for a halt to Middle East 'escalation' — a diplomatic shield deployed even as its proxy network escalates on multiple fronts, a classic coordinated pressure-and-negotiate posture. Bahrain publicly refused to attend Iran's proposed Hormuz meeting, signaling Gulf fragmentation over Tehran's regional order bid, while Saudi Arabia signaled restraint (no retaliation, demanding Baghdad 'take necessary measures') under explicit US pressure on Iraq to rein in Iran-backed militias. President Trump claimed the Houthis asked the US not to intervene in Yemen — a potential off-ramp narrative that conflicts sharply with Houthi battlefield advances — and US courts blocked the administration's plan to cut FEMA's workforce, preserving disaster-response capacity. Allied defense-industrial strain is visible in the UK Type 31 frigate schedule challenges as Western naval assets are stretched across the Middle East tasking.",
+    "Geoeconomically, the war premium is now explicit: Brent at $109.51/bbl (+$3.39) and WTI at $97.26/bbl (+$3.05), compounded by the physical loss of the East-West pipeline's flow redundancy just as Houthi control of Yemen's Red Sea coast threatens Bab al-Mandeb transit. US natural gas ($2.81/MMBtu) and a steady dollar keep domestic energy and imported inflation contained for now. Financial conditions remain dangerously complacent relative to the geopolitical trajectory: NFCI at -0.56 and STLFSI at -0.79 (accommodative), high-yield spreads at a tight 2.7%, VIX subdued at 17.84 despite a +1.38 uptick, and the yield curve normalizing at +0.33 — a setup vulnerable to abrupt repricing if chokepoint disruption or Saudi-Iranian escalation materializes. Domestically, infrastructure stress is accumulating (Georgia shutoffs with spoiled food and heat exposure, 2,433 Memphis customers still dark, planned Louisiana outages), while GDELT unrest signals remain low-intensity and health authorities track Ebola's spread to a seventh DRC province."
   ],
   "keyDevelopments": [
     {
-      "headline": "Houthi forces seize Red Sea city of Mocha as Saudi-backed forces strike back and civilian displacement soars (Al-Monitor / Al Jazeera)",
+      "headline": "Saudi Arabia closes East-West pipeline after attack confirmed to have originated from Iraq; Riyadh declines retaliation and demands Baghdad act (NBC News / DW / France 24)",
+      "theater": "Middle East & Red Sea / Global Energy",
+      "significance": "The East-West pipeline is Saudi Arabia's critical redundancy bypassing the Strait of Hormuz (~5 million bpd nominal capacity); its closure removes spare export capacity precisely as Houthi forces threaten Red Sea transit, compounding supply-side risk.",
+      "impact": "Physically limits oil flow and Saudi response options, tightens global crude supply, and raises the stakes of any further militia strike on Saudi energy infrastructure; Saudi restraint buys time but signals vulnerability Iran may exploit."
+    },
+    {
+      "headline": "Houthi forces consolidate Yemen's Red Sea coastline, cementing hold on Bab al-Mandeb approaches and handing Iran strategic leverage (Al Jazeera)",
       "theater": "Middle East & Red Sea",
-      "significance": "Houthi ground consolidation on Yemen's Red Sea littoral converts Bab al-Mandeb from a standoff-weapons threat into a territorial chokepoint problem, directly menacing one of the world's most critical maritime arteries.",
-      "impact": "Raises probability of Saudi military re-intervention and potential Mecca Pact activation; shipping insurers will further restrict Red Sea transits, compounding the Hormuz closure."
+      "significance": "Territorial control of the littoral opposite one of the world's most critical maritime chokepoints converts a proxy force into a persistent anti-access threat against global shipping and naval transit.",
+      "impact": "Elevates war-risk insurance and rerouting costs for commercial shipping, complicates US naval freedom of maneuver, and gives Tehran coercive leverage over roughly 10% of global seaborne trade without direct Iranian involvement."
     },
     {
-      "headline": "Iran-Oman understanding does not provide for immediate reopening of the Strait of Hormuz, per Iranian source (Al-Monitor / Tasnim)",
-      "theater": "Global Energy & Trade Chokepoints",
-      "significance": "Tehran is retaining Hormuz as a controlled bargaining chip, with only a framework — not a timetable — for reopening the world's most important oil transit point.",
-      "impact": "Sustains the ~$110 Brent war premium; every tanker-day of delay feeds directly into global fuel, freight, and food inflation."
-    },
-    {
-      "headline": "Baghdad confirms Saudi pipeline drone attack originated from Iraq; PM dismisses Maysan commander and shuts three Iran border crossings (DW / Al Jazeera)",
+      "headline": "Guided-missile destroyers actively defend USS George Washington operating in the Middle East (Fox News)",
       "theater": "Middle East & Red Sea",
-      "significance": "Iraqi state acknowledgment of militia-launched strikes on GCC energy infrastructure, paired with rare punitive measures against Iran-linked commands, signals acute pressure on Baghdad's sovereignty from both Washington and Tehran.",
-      "impact": "Saudi declared non-retaliation prevents immediate state-on-state escalation, but repeat militia strikes would force Riyadh's hand and potentially trigger the Pakistan/Türkiye Mecca Pact contingency."
+      "significance": "A US carrier strike group operating under active defense confirms it is inside a credible threat envelope — Houthi anti-ship missile/drone and Iranian systems — marking the highest US naval exposure in the region in this crisis phase.",
+      "impact": "Any successful strike on or near the carrier would be a massive escalation trigger; simultaneously, the deployment consumes naval capacity otherwise available for Indo-Pacific deterrence."
     },
     {
-      "headline": "Iran's President meets Abu Dhabi Crown Prince at BRICS summit in first high-level talks since war began (Al Jazeera)",
-      "theater": "Middle East & Red Sea",
-      "significance": "Opens a direct Gulf-Iran de-escalation channel outside US mediation, suggesting GCC states are hedging toward independent diplomacy as the war broadens.",
-      "impact": "Could accelerate conditions for Hormuz reopening and reduce strike risk against Gulf energy infrastructure, but may strain US-Gulf alignment."
+      "headline": "Ukraine claims first-ever kill of a drone boat by another drone boat (The War Zone)",
+      "theater": "Eastern Europe / Ukraine / Defense Technology",
+      "significance": "A historic first in uncrewed surface vessel warfare — machine-gun engagement of one USV by another — demonstrating autonomous/remote naval combat is maturing from experimental to operational.",
+      "impact": "Accelerates global proliferation of cheap USV swarming tactics; navies worldwide, including US and Chinese planners, must now account for uncrewed-on-uncrewed engagements in littoral doctrine, with direct implications for chokepoint defense."
     },
     {
-      "headline": "BRICS leaders at India summit call for 'maximum restraint' in Middle East and condemn unilateral sanctions (PBS / Yahoo / Kurdistan24)",
-      "theater": "Strategic Alliances & Diplomatic Posturing",
-      "significance": "The bloc's unity is being tested by the war, with a lowest-common-denominator statement that critiques sanctions enforcement while avoiding condemnation of any single party.",
-      "impact": "Weakens prospects for a unified multilateral pressure framework and gives Tehran diplomatic room; signals sanctions evasion coalitions may deepen."
-    },
-    {
-      "headline": "Ukrainian Sargan-3000 naval drone destroys hostile USV in first uncrewed-surface-vessel-vs-USV combat in history (Naval News)",
-      "theater": "Defense & Cyber Domains",
-      "significance": "Autonomous systems have now engaged and destroyed one another in combat, marking a doctrinal inflection point for naval warfare and drone-swarm defense.",
-      "impact": "Accelerates global USV/counter-USV procurement cycles; directly relevant to Red Sea and Gulf convoy-protection concepts."
-    },
-    {
-      "headline": "UK commits to rewriting the War Books by year-end under accelerated Home Defence Programme (UK Defence Journal)",
-      "theater": "Defense & Cyber Domains",
-      "significance": "A NATO founding member formally accelerating civil-military mobilization planning indicates allied governments are preparing for conflict broadening or homeland contingency.",
-      "impact": "Signals to adversaries sustained allied resolve; domestically primes populations for wartime measures, resilience planning, and defense-industrial expansion."
-    },
-    {
-      "headline": "Fire at Bulgarian weapons site deemed sabotage; officials do not rule out outside interference (BBC)",
-      "theater": "Defense & Cyber Domains",
-      "significance": "Apparent gray-zone attack on a European munitions/logistics node suggests deliberate disruption of arms pipelines feeding frontline theaters.",
-      "impact": "NATO supply-chain security will tighten; increased risk of further deniable sabotage across European defense infrastructure."
-    },
-    {
-      "headline": "Ukraine faces winter crisis as Russian strikes further weaken economy (Global Banking & Finance Review)",
+      "headline": "Russian strikes hit Odesa residential flat and Kovel infrastructure, five wounded (BBC / УНН)",
       "theater": "Eastern Europe / Ukraine",
-      "significance": "Russia's attritional campaign against energy and economic infrastructure is degrading Ukraine's capacity to sustain the war through winter.",
-      "impact": "Raises Western aid requirements precisely as US resources and political attention are consumed by the Iran war — a strategic pressure point for Moscow."
+      "significance": "Kovel sits on the western logistics corridor toward Poland — strikes there suggest continued Russian pressure on NATO supply lines, while the Odesa residential hit underscores sustained strikes on southern urban centers.",
+      "impact": "Degrades Ukrainian western infrastructure and civilian morale; strike tempo against NATO-adjacent logistics nodes is a key indicator of Russian risk tolerance toward alliance supply routes."
     },
     {
-      "headline": "US uses Alien Terrorist Removal Court for the first time since 1996 creation to deport Afghan woman (Al Jazeera)",
-      "theater": "Domestic Civil Unrest & Demonstrations",
-      "significance": "Activation of a never-used wartime legal instrument signals a hardened US domestic-security posture concurrent with the Iran war.",
-      "impact": "Likely precedent for expanded removals and wartime legal authorities; fuels civil-liberties controversies and diaspora community tensions."
+      "headline": "Iran joins Russia and China at BRICS conference calling for halt to Middle East 'escalation' (New York Post)",
+      "theater": "Middle East & Red Sea / Strategic Alliances",
+      "significance": "Public trilateral diplomatic alignment provides Iran political cover and potential material backing even as its proxy network escalates — a coordinated pressure-and-shield strategy.",
+      "impact": "Complicates US escalation management by raising the cost of strikes against Iran proper; signals emergence of a competing bloc framing the regional order contest."
     },
     {
-      "headline": "UK anti-migrant vigilante groups surge to 28 in 18 months; Portsmouth protests continue as Home Secretary orders 'all powers necessary' (The Guardian)",
-      "theater": "Domestic Civil Unrest & Demonstrations",
-      "significance": "Sustained street-level mobilization and vigilante organization in a key US ally, with government authorizing maximal policing, indicates rising domestic instability risk in wartime Britain.",
-      "impact": "Diverts UK policing capacity, risks serious public disorder, and compounds the political volatility already reflected in Reform's £72m war chest."
+      "headline": "Bahrain refuses to participate in Iran's proposed Hormuz meeting (Al Jazeera)",
+      "theater": "Middle East & Red Sea",
+      "significance": "Iran's attempt to convene Gulf states on Strait of Hormuz security is fracturing — Bahrain's refusal signals GCC skepticism of Tehran's good-faith framing amid proxy escalation.",
+      "impact": "Deepens Gulf fragmentation, reduces prospects for de-escalation diplomacy, and leaves chokepoint security governance without a regional consensus mechanism."
+    },
+    {
+      "headline": "Israel bombs southern Lebanon as US-mediated talks postponed (Al Jazeera)",
+      "theater": "Middle East & Red Sea",
+      "significance": "Continued strikes during a diplomatic pause indicate Israel is maintaining military pressure regardless of negotiation track, keeping a second front live alongside the Yemen/Saudi crisis.",
+      "impact": "Sustained strike tempo risks Hizbullah reprisal and a two-front widening that would further stretch US naval and air defense assets already committed to carrier defense."
+    },
+    {
+      "headline": "US court blocks Trump administration plan to cut disaster agency (FEMA) workforce (Al Jazeera)",
+      "theater": "Domestic Resilience / Civil Defense",
+      "significance": "Judicial preservation of disaster-response capacity matters as US domestic infrastructure shows stress (Georgia, Memphis, Louisiana power outages) and hurricane season continues.",
+      "impact": "Maintains federal emergency response readiness for domestic infrastructure failures, which are themselves partially driven by heat and grid stress — a civil-defense resilience check."
     }
   ],
   "indicatorsAndWarnings": [
-    "Monitor for a formal Saudi request to activate the Mecca Pact within 24-72 hours — any announcement of Pakistani or Turkish military 'advisory' deployments to the Red Sea/Gulf would mark decisive regionalization of the war.",
-    "Watch Houthi anti-shipping activity in Bab al-Mandeb: a first successful strike on a commercial or naval vessel following the Mocha seizure would trigger a major insurance withdrawal and possible coalition naval retaliation.",
-    "Track whether Iraqi militia rocket/drone launches against Saudi or US targets recur despite Baghdad's border closures and Maysan command purge; a second strike likely forces a US or Saudi retaliatory strike window inside Iraq.",
-    "Monitor tanker traffic and any Iranian announcement of a Hormuz reopening timetable following the Iran-Oman understanding — failure to produce a schedule within 72 hours indicates Tehran intends to keep oil leverage through the BRICS diplomatic window.",
-    "Watch for a US/Israeli retaliatory strike window opening against Houthi coastal positions at Mocha and Hodeidah, particularly following Axios-reported Saudi coordination discussions.",
-    "Financial-complacency tripwire: a Brent breakout above ~$115, a VIX move above 25, or a sharp widening in high-yield spreads would signal markets repricing escalation risk — expect correlated equity drawdown affecting retirement accounts.",
-    "Monitor the Bulgarian sabotage investigation for attribution; any finding of Russian or Iranian involvement would raise the alert level for further deniable attacks on NATO munitions and logistics nodes in Eastern Europe.",
-    "Watch UK Home Office policing posture at upcoming anti-migrant demonstrations following the 'all powers necessary' directive; a serious disorder event would accelerate the domestic mobilization narrative already reflected in the War Books rewrite."
+    "Monitor for renewed Houthi strikes on Saudi energy infrastructure within 24-72 hours — a successful hit on East-West pipeline restart efforts, Ras Tanura, or Red Sea loading terminals would be a primary escalation trigger and oil-price shock catalyst.",
+    "Watch Bab al-Mandeb transit indicators over the next 72 hours: war-risk insurance rate spikes, carrier rerouting announcements around the Cape of Good Hope, or an attack on a commercial vessel would confirm chokepoint denial is operational.",
+    "Track Monday's Iran-proposed Hormuz meeting attendance list — broader Gulf participation would signal Iranian diplomatic traction; additional GCC refusals confirm deepening fragmentation and higher miscalculation risk.",
+    "Watch for potential US kinetic action against Iran-backed militias inside Iraq as pressure mounts on Baghdad to disarm them — a US strike window could open within days if militia attacks on Saudi or US assets continue.",
+    "Monitor Israel-Lebanon negotiation track: continued Israeli strikes during the postponed talks risk Hizbullah reprisal and a second-front widening; resumption or collapse of talks is a 72-hour decision point.",
+    "Watch Brent crude for a sustained close above $110/bbl — the likely threshold for broad inflation repricing, hawkish Federal Reserve repositioning, and equity volatility (VIX breaking above 20), ending current market complacency.",
+    "Monitor Russian strike tempo against western Ukrainian logistics nodes (Kovel, Lutsk, Lviv corridor near the Polish border) for signs of a deliberate campaign against NATO supply lines.",
+    "Track Black Sea USV engagement patterns for escalation against civilian shipping or Russian naval assets, as Ukraine's drone-boat-on-drone-boat kill suggests rapidly expanding uncrewed naval combat employment."
   ],
   "date": "2026-09-12",
-  "generatedAt": "2026-09-12T19:33:28.451Z",
+  "generatedAt": "2026-09-12T21:55:21.460Z",
   "modelUsed": "z-ai/glm-5.3-flash"
 }

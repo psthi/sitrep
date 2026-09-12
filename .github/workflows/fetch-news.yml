@@ -53,7 +53,21 @@ jobs:
           OPENROUTER_MODEL: "z-ai/glm-5.3-flash"
         continue-on-error: true
 
+      - name: Check if should broadcast
+        id: check_broadcast
+        run: |
+          HOUR=$(date -u +%H)
+          MINUTE=$(date -u +%M)
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "send=true" >> $GITHUB_OUTPUT
+          elif [ $((10#$HOUR % 8)) -eq 0 ] && [ $((10#$MINUTE)) -lt 30 ]; then
+            echo "send=true" >> $GITHUB_OUTPUT
+          else
+            echo "send=false" >> $GITHUB_OUTPUT
+          fi
+
       - name: Broadcast to Telegram (optional)
+        if: steps.check_broadcast.outputs.send == 'true'
         run: node scripts/send-telegram.mjs
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}

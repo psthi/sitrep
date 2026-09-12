@@ -1,5 +1,39 @@
 import { readFileSync, existsSync } from "fs";
 
+async function getOrCreateTerm(wpUrl, authHeader, taxonomy, termName) {
+  const endpoint = `${wpUrl.replace(/\/$/, '')}/wp-json/wp/v2/${taxonomy}`;
+  
+  try {
+    // Search for existing term
+    const searchRes = await fetch(`${endpoint}?search=${encodeURIComponent(termName)}`, {
+      headers: { "Authorization": authHeader }
+    });
+    
+    if (searchRes.ok) {
+      const terms = await searchRes.json();
+      const exactMatch = terms.find(t => t.name.toLowerCase() === termName.toLowerCase());
+      if (exactMatch) return exactMatch.id;
+    }
+    
+    // Create new term if it doesn't exist
+    const createRes = await fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Authorization": authHeader },
+      body: JSON.stringify({ name: termName })
+    });
+    
+    if (createRes.ok) {
+      const newTerm = await createRes.json();
+      return newTerm.id;
+    } else {
+      console.warn(`[WARN] Failed to create ${taxonomy} '${termName}': ${createRes.status}`);
+    }
+  } catch (err) {
+    console.warn(`[WARN] Error fetching/creating ${taxonomy} '${termName}':`, err.message);
+  }
+  return null;
+}
+
 async function sendWordPressBriefing() {
   const wpUrl = process.env.WP_URL;
   const wpUser = process.env.WP_USERNAME;
@@ -22,6 +56,8 @@ async function sendWordPressBriefing() {
     console.error("[ERROR] Failed to parse data/briefing.json:", err.message);
     return;
   }
+
+  const authHeader = "Basic " + Buffer.from(`${wpUser}:${wpPass}`).toString("base64");
 
   // Build Theater Threat Matrix lines
   const threatLines = (briefing.threatMatrix || [])
@@ -98,11 +134,40 @@ ${iwLines ? `<h2>Indicators & Warnings (24-72H)</h2>\n<ul>\n${iwLines}\n</ul>\n`
 <p><a href="https://psthi.github.io/sitrep/">View Live Command Dashboard</a></p>
 `.trim();
 
-  const authHeader = "Basic " + Buffer.from(`${wpUser}:${wpPass}`).toString("base64");
+  // 1. Get Category ID
+  const categoryId = await getOrCreateTerm(wpUrl, authHeader, "categories", "Daily Intelligence");
+  
+  // 2. Get Tag IDs (Static base tags + Dynamic regions from Threat Matrix)
+  const tagNames = new Set(["SITREP", "OSINT", "Geopolitics"]);
+  if (briefing.threatMatrix) {
+    briefing.threatMatrix.forEach(t => {
+      if (t.theater) {
+        // e.g., "Middle East & Red Sea" -> split into simpler tags if needed, or keep as one. We will keep as is.
+        tagNames.add(t.theater.replace(/&amp;/g, '&').replace(/&/g, 'and'));
+      }
+    });
+  }
+  
+  const tagIds = [];
+  for (const tagName of tagNames) {
+    const tId = await getOrCreateTerm(wpUrl, authHeader, "tags", tagName);
+    if (tId) tagIds.push(tId);
+  }
+
+  // 3. RankMath SEO Metadata
+  const seoDescription = (briefing.bluf || briefing.summary || "").substring(0, 160).trim();
+  const seoKeywords = Array.from(tagNames).slice(0, 5).join(", ");
+
   const postData = {
     title: `SITREP // Operational Intelligence Briefing - ${briefing.date || new Date().toISOString().split("T")[0]}`,
     content: fullHtmlContent,
-    status: "publish"
+    status: "publish",
+    categories: categoryId ? [categoryId] : [],
+    tags: tagIds,
+    meta: {
+      rank_math_focus_keyword: seoKeywords,
+      rank_math_description: seoDescription
+    }
   };
 
   const endpoint = `${wpUrl.replace(/\/$/, '')}/wp-json/wp/v2/posts`;

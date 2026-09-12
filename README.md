@@ -117,6 +117,9 @@ Go to **Settings** → **Secrets and variables** → **Actions** and add:
 | `OPENROUTER_API_KEY` | OpenRouter API key for intelligence synthesis | `sk-or-v1-...` |
 | `TELEGRAM_BOT_TOKEN` | Telegram Bot Token from `@BotFather` | `123456789:ABC...` |
 | `TELEGRAM_CHAT_ID` | Single or comma-separated Telegram Chat / Channel IDs | `12345678, -10098765432, @my_channel` |
+| `WP_URL` | WordPress Site URL for automated blog posting | `https://securityreports.org` |
+| `WP_USERNAME` | WordPress Username | `admin` |
+| `WP_APP_PASSWORD` | WordPress Application Password | `a1b2 c3d4 e5f6 g7h8` |
 | `FRED_API_KEY` | (Optional) Custom FRED API Key | `a6ca8edc5...` |
 
 *(Note: If you want to change the OpenRouter model, set `OPENROUTER_MODEL` in `.github/workflows/fetch-news.yml` or add it as a secret, e.g. `z-ai/glm-5.3-flash`, `deepseek/deepseek-chat`, or `anthropic/claude-3.5-sonnet`)*.

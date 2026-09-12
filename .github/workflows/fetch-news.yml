@@ -56,12 +56,15 @@ jobs:
       - name: Check if should broadcast
         id: check_broadcast
         run: |
-          HOUR=$(date -u +%H)
-          MINUTE=$(date -u +%M)
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          LAST_SENT=0
+          if [ -f data/last-telegram.txt ]; then
+            LAST_SENT=$(cat data/last-telegram.txt)
+          fi
+          NOW=$(date -u +%s)
+          DIFF=$((NOW - LAST_SENT))
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ $DIFF -ge 28800 ]; then
             echo "send=true" >> $GITHUB_OUTPUT
-          elif [ $((10#$HOUR % 8)) -eq 0 ] && [ $((10#$MINUTE)) -lt 30 ]; then
-            echo "send=true" >> $GITHUB_OUTPUT
+            echo $NOW > data/last-telegram.txt
           else
             echo "send=false" >> $GITHUB_OUTPUT
           fi

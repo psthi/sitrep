@@ -37,7 +37,7 @@ An autonomous, defense-grade **Situation Report (SITREP)** dashboard and multi-c
 │ 3. LIVE WAR-ROOM DASHBOARD           │ │ 4. MULTI-RECIPIENT TELEGRAM ALERTS │
 │    • GitHub Pages Web Command Center │ │    • Formatted HTML Intelligence   │
 │    • Zulu UTC + Local Combat Clocks  │ │      Dispatches to Multiple Chat   │
-│    • Real-Time Search & Filters      │ │      IDs / Channels                │
+│    • Real-Time Search & Filters      │ │      IDs / Channels (Every 8h)     │
 └──────────────────────────────────────┘ └────────────────────────────────────┘
 ```
 
@@ -133,8 +133,9 @@ Go to **Settings** → **Secrets and variables** → **Actions** and add:
 The pipeline runs automatically via GitHub Actions:
 ```yaml
 schedule:
-  - cron: '*/30 * * * *' # Executes every 30 minutes, 24/7
+  - cron: '*/30 * * * *' # Data ingestion executes every 30 minutes, 24/7
 ```
+*(Note: While data is collected every 30 minutes, Telegram broadcasts are configured to send once every 8 hours. This is managed via stateful timestamps in `data/last-telegram.txt` to bypass GitHub Action cron dropouts.)*
 
 ---
 

@@ -1,127 +1,122 @@
 {
-  "bluf": "The Iran-aligned 'Axis of Resistance' has opened a coordinated multi-front campaign against Gulf energy arteries — Houthi seizure of two strategic Red Sea islands, missile/drone strikes on Saudi Arabia's East-West Pipeline, and a mine-induced tanker explosion in the Strait of Hormuz — driving Brent crude past $109/bbl and forcing Gulf states to shelve de-escalation talks with Tehran. Financial markets remain dangerously complacent (VIX ~16, tight high-yield spreads, accommodative financial conditions) against a widening physical war premium in oil, meaning escalation risk is underpriced. The immediate risk trajectory favors further kinetic escalation across the Red Sea–Hormuz corridor within 24–72 hours, with direct transmission to US pump prices, freight costs, and strategic shipping insurance.",
+  "bluf": "The Middle East is now the primary global strategic driver: Iranian strikes have inflicted confirmed structural damage on US base infrastructure, an oil tanker has exploded in the Strait of Hormuz, Houthis have seized Red Sea positions at Mocha and Perim Island, and Saudi Arabia's East-West pipeline closure has pushed Brent crude to $109.51/bbl — a hard war premium. A concurrent US refinery/grid event (Joliet, Whiting, Houston) is compounding domestic fuel-supply fragility even as financial markets remain complacent (VIX 15.84, tight high-yield spreads), creating a dangerous pricing disconnect. The lone de-escalatory opening is Ukraine, where Zelensky has offered a mutual halt to strikes on energy infrastructure if Moscow reciprocates.",
   "householdImpact": {
-    "energyAndFuel": "Crude oil above $100 a barrel will keep pushing gasoline prices up at the pump over the coming weeks, and the sudden shutdown of the Joliet, Illinois refinery plus a Houston-area plant power outage could cause sharper, localized price spikes in the Midwest. Home heating and electric bills are cushioned for now by normal natural gas prices (~$2.81), but expensive diesel and shipping fuel will gradually leak into utility and delivery costs.",
-    "borrowingAndMortgages": "Bond markets are calm and credit conditions remain easy, so mortgage, auto loan, and credit card rates should hold roughly steady in the short term. The main risk is that a sustained oil shock re-ignites inflation, forcing the Federal Reserve to keep rates higher for longer and delaying any relief on borrowing costs.",
-    "groceriesAndSupplyChain": "Mine strikes near the Strait of Hormuz and Houthi control of Red Sea islands raise shipping insurance and freight costs, which feed gradually into prices for imported goods, food, and everyday household items. Diesel at ~$97 oil also inflates trucking costs, so expect grocery shelf prices to creep upward even though outright shortages remain unlikely.",
-    "jobsAndSavings": "With calm markets (VIX ~16), tight corporate bond spreads, and easy financial conditions, hiring and 401(k) balances are stable for now. However, equities look complacent given the war premium in oil — a major escalation could jolt retirement accounts and slow hiring in fuel-intensive sectors like airlines, trucking, and chemicals."
+    "energyAndFuel": "Expect gas pump prices to climb steadily over the next few weeks — crude has surged to roughly $97-$110 per barrel because of Middle East fighting, and that cost flows straight to the station. Meanwhile, power outages have forced major refineries near Chicago and along the Gulf Coast offline, which could cause temporary regional fuel shortages and higher electricity strain as plants flare and restart.",
+    "borrowingAndMortgages": "Borrowing conditions remain unusually cheap and calm right now — credit markets are loose and stock volatility is low, keeping mortgage and auto loan rates relatively stable. However, if sustained $100+ oil reignites inflation, the Federal Reserve may be forced to keep interest rates higher for longer, which would eventually push up mortgage, car loan, and credit card costs.",
+    "groceriesAndSupplyChain": "Rising diesel and shipping fuel costs act like a tax on everything transported by truck, rail, or ship, so expect gradual creep in grocery prices over the coming weeks. Attacks and instability around the Red Sea and Strait of Hormuz force cargo ships onto longer, costlier routes, adding delays and expense to imported goods.",
+    "jobsAndSavings": "Your job is likely safe for now — credit is cheap, markets are calm, and companies are still hiring — but your 401(k) may feel bumps from the AI stock slide and any oil-driven market swings. The bigger long-term risk is that a sustained energy shock could slow hiring and squeeze company profits later this year."
   },
   "threatMatrix": [
     {
       "theater": "Eastern Europe / Ukraine",
       "status": "ELEVATED",
-      "trend": "STABLE",
-      "summary": "A UK service member died in a non-hostile road traffic crash in Ukraine per the MoD, while twelve European states meeting in Finland pressed the EU to harden its Arctic posture against Russia amid a strained Fenno-Skan 2 power interconnection."
+      "trend": "DE-ESCALATING",
+      "summary": "Zelensky has offered to halt strikes on Russian energy infrastructure if Moscow reciprocates, opening the first credible partial-ceasefire track since US-brokered talks were announced, though verification and Russian compliance remain unproven."
     },
     {
       "theater": "Middle East & Red Sea",
       "status": "CRITICAL",
       "trend": "ESCALATING",
-      "summary": "Houthis seized two strategic Red Sea islands and struck Saudi military infrastructure and the East-West Pipeline while a tanker exploded on mines in Hormuz, with US airmen described as operating under punishing Iranian barrages on US bases — an active multi-front conflict."
+      "summary": "The Pentagon has confirmed Iranian strikes destroyed hundreds of buildings at US bases, an IRGC-attributed tanker explosion struck the Strait of Hormuz, and Houthi forces captured Mocha and Perim Island, extending their control over Red Sea approaches."
     },
     {
       "theater": "Indo-Pacific & Taiwan",
       "status": "GUARDED",
+      "troupe": "STABLE",
       "trend": "STABLE",
-      "summary": "China's reported reduction of troop deployments along the India–China LAC in 2025 signals continued regional de-escalation while US carrier and amphibious forces maintain routine global posture per fleet trackers."
+      "summary": "No direct kinetic signals in the theater this cycle, but US disclosure of deployed on-orbit space control weapons will be read in Beijing and Moscow as a deterrence escalation with Indo-Pacific implications."
     },
     {
       "theater": "Defense & Cyber Domains",
-      "status": "ELEVATED",
-      "trend": "VOLATILE",
-      "summary": "Washington is in open political conflict over AI governance — the President dismissing oversight as a 'hoax' and 'SICK conspiracy' — while the DoD–Commerce showdown over the TraCSS space traffic system, rapid maritime autonomy launches (Seavex/Subvex), and the AFA 2026 Air, Space & Cyber Conference reshape defense-technology risk."
+      "status": "HIGH",
+      "trend": "ESCALATING",
+      "summary": "The US Space Force has confirmed weapons deployed in orbit for the first time while Anduril's YFQ-44A Fury collaborative combat aircraft flew alongside F-35s, marking accelerated fielding of space-based and autonomous combat capabilities amid a three-way US-China-Russia space arms dynamic."
     },
     {
       "theater": "Domestic Civil Unrest & Demonstrations",
       "status": "GUARDED",
       "trend": "STABLE",
-      "summary": "US unrest indicators are low-amplitude (immigration-detention oversight findings, Columbia discrimination lawsuit, altered CDC measles-death reporting amid a Pennsylvania outbreak), but Turkey's mass LGBTQ+ detentions in Izmir and the UK Home Secretary's directive to use 'all powers necessary' against anti-migrant protests show rising social friction abroad."
+      "summary": "US unrest indicators remain low-noise, but institutional friction is rising — a DHS whistleblower alleges potentially illegal voter-database searches, democracy indices hit 50-year lows, and UK authorities have ordered 'all powers necessary' against anti-migrant protests."
     },
     {
       "theater": "Global Energy & Trade Chokepoints",
       "status": "CRITICAL",
       "trend": "ESCALATING",
-      "summary": "Brent at $109.51 and WTI at $97.26 embed a widening war premium as Hormuz mine strikes, Houthi island seizures, and simultaneous refinery/grid outages (Joliet, Houston, Fenno-Skan 2) stress global supply reliability while Gulf–Iran talks stall."
+      "summary": "Brent crude at $109.51/bbl (+3.39) reflects a hard war premium as the Strait of Hormuz suffers a tanker explosion, Saudi Arabia's East-West pipeline closure threatens ~5 mb/d of alternate export capacity, and simultaneous US refinery outages in Joliet, Whiting, and Houston tighten refined-product supply."
     }
   ],
   "operationalSummary": [
-    "Kinetic & Frontline Operations: Houthi forces physically seized two strategic Red Sea islands threatening the Bab al-Mandab approaches while pressing a fresh barrage of missiles and drones against Saudi military targets, including attacks on the Saudi East-West Pipeline that jeopardize the Kingdom's Red Sea export bypass. An oil tanker reportedly exploded after colliding with mines in the Strait of Hormuz (per Iran's Fars agency), the first confirmed chokepoint mining effect this cycle. US Air Force leadership (Gen. Wilsbach) has publicly detailed airmen performing under punishing Iranian missile barrages on US bases, confirming direct Iran–US exchanges are ongoing or recent. No kinetic shifts reported in Ukraine, where a UK service member died in a non-hostile road crash; the USS Ford concluded a 326-day deployment with only six-month maintenance planned despite a shipboard fire.",
-    "Strategic Alliances & Diplomatic Posturing: Gulf states have postponed Strait of Hormuz talks with Iran as the Yemen conflict intensifies — diplomatic off-ramps are visibly narrowing, and Tehran denies involvement in Yemen's revived civil war even as analysts flag the 'axis of Iranian centrality' as the region's most destabilizing force. Twelve European countries meeting in Finland urged the EU to beef up its Arctic presence against Russian aggression and President Trump's Greenland pressure, formalizing a third European strategic flank. In Washington, the President labeled AI oversight calls a 'SICK conspiracy' while the House Speaker plans meetings with tech executives, deepening policy ambiguity; DoD faces hard choices on whether to absorb or scrap Commerce's TraCSS space traffic mission; X Corp/SpaceXAI dropped its Apple antitrust suit; and Milei is drafting sanctions legislation targeting Falklands-operating firms, reopening UK–Argentina friction.",
-    "Geoeconomic, Market & Social Stability: Brent ($109.51, +3.39) and WTI ($97.26, +3.05) carry an explicit war premium, yet VIX at 15.84, high-yield OAS at a tight 2.65%, and accommodative NFCI (-0.56) and STLFSI (-0.79) readings show financial conditions dismissing tail risk — a divergence historically resolved violently; the 10Y–2Y spread at +0.33% is normalizing, removing a recession signal but not pricing energy passthrough. Domestic and allied infrastructure fragility surfaced simultaneously: Exxon's Joliet refinery shut after a grid outage (direct Midwest fuel-supply hit), a Houston plant power outage produced black smoke, and the Fenno-Skan 2 HVDC link failure strained Nordic power balance ahead of winter. Humanitarian and social stress markers include the UN warning that Sudan's aid networks could collapse by month's end, 28 children killed in a DR Congo school fire, Turkey's jailing of 16 LGBTQ+ activists, and the UK Home Secretary ordering maximal policing powers against anti-migrant protests; the CDC's changed measles death-count methodology amid a Pennsylvania outbreak adds a domestic public-health transparency concern. Note: maritime AIS and aviation feeds returned zero contacts this cycle — a sensor coverage gap requiring corroboration via naval and UKMTO reporting."
+    "Kinetic activity is concentrated in two theaters. In the Middle East, the Pentagon's admission that Iranian strikes damaged and destroyed hundreds of buildings at US bases represents a rare official acknowledgment of direct state-on-state damage to American infrastructure, while the IRGC-reported tanker explosion in the Strait of Hormuz — the transit corridor for roughly a fifth of global oil — signals active threat to commercial maritime traffic. Houthi forces have captured Mocha and Perim Island, giving them terrain overlooking the southern Red Sea and Bab al-Mandab approaches just as Saudi Arabia confronts pipeline security challenges on its East-West corridor. Israel's strike on a Gaza displacement camp continues the regional kinetic tempo. Conversely, Ukraine presents a de-escalatory vector: Zelensky has publicly offered a mutual standdown on energy-infrastructure strikes, and Kyiv has signaled readiness to pause attacks if Russia halts its own campaign against Ukrainian critical infrastructure.",
+    "Strategically, the disclosure that the US Space Force has weapons deployed on-orbit for the first time is a landmark deterrence signal directed at peer competitors China and Russia, formalizing space as an operational warfighting domain. The successful flight of Anduril's YFQ-44A Fury loyal wingman alongside F-35s indicates the US is accelerating crewed-uncrewed teaming toward operational fielding. Diplomatically, Trump's claims of progress toward a new Iran deal conflict sharply with the physical evidence of Iranian strike damage to US facilities and rising oil prices, suggesting either a negotiating track under intense escalation pressure or strategic signaling ahead of talks. The confirmed role of Putin-awarded oligarch Umar Kremlev in funding Trump Jr.'s wedding sustains scrutiny of Kremlin influence channels into US political circles, while Ukrainian alignment with US mediation underscores Kyiv's dependence on Washington's negotiating posture.",
+    "Geoeconomically, energy markets are pricing a war premium: Brent at $109.51 and WTI at $97.26 represent sustained triple-digit territory, and the potential Saudi East-West pipeline closure removes the key bypass around Hormuz disruptions — meaning any further Iranian interference in the Strait directly strands export barrels. Domestically, a grid event has idled ExxonMobil's Joliet refinery, slowed BP Whiting, and forced flaring at Houston/Pasadena chemical plants, layering refined-product supply risk on top of crude-cost inflation; Ohio legislators are already advancing outage-reimbursement bills, signaling rising political salience of grid reliability. Yet financial markets remain strikingly complacent — VIX at 15.84, high-yield spreads at a tight 2.65%, and accommodative financial conditions — a disconnect that leaves equities and credit exposed to a violent repricing if Hormuz flows are materially disrupted. The AI-sector selloff after top lab CEOs called for a slowdown in 'reckless' development adds a second volatility vector concentrated in the same equities that dominate household retirement portfolios. Civil unrest indicators remain muted domestically, but institutional stress signals — the DHS voter-search whistleblower and 50-year-low democracy indices — suggest rising political-systemic fragility beneath a calm surface."
   ],
   "keyDevelopments": [
     {
-      "headline": "Houthis seize two strategic Red Sea islands (PBS)",
+      "headline": "Pentagon admits Iranian strikes damaged and destroyed hundreds of buildings at US bases (Fortune)",
       "theater": "Middle East & Red Sea",
-      "significance": "Territorial consolidation on the Bab al-Mandab approaches gives the Houthis physical basing for anti-shipping fires and complicates any naval clearing operation.",
-      "impact": "Raises risk premium on all Red Sea transits; war-risk insurance and rerouting costs will climb, directly feeding consumer import prices."
+      "significance": "Official confirmation of substantial physical damage to US military infrastructure from Iranian state action marks a major escalation threshold and constrains US options short of and including direct retaliation.",
+      "impact": "Raises the probability of US retaliatory strikes or expanded force posture in the region; US personnel and regional allies now operating from degraded facilities."
     },
     {
-      "headline": "Attack on Saudi East-West Pipeline threatens export routes; oil prices rise (WSJ)",
+      "headline": "Oil tanker explodes in Strait of Hormuz, per Iran's IRGC (South China Morning Post)",
       "theater": "Global Energy & Trade Chokepoints",
-      "significance": "The pipeline is Saudi Arabia's bypass around Hormuz; successful interdiction would strand ~5 mb/d of export capacity and remove the Kingdom's redundancy.",
-      "impact": "Sustains the war premium in crude, guarantees higher pump prices, and pressures global refiners to bid up alternative crude grades."
+      "significance": "A tanker incident in the world's most critical oil chokepoint during peak tensions threatens freedom of navigation and global oil flows of roughly 17-20 million barrels per day.",
+      "impact": "War-risk insurance premiums will spike, tanker transits may pause or reroute, and crude prices face further upside; direct knock-on to global fuel and transport costs."
     },
     {
-      "headline": "Oil tanker explodes after colliding with mines in Strait of Hormuz (Jerusalem Post / Fars)",
+      "headline": "Houthis capture Mocha and Perim Island as fighting with Yemen's National Government continues (USNI News)",
       "theater": "Middle East & Red Sea",
-      "significance": "First confirmed mining effect in the world's most critical oil chokepoint this cycle; mining is a classic deniable escalation instrument.",
-      "impact": "Triggers convoy discussions, naval MCM tasking, and immediate Lloyd's war-risk zone reviews; a second strike would be the decisive escalation trigger."
+      "significance": "Seizure of Perim Island places Iranian-backed forces directly astride the Bab al-Mandab strait, the southern gateway to the Red Sea and Suez route.",
+      "impact": "Escalates threat to Red Sea commercial shipping, complicates Saudi border security, and risks drawing coalition naval forces into renewed maritime interdiction operations."
     },
     {
-      "headline": "Gulf states postpone Strait of Hormuz talks with Iran as Yemen conflict intensifies (The Guardian)",
-      "theater": "Middle East & Red Sea",
-      "significance": "The last structured diplomatic channel between Gulf capitals and Tehran is now frozen amid active hostilities.",
-      "impact": "Removes an off-ramp; miscalculation risk rises materially as both sides operate without a deconfliction dialogue."
-    },
-    {
-      "headline": "Oil surges past US$100/bbl amid Middle East attacks; Brent $109.51 (+3.39) (Mexico Business News / market data)",
+      "headline": "Closure of Saudi Arabia's East-West pipeline raises questions for global oil flows (Boston Herald)",
       "theater": "Global Energy & Trade Chokepoints",
-      "significance": "A durable $100+ floor re-prices global inflation, shipping, and petrochemical costs and tests strategic reserve policy.",
-      "impact": "Direct household hit via gasoline and goods prices; raises probability of Fed holding rates higher for longer."
+      "significance": "The East-West pipeline is Saudi Arabia's primary bypass around the Strait of Hormuz; its closure removes ~5 million barrels/day of redundant export capacity at the worst possible moment.",
+      "impact": "Concentrates global supply risk on Hormuz transit itself, amplifying price volatility and giving Iran disproportionate leverage over world oil markets."
     },
     {
-      "headline": "ExxonMobil shuts down Joliet refinery after power outage (Reuters)",
-      "theater": "Global Energy & Trade Chokepoints",
-      "significance": "A major Midwest fuels hub offline simultaneously with war-premium crude tightens regional product supply.",
-      "impact": "Midwest gasoline spikes are the fastest political transmission channel of the Middle East conflict to US voters; DOE waiver or SPR-related action possible within days."
+      "headline": "Zelensky says Ukraine ready to halt strikes on Russian energy infrastructure if Moscow reciprocates (France 24 / PBS)",
+      "theater": "Eastern Europe / Ukraine",
+      "significance": "First concrete, reciprocal de-escalation offer following the Trump-brokered understanding; targeting energy infrastructure has been the defining escalation dynamic of the air war.",
+      "impact": "If implemented, would reduce blackouts for Ukrainian civilians and cut regional energy-market volatility; collapse of the deal would likely trigger intensified winter-infrastructure strikes."
     },
     {
-      "headline": "Airmen under fire: stories from Iranian barrages on US bases (The War Zone)",
-      "theater": "Middle East & Red Sea",
-      "significance": "Public confirmation from the Air Force Chief of Staff that US personnel have absorbed significant Iranian missile attacks validates an active, not latent, US–Iran exchange.",
-      "impact": "Raises baseline probability of further retaliatory cycles and US force-protection escalations across the CENTCOM AOR."
-    },
-    {
-      "headline": "DoD, industry face hard choices over scrapping Commerce's TraCSS spacewatch program (Breaking Defense)",
+      "headline": "US Space Force confirms weapons deployed in orbit for first time (France 24 / Military Times)",
       "theater": "Defense & Cyber Domains",
-      "significance": "Space traffic coordination gaps would leave Space Command holding civil space-safety responsibilities indefinitely amid rising orbital congestion and counterspace threats.",
-      "impact": "Degraded conjunction warnings increase collision and attribution ambiguity risks for both commercial and military satellites."
+      "significance": "First official US acknowledgment of on-orbit weapons employment, formalizing space as an active warfighting domain amid parallel Chinese and Russian counterspace programs.",
+      "impact": "Raises arms-race stakes in space; US satellite constellations underpin both military operations and civilian GPS/communications, making them high-value escalation targets."
     },
     {
-      "headline": "Twelve European countries urge EU to boost Arctic role against Russia 'threat' (France 24 / DW)",
-      "theater": "Eastern Europe / Arctic",
-      "significance": "Formalizes Arctic as Europe's third strategic flank amid Russian aggression, critical-raw-materials competition, and US Greenland pressure.",
-      "impact": "Drives EU defense-industrial and infrastructure investment northward; raises NATO–Russia friction points around GIUK and Barents approaches."
+      "headline": "Power outages shut ExxonMobil Joliet refinery, slow BP Whiting, and force flaring at Houston-area chemical plants (NBC Chicago / NWI Times / Houston Chronicle)",
+      "theater": "Global Energy & Trade Chokepoints / Domestic Infrastructure",
+      "significance": "A simultaneous grid event idling two major Midwest/Gulf refineries tightens US refined-product supply exactly as crude war-premium pricing peaks.",
+      "impact": "Regional gasoline price spikes likely in Chicago/Gulf markets; visible flaring and smoke events will stress local communities and heighten scrutiny of grid resilience."
     },
     {
-      "headline": "UN warns Sudan aid networks at risk of collapse without immediate donations (Al Jazeera)",
-      "theater": "Africa / Humanitarian",
-      "significance": "IOM says shelter and relief supplies could be depleted by month's end in an active civil war zone.",
-      "impact": "Mass displacement toward Chad and Egypt is likely, creating a regional refugee crisis and a recruiting vacuum exploitable by armed factions."
+      "headline": "AI-linked stocks slide after Anthropic, OpenAI and SpaceX chiefs call for slowdown in 'reckless' development (The Guardian)",
+      "theater": "Global Markets / Domestic",
+      "significance": "Unprecedented public warning from AI industry leaders triggered a broad tech selloff, exposing the market's concentration risk in AI-exposed equities.",
+      "impact": "Household retirement portfolios heavily weighted to tech face volatility; a sustained AI unwind could tighten financial conditions and chill capex-dependent hiring."
+    },
+    {
+      "headline": "Democracy indicators in US at lowest levels in 50 years; DHS whistleblower alleges improper voter-database searches (The Guardian)",
+      "theater": "Domestic Civil Unrest & Institutional",
+      "significance": "Converging external assessment and internal whistleblower testimony point to rule-of-law erosion and contested election-integrity processes ahead of future electoral cycles.",
+      "impact": "Elevated risk of political-legal crises, contested administrative actions, and polarizing flashpoints capable of mobilizing street-level protest."
     }
   ],
   "indicatorsAndWarnings": [
-    "Watch for a formal Houthi or Iranian threat-to-close declaration for Bab al-Mandab or the Strait of Hormuz, or expansion of Lloyd's/BIMCO war-risk zones within 24–72 hours — either would trigger tanker re-routing, freight surges, and a second oil leg toward $120+/bbl.",
-    "Monitor US/Saudi retaliatory strike windows against Houthi coastal missile batteries and launch sites; any second mine strike or successful missile hit on a commercial LNG/LPG carrier is the decisive escalation trigger for direct strikes on Iran-linked territory.",
-    "Track DOE emergency gasoline waiver or SPR-related announcements following the Joliet refinery shutdown; Midwest pump-price trajectories over the next 72 hours are the key domestic political signal.",
-    "Watch Statnett/Fingrid advisories for further Nordic interconnector failures or demand-response alerts while Fenno-Skan 2 remains offline; cascading grid stress approaching winter is a NATO resilience vulnerability.",
-    "Monitor whether postponed Gulf–Iran Hormuz talks are rescheduled or formally collapse — a collapsed diplomatic track materially raises the probability of open Gulf state–Iran confrontation.",
-    "Note the sensor gap: AIS chokepoint and aviation feeds returned zero contacts this cycle — corroborate Red Sea and Bab al-Mandab transit patterns via UKMTO advisories and naval reporting rather than automated feeds before drawing conclusions.",
-    "Watch AFA 2026 Air, Space & Cyber Conference announcements for TraCSS disposition and any urgent space-domain-awareness tasking shifts to US Space Command.",
-    "Monitor the Sudan funding cliff at month-end (IOM depletion warning) for early mass-displacement indicators toward Chad/Egypt, and watch UK domestic policing posture after the Home Secretary's 'all powers necessary' directive on anti-migrant protests."
+    "Monitor Strait of Hormuz for further tanker incidents, IRGC seizures, or naval escort operations over the next 24-72 hours; any closure or insurance-market withdrawal would trigger an immediate oil price shock beyond $115-120/bbl Brent.",
+    "Watch for formal confirmation and duration parameters of the Saudi East-West pipeline closure and any emergency OPEC+ or SPR coordination signals from Washington and Riyadh.",
+    "Track US retaliatory decision-making following Pentagon confirmation of Iranian strike damage to US bases — look for carrier/air wing repositioning, TLAM-capable platform movements, and evacuation or force-protection escalations at Gulf installations.",
+    "Assess whether Russia reciprocates Zelensky's energy-infrastructure standdown within 72 hours; continued Russian strikes on Ukrainian grid targets would indicate the ceasefire track is failing and winter-infrastructure bombardment will resume.",
+    "Monitor Houthi follow-on operations from Mocha and Perim Island toward Red Sea shipping lanes, including any anti-ship missile/drone launches and coalition naval responses near Bab al-Mandab.",
+    "Track restart timelines for ExxonMobil Joliet and BP Whiting refineries and any EPA/state waivers; prolonged outages into peak-demand windows would produce regional gasoline shortages and price spikes exceeding the crude-driven baseline.",
+    "Watch for counter-responses from China or Russia to the US on-orbit weapons disclosure, including announced counterspace tests, ASAT demonstrations, or diplomatic moves toward space-arms-control frameworks.",
+    "Monitor AI-sector equity contagion and credit spreads for any breakdown from current complacent levels (VIX sub-16, HY OAS ~2.65%); a VIX move above 22 alongside widening spreads would signal the market is finally repricing Middle East risk."
   ],
   "date": "2026-09-14",
-  "generatedAt": "2026-09-14T20:44:33.948Z",
+  "generatedAt": "2026-09-14T23:40:57.982Z",
   "modelUsed": "z-ai/glm-5.3-flash"
 }

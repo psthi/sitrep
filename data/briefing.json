@@ -1,121 +1,114 @@
 {
-  "bluf": "The six-month-old US-Iran war remains the dominant strategic driver: the CBO now pegs its cost at $38 billion rising $3 billion per month, newly released imagery confirms widespread damage to US regional bases, and the resulting oil war premium (Brent near $110) is feeding directly into US inflation just as the Fed opens its September meeting. Simultaneously, Russia has shifted to lethal gray-zone operations on US and European soil, and the Houthi campaign has expanded toward Saudi holy sites, deepening a multi-theater escalation risk. The near-term trajectory is escalatory rather than de-escalatory: energy inflation, munitions depletion, and covert operations will all likely worsen before the only visible off-ramp (China-mediated talks) can mature.",
+  "bluf": "The defining strategic reality is a multi-front escalation arc: an active US–Iran conflict now intersecting with a Houthi drone strike attempt near Mecca that has triggered a Saudi 'red line' warning, while Brent crude holds a war premium near $110 and Japan manages a Strait of Hormuz energy shock. Simultaneously, Ukraine's deep strike on a Voronezh plant producing Iskander missile components and Europe's pivot to mass-produced, low-cost missile arsenals confirm a protracted attrition-war paradigm across two theaters. Financial markets remain deceptively calm (VIX 17.1, tight credit spreads), leaving households maximally exposed to an energy-led inflation shock if Hormuz transit degrades further.",
   "householdImpact": {
-    "energyAndFuel": "With Brent crude near $110 a barrel and diesel hitting record levels (over $8 a gallon in parts of California), expect gas pump prices to stay elevated and climb, especially for diesel trucks and farm vehicles. Home heating oil tracks diesel prices closely, and utilities pass higher fuel costs into monthly electric bills, so both driving and household energy costs will likely rise in the coming weeks.",
-    "borrowingAndMortgages": "The Fed opened its September meeting facing war-driven inflation, which means rates on mortgages, auto loans, and credit cards are likely to stay higher for longer. Credit is still flowing freely (market stress indicators are low), so loans remain available, but do not expect near-term relief on borrowing costs.",
-    "groceriesAndSupplyChain": "Diesel powers the trucks, trains, and farm equipment that move food, so record diesel prices flow into grocery bills within a matter of weeks. Middle East supply disruptions and shipping rerouting add freight costs to imported goods, compounding price pressure on everyday staples and consumer products.",
-    "jobsAndSavings": "Markets are currently calm (low volatility, easy credit conditions), which supports hiring and steady 401(k) balances, but the war's $3-billion-a-month cost, rising inflation, and a hawkish Fed pose real downside risk to stocks and bonds. Workers in fuel-intensive sectors like transport, logistics, and agriculture face the most margin and job-security pressure."
+    "energyAndFuel": "Crude oil is trading at war-inflated levels (Brent ~$110, WTI ~$97 per barrel), which typically means gasoline prices roughly 60–90 cents per gallon above normal — expect pump prices to keep climbing if Middle East tensions worsen. Home heating and electric bills are cushioned for now because natural gas remains near normal (~$2.81/MMBtu), but a sustained conflict or Hormuz disruption would push utility costs higher.",
+    "borrowingAndMortgages": "Bond markets are calm and the yield curve is normalizing, so mortgage and auto loan rates are holding steady rather than spiking for now. However, if the war premium keeps oil elevated, energy-driven inflation could force lenders to keep mortgage rates and credit card APRs higher for longer.",
+    "groceriesAndSupplyChain": "High diesel and shipping fuel costs feed directly into the price of trucked and imported groceries, so expect gradual increases on everyday shelf staples over the coming weeks. Any disruption at the Strait of Hormuz — the pass-through for roughly a fifth of the world's oil — would raise freight and insurance costs, hitting imported goods and food prices within weeks.",
+    "jobsAndSavings": "Stock markets are still calm and credit remains easy, which supports hiring and steady 401(k) balances, but this calm looks complacent given two active conflict zones. A major escalation — especially a Hormuz closure — could trigger a sharp market drop hitting retirement savings, while energy, defense, and AI-infrastructure sectors would see hiring booms."
   },
   "threatMatrix": [
     {
       "theater": "Eastern Europe / Ukraine",
       "status": "HIGH",
-      "trend": "VOLATILE",
-      "summary": "Russia has shifted to lethal gray-zone operations, with US officials alleging its intelligence services are paying operatives to surveil and kill Ukraine-aligned individuals in the US and Europe, and the DOJ charging Russian nationals for terrorism financing and murder-for-hire."
+      "trend": "ESCALATING",
+      "summary": "Ukraine's deep-strike campaign reached the Russian defense-industrial base with a power outage reported at the Voronezh facility manufacturing Iskander missile components, while Europe accelerates procurement of cheaper, mass-produced missiles to rebuild depleted inventories."
     },
     {
       "theater": "Middle East & Red Sea",
       "status": "CRITICAL",
       "trend": "ESCALATING",
-      "summary": "The six-month US-Iran war grinds on with confirmed damage to US regional bases, a Houthi drone intercepted near Mecca, expanded Israeli operations in the West Bank, and Washington set to resume 2,000lb bomb deliveries to Israel."
+      "summary": "An active US–Iran conflict widened as Saudi air defenses destroyed a Houthi drone just outside Mecca — prompting Riyadh to declare a 'red line' — while a Gaza building collapse killed at least 10 with up to 70 missing and the US House voted for a third time to halt the war."
     },
     {
       "theater": "Indo-Pacific & Taiwan",
       "status": "GUARDED",
       "trend": "STABLE",
-      "summary": "No direct Taiwan-contingency signaling this cycle; Beijing is instead investing in mediator capital on the Iran war, a position it may later bank as leverage in Indo-Pacific bargaining."
+      "summary": "No direct military provocation detected; activity is economic-strategic with China's Pinglu Canal opening a new trade gateway to Southeast Asia, Hong Kong unveiling a five-year financial-hub plan, and a Seoul court ordering North Korea to pay $32.5M for the 2020 liaison office bombing."
     },
     {
       "theater": "Defense & Cyber Domains",
-      "status": "HIGH",
+      "status": "ELEVATED",
       "trend": "ESCALATING",
-      "summary": "The CBO warns US munitions stockpiles may take up to five years to replenish even as the USAF debuts its CCA combat drones at scale in Exercise Emerald Flag and homeland counterterrorism disrupts ISIS-inspired plotting in Pennsylvania."
+      "summary": "Two US domestic ISIS-inspired terror plots (Butler County and Pennsylvania) were disrupted, Sahel jihadist violence hit record levels, and the AI arms race intensified with Anthropic's $31B Queensland datacentre deal and OpenAI's chief warning the world is 'right to be afraid.'"
     },
     {
       "theater": "Domestic Civil Unrest & Demonstrations",
       "status": "ELEVATED",
       "trend": "VOLATILE",
-      "summary": "The GDELT baseline is noisy, but genuine mobilization signals include UK anti-migrant protest policing directives, pro-Palestinian cultural-sector ruptures (support acts quitting the Ed Sheeran tour), and foiled domestic attack plotting in the US."
+      "summary": "Political fracture inside Washington deepened as Rep. Massie forced an impeachment vote on Defense Secretary Hegseth mid-conflict, while the UK home secretary ordered police to use 'all powers' against anti-migrant protests, pro-Palestine artists withdrew from major tours, and an Islamophobic incident in Sydney underscored widening social friction."
     },
     {
       "theater": "Global Energy & Trade Chokepoints",
-      "status": "CRITICAL",
+      "status": "HIGH",
       "trend": "ESCALATING",
-      "summary": "Brent holds a war premium near $110 (+$3.39 day-over-day) with US diesel at record levels ($8.06 per gallon in Bakersfield) as Gulf and Red Sea disruptions compress supply heading into the Fed's September meeting."
+      "summary": "Brent crude surged to $109.51 (+$3.39) and WTI to $97.26 on a war premium with Middle East disruptions limiting downside despite US stock builds, and Japan is actively managing a Strait of Hormuz energy shock that signals tangible transit risk to global flows."
     }
   ],
   "operationalSummary": [
-    "Kinetic & Frontline Operations: The US-Iran war enters its seventh month with newly released imagery confirming widespread damage at US bases in the Middle East from earlier Iranian attacks, underscoring sustained attrition of forward-deployed infrastructure. Saudi-led coalition air defenses intercepted a drone targeting Mecca, while Houthi strikes continue to pressure Saudi territory. Israel conducted a helicopter-borne rappel raid onto a residential building in Yatta, occupied West Bank, signaling expanded special-operations tempo beyond Gaza. A Sepehran Airlines Boeing 737 suffered cabin structural failure after an emergency landing in Mashhad, highlighting airworthiness strain on Iranian civil aviation under war conditions. The USAF will debut its Collaborative Combat Aircraft fighter drones in Exercise Emerald Flag, testing manned-unmanned teaming precisely as the CBO warns munitions stockpiles could take up to five years to replenish.",
-    "Strategic Alliances & Diplomatic Posturing: Iran's foreign minister is heading to Beijing as China positions itself as the mediator of the conflict, a move that could produce the only viable ceasefire channel while granting Beijing leverage over Washington and Gulf partners. The Trump administration plans to deliver 2,000lb bombs to Israel in a vast arms deal, reversing a two-year pause imposed over mass-casualty concerns, signaling unqualified munitions resupply and latent escalation capacity. Paris is exploring a plan to bolster the Lebanese Army's deployment in southern Lebanon, an early stabilization framework for the Israel-Hezbollah frontier. In the gray zone, federal officials allege Russian intelligence attempted to pay people to surveil and kill Ukraine-aligned targets in the US and Europe, and the DOJ has charged Russians for financing terrorism and murder-for-hire; the FBI simultaneously disrupted an ISIS-inspired plot in Pennsylvania. The guilty plea of Alex Saab, a former Maduro ally, tightens legal and coercive pressure on Caracas.",
-    "Geoeconomic, Market & Social Stability: Brent crude sits at $109.51 (+$3.39) and WTI at $97.26 on the war premium, with record US diesel prices ($8.06 per gallon in Bakersfield) feeding directly into transport and food inflation, while gold steadies near $4,333 as safe-haven demand meets the Fed's September policy meeting. Financial conditions remain paradoxically accommodative (NFCI -0.56, STLFSI -0.79, high-yield spreads tight at 2.71%, VIX subdued at 17.1), indicating markets are underpricing escalation tail risk even as the CBO confirms the war is raising inflation and straining munitions. Structural stresses accumulate in the background: the Tijuana River sewage crisis carries an estimated toll as high as $7.9 billion, roughly 1,500 Britons a day are quitting jobs to become unpaid carers, Argentina intensifies legal action against Falklands oil companies, Australia guts environmental objection rights to streamline mining, and analysts debate whether private credit is the next systemic vulnerability. Domestic and allied social fault lines - foiled ISIS plotting, UK anti-migrant protest policing directives, and Met Police integrity scandals - round out a picture of societies absorbing compounding war-era pressures."
+    "Kinetic & Frontline Operations: The most consequential kinetic event of the cycle was the Saudi-led coalition's interception and destruction of a Houthi drone just outside Mecca — the first direct threat to Islam's holiest city in this conflict — with Riyadh explicitly warning of a 'red line' while the Houthis denied the launch. In the European theater, Ukraine's deep-strike campaign demonstrably reached the Russian defense-industrial base, with a reported power outage at the Voronezh plant manufacturing Iskander-M missile components, degrading Russian precision-fire production capacity. In Gaza, a building collapse in Gaza City killed at least 10 with up to 70 believed missing, compounding the humanitarian emergency. US–Iran hostilities remain kinetic but politically contested, with the House moving to terminate the war authorization.",
+    "Strategic Alliances & Diplomatic Posturing: The US House passed a war powers resolution to end the Iran war for a third time, with seven Republicans defecting — a significant constraint signal on executive war authority — while Rep. Thomas Massie forced an impeachment vote against Defense Secretary Pete Hegseth, injecting leadership instability into the Pentagon during an active conflict. Vice President Vance's statement that US Middle East policy 'cannot be subservient' to Israel signals intra-coalition friction over escalation management. Europe is translating Ukraine lessons into force design, shifting procurement toward cheaper, mass-produced missiles and interceptors as small inventories proved inadequate, while von der Leyen's State of the Union (with Canada's Carney attending) frames EU crisis posture on migration, AI, and security. Washington simultaneously escalated friction with a BRICS partner by restricting visas for South African officials over alleged anti-white discrimination.",
+    "Geoeconomic, Market & Social Stability: Energy markets carry an explicit war premium — Brent at $109.51 (+3.39) and WTI at $97.26 (+3.05), with Middle East disruptions limiting losses despite a US stock build — and Japan's active management of a Hormuz energy shock confirms chokepoint risk is now an operational planning variable for allied economies. Financial conditions remain dangerously accommodative (NFCI -0.56, STLFSI -0.79) with high-yield spreads tight at 2.71%, a complacency profile that leaves no cushion priced in for escalation; VIX at 17.1 is subdued but rising (+1.26). Structural realignments continue via the AI-infrastructure buildout (Anthropic's $31B Queensland datacentre, Hong Kong's five-year financial hub plan) and China's Pinglu Canal rerouting Southeast Asian trade. Civil-security strain is broadening: record Sahel jihadist violence 25 years after 9/11, two disrupted ISIS-inspired plots in Pennsylvania, UK orders for 'all powers' against anti-migrant protests, and social-conflict incidents from Sydney to Bangkok indicate a rising ambient threat backdrop in both Western and allied domestic spaces."
   ],
   "keyDevelopments": [
     {
-      "headline": "CBO reports the six-month US war against Iran has cost $38 billion and will rise roughly $3 billion per month, driving inflation and depleting munitions stockpiles that could take up to five years to replenish (Reuters/Al-Monitor; Al Jazeera)",
-      "theater": "North America / Fiscal-Industrial",
-      "significance": "Quantifies the war's fiscal drag and exposes a strategic readiness gap in precision munitions and defense industrial capacity.",
-      "impact": "Sustains consumer price pressure, constrains US capacity for a second major contingency, and forces long-term defense industrial base expansion decisions."
-    },
-    {
-      "headline": "New imagery shows widespread damage at US bases in the Middle East following Iranian attacks (Yahoo News)",
+      "headline": "Saudi-led coalition intercepts and destroys Houthi drone headed for Mecca; Riyadh warns of 'red line' (Al Jazeera / DW)",
       "theater": "Middle East & Red Sea",
-      "significance": "Confirms successful Iranian strikes against hardened US forward infrastructure and ongoing attrition of America's regional military posture.",
-      "impact": "Force protection, basing capacity, and deterrence credibility are degraded; reconstruction now competes with wartime expenditure for finite defense dollars."
+      "significance": "First direct threat to Islam's holiest city in the current conflict crosses a threshold that compels Saudi retaliation calculus against Houthi infrastructure and potentially its Iranian patron.",
+      "impact": "Raises probability of direct Saudi kinetic response and broadens the US–Iran war into a wider Gulf confrontation; pilgrim traffic and civilian populations in the Hejaz region face elevated risk."
     },
     {
-      "headline": "US set to deliver 2,000lb bombs to Israel as part of a vast arms deal, reversing a two-year delivery pause (The Guardian)",
-      "theater": "Middle East & Red Sea",
-      "significance": "Signals unqualified US resupply of Israel's heavy munitions pipeline and latent capacity for renewed large-scale operations in Gaza or beyond.",
-      "impact": "Raises escalation risk across Gaza and the West Bank, is likely to provoke Iranian or Houthi retaliation, and fuels regional anti-US mobilization."
+      "headline": "US House votes to end Iran war for third time, with 7 Republicans joining (Al Jazeera)",
+      "theater": "North America / War Powers",
+      "significance": "Repeated bipartisan congressional action constrains executive war authority and signals eroding domestic political consensus for continued military operations against Iran.",
+      "impact": "Creates policy uncertainty for theater commanders and allies; if enacted or followed by funding limits, could freeze strike tempo and open a constitutional confrontation with the White House."
     },
     {
-      "headline": "Iranian foreign minister heads to China as Beijing seeks to mediate an end to the war (Al Jazeera)",
-      "theater": "Middle East / Indo-Pacific Diplomacy",
-      "significance": "China's near-monopoly on the mediator role makes it the gatekeeper of the only visible ceasefire channel.",
-      "impact": "A credible framework could rapidly reprice oil $10-20 per barrel lower; failure leaves Beijing holding diplomatic leverage over US economic and strategic equities."
+      "headline": "Power outage reported at Voronezh factory manufacturing Iskander missile components (UA.NEWS)",
+      "theater": "Eastern Europe / Ukraine",
+      "significance": "Confirms Ukrainian deep-strike reach into Russia's defense-industrial heartland, targeting precision-munitions production rather than only frontline logistics.",
+      "impact": "Degrades Russian missile stockpile replenishment at the margin and forces Russian air defense redistribution away from the front; escalates the strategic-strike exchange dynamic."
     },
     {
-      "headline": "Saudi-led coalition intercepts drone headed for Mecca; Crown Prince travels to Egypt to seek support against Houthi strikes (Al Jazeera; AP)",
-      "theater": "Middle East & Red Sea",
-      "significance": "The Houthi campaign has expanded toward Islam's holiest sites, converting the conflict into a direct Saudi homeland security crisis.",
-      "impact": "Elevates Red Sea and Bab al-Mandab transit risk; a major Saudi retaliation or coalition re-engagement would widen the war's energy footprint significantly."
+      "headline": "European militaries pivot to bigger, cheaper missile arsenals after Ukraine and Middle East exposed inventory limits (Reuters via Al-Monitor)",
+      "theater": "Europe / Defense Industrial",
+      "significance": "Marks a structural shift in NATO-European force design from small inventories of exquisite munitions toward mass-produced, cost-effective missiles and interceptors.",
+      "impact": "Expands allied magazine depth over 12–36 months, improving deterrence endurance in both the Ukraine and Middle East contingencies; defense-industrial stocks and production lines stand to benefit."
     },
     {
-      "headline": "US federal officials say Russian intelligence is plotting targeted killings of Ukraine-aligned individuals in the US and Europe; DOJ charges Russians for financing terrorism and murder-for-hire (The Guardian; ABC News)",
-      "theater": "Eastern Europe / North America / Gray Zone",
-      "significance": "Marks an escalation from espionage and disruption to lethal covert action on US and NATO soil.",
-      "impact": "Any successful killing could trigger a major alliance political crisis, NATO Article 4 consultations, and a domestic counterintelligence surge."
+      "headline": "Al-Qaida and IS-linked violence in Africa's Sahel set to hit record levels this year (The Guardian)",
+      "theater": "Africa / Sahel",
+      "significance": "Twenty-five years after 9/11, the Sahel has become the global epicenter of Islamist extremist violence, with sweeping militant offensives driving historic casualty projections.",
+      "impact": "Sustains refugee flows toward Europe, risks state collapse in the tri-border region, and provides plotting space for transnational attacks, including into Western homelands."
     },
     {
-      "headline": "FBI foils ISIS-inspired terror plot in Pennsylvania; separate Butler County man charged with plotting an attack (NBC News; Pittsburgh Post-Gazette)",
-      "theater": "Domestic US / Global Security",
-      "significance": "Demonstrates a persistent inspired-violence threat environment amplified by ongoing Middle East war coverage.",
-      "impact": "Sustains an elevated homeland threat posture and raises the probability of copycat plotting tied to regional developments."
+      "headline": "Brent crude at $109.51 (+3.39) on war premium; Japan managing Strait of Hormuz energy shock (Yahoo Finance / GIS Reports)",
+      "theater": "Global Energy & Trade Chokepoints",
+      "significance": "Oil's war premium is now entrenched with Middle East supply disruptions offsetting US stock builds, and a key US ally is actively rationing and rerouting energy exposure to Hormuz risk.",
+      "impact": "Sustained $100+ crude transmits directly into global inflation, pressuring central banks to hold rates higher, straining import-dependent economies, and raising the risk of demand destruction or strategic reserve releases."
     },
     {
-      "headline": "USAF's CCA fighter drones to make large-scale exercise debut at Emerald Flag, testing crewed-uncrewed teaming (The War Zone)",
-      "theater": "Defense & Cyber Domains",
-      "significance": "First major operational test of attritable autonomous combat aircraft - a direct answer to munitions depletion and airframe attrition risk.",
-      "impact": "Accelerates the shift toward autonomous mass in US airpower calculus with direct relevance to both the Iran war and any Indo-Pacific contingency."
+      "headline": "Rep. Massie forces House impeachment vote on Defense Secretary Hegseth (Al Jazeera)",
+      "theater": "North America / Political-Military",
+      "significance": "Forces Republicans to vote on impeaching the Secretary of Defense during an active multi-theater conflict, injecting leadership uncertainty at the Pentagon's top echelon.",
+      "impact": "Distraction and churn at DoD leadership during the Iran war and Indo-Pacific deterrence posture could slow decisions on force protection, arms transfers, and rules of engagement."
     },
     {
-      "headline": "Diesel hits record $8.06 per gallon in Bakersfield; gold steadies near $4,333 as the Fed opens its September meeting amid the Middle East oil shock (KBAK; KITCO)",
-      "theater": "Global Energy & Trade / North America",
-      "significance": "The war premium is now embedded in US transport costs, forcing a Fed choice between inflation control and growth support.",
-      "impact": "Direct hit to logistics, food, and household fuel budgets; current market complacency (VIX 17.1) leaves room for sharp volatility repricing on any policy or battlefield surprise."
+      "headline": "Pennsylvania man charged in alleged ISIS-inspired attack plot; second Butler County terror case this cycle (SOFX / Post-Gazette)",
+      "theater": "US Homeland Security",
+      "significance": "Two separate domestic plotting cases in one news cycle, amid record Sahel terrorist violence, indicates inspired-threat velocity is rising in the US homeland.",
+      "impact": "Elevates domestic terrorism alert posture, likely increases FBI surveillance tempo, and raises the probability of a successful lone-offender attack during the current Middle East war."
     }
   ],
   "indicatorsAndWarnings": [
-    "Watch the Fed's September statement and press conference: a hawkish hold citing war-driven inflation could lift the VIX sharply from 17.1 and push mortgage and Treasury yields higher within hours.",
-    "Monitor Houthi launch cadence toward Saudi territory and Red Sea/Bab al-Mandab shipping following the Mecca interception; any strike near Hajj-period crowds or a successful tanker hit would constitute a major escalation trigger.",
-    "Track outcomes of the Iranian foreign minister's Beijing visit: announcement of a Chinese-brokered ceasefire framework could rapidly drop Brent $10-20 per barrel, while a visible failure could prompt fresh Iranian strikes on US basing or Gulf infrastructure.",
-    "Watch the timing and disclosure of the 2,000lb bomb transfer to Israel - Iranian or Houthi retaliation against US bases or Gulf energy infrastructure during the delivery window is a plausible escalation vector.",
-    "Monitor for additional DOJ, FBI, or European counterpart announcements of Russian-directed assassination or sabotage attempts; a successful killing on NATO soil would likely invoke Article 4 or Article 5 consultations.",
-    "Watch southern Lebanon for Israel-Lebanese Army friction as Paris's reinforcement plan is tabled, including any Hezbollah signaling or border incidents.",
-    "Expect follow-up homeland security activity building on the Pennsylvania ISIS and Butler County cases; additional arrests or disrupted plots inspired by Middle East events are likely within the 72-hour window.",
-    "Observe Venezuela's official response to Alex Saab's guilty plea for signs of diplomatic expulsion, Caribbean military posturing, or retaliation against US interests."
+    "Monitor for direct Saudi kinetic retaliation against Houthi targets in Yemen within 24–72 hours following the Mecca drone intercept — any Saudi strikes on Houthi command nodes or Iranian-linked facilities would confirm 'red line' enforcement and widen the Gulf war.",
+    "Watch Senate action on the Iran war powers resolution and any White House veto threat or signing statement; a funding-linked confrontation would create immediate uncertainty over US strike tempo and force posture in the CENTCOM AOR.",
+    "Track Strait of Hormuz tanker transit rates, war-risk insurance premiums, and Japanese/Chinese tanker rerouting over the next 48 hours — a measurable drop in transits or insurance spike above current levels is the primary trigger for Brent breaking above $115.",
+    "Expect Russian retaliatory strikes against Ukrainian infrastructure or leadership within 72 hours in response to the Voronezh defense-plant strike; monitor for Iskander/Shaheed launch surges and any Russian nuclear signaling rhetoric.",
+    "Monitor follow-on arrests or FBI advisories connected to ISIS-inspired domestic plotting in Pennsylvania and nationally, particularly around any scheduled public gatherings or religious sites given the Mecca incident and Sydney Islamophobic incident as polarization catalysts.",
+    "Track the outcome and vote count of the Hegseth impeachment vote — a significant GOP defection count would signal durable Pentagon leadership instability through the active conflict period.",
+    "Watch for Houthi anti-shipping attacks on Red Sea/Bab el-Mandeb commercial traffic resuming in sympathy with the Mecca incident, which would re-inflate shipping insurance costs and reroute container flows around the Cape within days."
   ],
   "date": "2026-09-16",
-  "generatedAt": "2026-09-16T01:32:23.821Z",
+  "generatedAt": "2026-09-16T07:06:32.936Z",
   "modelUsed": "z-ai/glm-5.3-flash"
 }

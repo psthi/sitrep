@@ -1,1883 +1,998 @@
 {
   "meta": {
-    "generatedAt": "2026-09-18T11:34:59.931Z",
+    "generatedAt": "2026-09-18T15:38:39.679Z",
     "source": "Mock AIS Data (API fallback)",
-    "vesselCount": 125
+    "vesselCount": 66
   },
   "vessels": [
     {
-      "mmsi": 259739907,
-      "name": "Vessel-6014",
+      "mmsi": 346455718,
+      "name": "Vessel-1617",
       "type": "Container",
       "location": {
-        "lat": 25.170075426334062,
-        "lon": 57.739203432139654
-      },
-      "speed": "15.1",
-      "course": 128,
-      "heading": 341,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Hormuz",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 263274510,
-      "name": "Vessel-9200",
-      "type": "Container",
-      "location": {
-        "lat": 25.581316329760323,
-        "lon": 56.951097231087616
-      },
-      "speed": "2.4",
-      "course": 47,
-      "heading": 158,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Hormuz",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 850286941,
-      "name": "Vessel-3446",
-      "type": "Military",
-      "location": {
-        "lat": 9.095801766022795,
-        "lon": -79.66592810254562
-      },
-      "speed": "7.1",
-      "course": 223,
-      "heading": 94,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 720035666,
-      "name": "Vessel-4402",
-      "type": "Tanker",
-      "location": {
-        "lat": 9.153672901283262,
-        "lon": -79.74748584764433
-      },
-      "speed": "12.7",
-      "course": 126,
-      "heading": 217,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 677932235,
-      "name": "Vessel-2513",
-      "type": "Container",
-      "location": {
-        "lat": 27.62464268957647,
-        "lon": 56.66516630891222
-      },
-      "speed": "23.3",
-      "course": 248,
-      "heading": 307,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Hormuz",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 174664711,
-      "name": "Vessel-6331",
-      "type": "Passenger",
-      "location": {
-        "lat": 13.097481019905185,
-        "lon": 42.57743580068555
-      },
-      "speed": "15.2",
-      "course": 221,
-      "heading": 146,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bab-el-Mandeb",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 741018213,
-      "name": "Vessel-2316",
-      "type": "Military",
-      "location": {
-        "lat": 27.279343532356588,
-        "lon": 56.71610333191395
-      },
-      "speed": "5.2",
-      "course": 0,
-      "heading": 174,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Hormuz",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 788033434,
-      "name": "Vessel-4565",
-      "type": "Container",
-      "location": {
-        "lat": 3.706626315544521,
-        "lon": 101.50019398477976
-      },
-      "speed": "9.2",
-      "course": 339,
-      "heading": 338,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Malacca",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 771914725,
-      "name": "Vessel-3711",
-      "type": "Cargo",
-      "location": {
-        "lat": 31.342731534594865,
-        "lon": 32.188240028944534
-      },
-      "speed": "5.0",
-      "course": 208,
-      "heading": 272,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Suez Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 328060251,
-      "name": "Vessel-4926",
-      "type": "Container",
-      "location": {
-        "lat": 29.9175657080684,
-        "lon": 33.15384584191701
-      },
-      "speed": "24.5",
-      "course": 321,
-      "heading": 244,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Suez Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 719596381,
-      "name": "Vessel-5522",
-      "type": "Tanker",
-      "location": {
-        "lat": 9.608533200828074,
-        "lon": -79.6162011813939
-      },
-      "speed": "1.5",
-      "course": 44,
-      "heading": 79,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 947683206,
-      "name": "Vessel-5796",
-      "type": "Cargo",
-      "location": {
-        "lat": 0.978385063828509,
-        "lon": 103.34533222853932
-      },
-      "speed": "12.8",
-      "course": 241,
-      "heading": 71,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Malacca",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 221253589,
-      "name": "Vessel-8533",
-      "type": "Military",
-      "location": {
-        "lat": 27.418882525789257,
-        "lon": 56.88279681152897
-      },
-      "speed": "20.1",
-      "course": 23,
-      "heading": 155,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Hormuz",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 487050667,
-      "name": "Vessel-3525",
-      "type": "Military",
-      "location": {
-        "lat": 0.8786453053475896,
-        "lon": 102.64315268746722
-      },
-      "speed": "1.4",
-      "course": 1,
-      "heading": 315,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Malacca",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 492891767,
-      "name": "Vessel-1060",
-      "type": "Cargo",
-      "location": {
-        "lat": 12.828523818478503,
-        "lon": 42.77515279429886
-      },
-      "speed": "4.4",
-      "course": 198,
-      "heading": 359,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bab-el-Mandeb",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 689066801,
-      "name": "Vessel-8042",
-      "type": "Container",
-      "location": {
-        "lat": 41.05546490282528,
-        "lon": 28.873053163278666
-      },
-      "speed": "16.6",
-      "course": 23,
-      "heading": 188,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 473329344,
-      "name": "Vessel-4103",
-      "type": "Military",
-      "location": {
-        "lat": 40.938490056875665,
-        "lon": 29.34371261371252
-      },
-      "speed": "19.5",
-      "course": 24,
-      "heading": 23,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 498757332,
-      "name": "Vessel-8851",
-      "type": "Cargo",
-      "location": {
-        "lat": 12.150007299456734,
-        "lon": 43.585742081045765
-      },
-      "speed": "2.6",
-      "course": 354,
-      "heading": 154,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bab-el-Mandeb",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 366894975,
-      "name": "Vessel-5016",
-      "type": "Passenger",
-      "location": {
-        "lat": 8.678475032299724,
-        "lon": -79.9981118966301
-      },
-      "speed": "12.3",
-      "course": 111,
-      "heading": 214,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Moored"
-    },
-    {
-      "mmsi": 580833398,
-      "name": "Vessel-9165",
-      "type": "Military",
-      "location": {
-        "lat": 2.123030938573458,
-        "lon": 103.52185599830378
-      },
-      "speed": "23.1",
-      "course": 200,
-      "heading": 272,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Malacca",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 362911333,
-      "name": "Vessel-6741",
-      "type": "Military",
-      "location": {
-        "lat": 9.179975831043926,
-        "lon": -79.23323848444697
-      },
-      "speed": "15.3",
-      "course": 70,
-      "heading": 180,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 983827865,
-      "name": "Vessel-7475",
-      "type": "Cargo",
-      "location": {
-        "lat": 4.058021159484194,
-        "lon": 102.99583834197205
-      },
-      "speed": "13.7",
-      "course": 26,
-      "heading": 117,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Malacca",
-      "status": "Moored"
-    },
-    {
-      "mmsi": 803337134,
-      "name": "Vessel-1975",
-      "type": "Military",
-      "location": {
-        "lat": 9.538856502467207,
-        "lon": -80.16458603120964
-      },
-      "speed": "1.9",
-      "course": 95,
-      "heading": 15,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 289803961,
-      "name": "Vessel-8848",
-      "type": "Container",
-      "location": {
-        "lat": 41.4725505064778,
-        "lon": 29.412048210800908
-      },
-      "speed": "17.9",
-      "course": 103,
-      "heading": 346,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 569187611,
-      "name": "Vessel-1600",
-      "type": "Military",
-      "location": {
-        "lat": 40.96018414374638,
-        "lon": 28.877365943737004
-      },
-      "speed": "24.6",
-      "course": 250,
-      "heading": 55,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Moored"
-    },
-    {
-      "mmsi": 751874365,
-      "name": "Vessel-3532",
-      "type": "Tanker",
-      "location": {
-        "lat": 9.068659848547618,
-        "lon": -79.5518561049703
-      },
-      "speed": "6.8",
-      "course": 157,
-      "heading": 253,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 522145463,
-      "name": "Vessel-182",
-      "type": "Container",
-      "location": {
-        "lat": 11.940711228244659,
-        "lon": 43.7434042507539
-      },
-      "speed": "9.0",
-      "course": 283,
-      "heading": 50,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bab-el-Mandeb",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 902533547,
-      "name": "Vessel-1986",
-      "type": "Military",
-      "location": {
-        "lat": 0.3813099532884836,
-        "lon": 100.46239871793968
-      },
-      "speed": "11.8",
-      "course": 265,
-      "heading": 330,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Malacca",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 207088800,
-      "name": "Vessel-9432",
-      "type": "Passenger",
-      "location": {
-        "lat": 31.388713563630017,
-        "lon": 31.382569127549786
-      },
-      "speed": "9.8",
-      "course": 261,
-      "heading": 48,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Suez Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 935276383,
-      "name": "Vessel-1357",
-      "type": "Military",
-      "location": {
-        "lat": 25.72544061684939,
-        "lon": 57.662338517900885
-      },
-      "speed": "11.6",
-      "course": 212,
-      "heading": 269,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Hormuz",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 978259911,
-      "name": "Vessel-6110",
-      "type": "Container",
-      "location": {
-        "lat": 9.147980408661184,
-        "lon": -79.43780208169541
-      },
-      "speed": "0.4",
-      "course": 53,
-      "heading": 348,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 925257267,
-      "name": "Vessel-9536",
-      "type": "Cargo",
-      "location": {
-        "lat": 30.920284814165605,
-        "lon": 31.266239117310366
-      },
-      "speed": "3.3",
-      "course": 182,
-      "heading": 89,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Suez Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 262150675,
-      "name": "Vessel-9107",
-      "type": "Cargo",
-      "location": {
-        "lat": 27.902573058533584,
-        "lon": 54.86933743529118
-      },
-      "speed": "6.2",
-      "course": 79,
-      "heading": 17,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Hormuz",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 566311509,
-      "name": "Vessel-9556",
-      "type": "Cargo",
-      "location": {
-        "lat": 26.40928119632845,
-        "lon": 56.957727935936646
-      },
-      "speed": "17.2",
-      "course": 41,
-      "heading": 109,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Hormuz",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 733210584,
-      "name": "Vessel-6843",
-      "type": "Passenger",
-      "location": {
-        "lat": 9.241114519089532,
-        "lon": -79.9505390990327
-      },
-      "speed": "21.4",
-      "course": 191,
-      "heading": 161,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 896222609,
-      "name": "Vessel-6343",
-      "type": "Passenger",
-      "location": {
-        "lat": 41.36885658521818,
-        "lon": 29.279178560733826
-      },
-      "speed": "8.7",
-      "course": 226,
-      "heading": 33,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 194028159,
-      "name": "Vessel-6302",
-      "type": "Container",
-      "location": {
-        "lat": 9.270699794639505,
-        "lon": -79.96743627225005
-      },
-      "speed": "8.4",
-      "course": 37,
-      "heading": 103,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 155344506,
-      "name": "Vessel-9628",
-      "type": "Container",
-      "location": {
-        "lat": 8.73759023586426,
-        "lon": -80.0756115299037
-      },
-      "speed": "0.5",
-      "course": 193,
-      "heading": 164,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 527812973,
-      "name": "Vessel-9413",
-      "type": "Cargo",
-      "location": {
-        "lat": 9.281211430975258,
-        "lon": -79.87992211444342
-      },
-      "speed": "19.0",
-      "course": 219,
-      "heading": 154,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 904759204,
-      "name": "Vessel-1020",
-      "type": "Container",
-      "location": {
-        "lat": 41.01811341423586,
-        "lon": 29.26751279947745
-      },
-      "speed": "12.6",
-      "course": 140,
-      "heading": 245,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 976594940,
-      "name": "Vessel-9581",
-      "type": "Military",
-      "location": {
-        "lat": 9.597703487140013,
-        "lon": -80.19845649394992
-      },
-      "speed": "23.6",
-      "course": 276,
-      "heading": 207,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 430194800,
-      "name": "Vessel-5498",
-      "type": "Military",
-      "location": {
-        "lat": 3.995900026647641,
-        "lon": 100.19151643526051
-      },
-      "speed": "7.9",
-      "course": 97,
-      "heading": 196,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Malacca",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 948526032,
-      "name": "Vessel-7165",
-      "type": "Military",
-      "location": {
-        "lat": 41.517001880802816,
-        "lon": 29.31821438666536
-      },
-      "speed": "7.7",
-      "course": 195,
-      "heading": 5,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 939118469,
-      "name": "Vessel-7215",
-      "type": "Cargo",
-      "location": {
-        "lat": 30.4595588412681,
-        "lon": 32.30778623647368
-      },
-      "speed": "11.3",
-      "course": 213,
-      "heading": 242,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Suez Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 752754420,
-      "name": "Vessel-7706",
-      "type": "Tanker",
-      "location": {
-        "lat": 29.639740586096693,
-        "lon": 32.40998122497304
-      },
-      "speed": "2.9",
-      "course": 63,
-      "heading": 282,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Suez Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 514884490,
-      "name": "Vessel-1861",
-      "type": "Passenger",
-      "location": {
-        "lat": 27.720287187331163,
-        "lon": 55.22793128995216
-      },
-      "speed": "3.5",
-      "course": 285,
-      "heading": 128,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Hormuz",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 491280472,
-      "name": "Vessel-9156",
-      "type": "Container",
-      "location": {
-        "lat": 30.365439132808287,
-        "lon": 31.970264758302065
-      },
-      "speed": "22.5",
-      "course": 179,
-      "heading": 139,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Suez Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 691210245,
-      "name": "Vessel-6913",
-      "type": "Military",
-      "location": {
-        "lat": 30.7854917417398,
-        "lon": 32.9085444347454
-      },
-      "speed": "19.0",
-      "course": 79,
-      "heading": 133,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Suez Canal",
-      "status": "Moored"
-    },
-    {
-      "mmsi": 876419219,
-      "name": "Vessel-6368",
-      "type": "Container",
-      "location": {
-        "lat": 41.47583330079666,
-        "lon": 29.174980039726158
-      },
-      "speed": "5.1",
-      "course": 2,
-      "heading": 265,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Moored"
-    },
-    {
-      "mmsi": 570522966,
-      "name": "Vessel-7835",
-      "type": "Cargo",
-      "location": {
-        "lat": 40.952116494966575,
-        "lon": 29.050027157113973
-      },
-      "speed": "8.7",
-      "course": 110,
-      "heading": 260,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 545205289,
-      "name": "Vessel-2938",
-      "type": "Military",
-      "location": {
-        "lat": 9.1271010225573,
-        "lon": -80.14850072278068
-      },
-      "speed": "7.3",
-      "course": 253,
-      "heading": 58,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 770849503,
-      "name": "Vessel-8184",
-      "type": "Tanker",
-      "location": {
-        "lat": 9.277230639406117,
-        "lon": -79.66684325737717
-      },
-      "speed": "18.9",
-      "course": 245,
-      "heading": 202,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 392735072,
-      "name": "Vessel-9491",
-      "type": "Tanker",
-      "location": {
-        "lat": 41.40918089028348,
-        "lon": 28.900159428965704
-      },
-      "speed": "14.3",
-      "course": 233,
-      "heading": 300,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 412651075,
-      "name": "Vessel-6367",
-      "type": "Military",
-      "location": {
-        "lat": 2.7029149413526374,
-        "lon": 103.34387466019558
-      },
-      "speed": "10.6",
-      "course": 16,
-      "heading": 173,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Malacca",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 263586736,
-      "name": "Vessel-7641",
-      "type": "Container",
-      "location": {
-        "lat": 41.19976967951743,
-        "lon": 29.265454920291667
-      },
-      "speed": "14.2",
-      "course": 357,
-      "heading": 168,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 781368649,
-      "name": "Vessel-1847",
-      "type": "Passenger",
-      "location": {
-        "lat": 13.490257632952602,
-        "lon": 42.71868934832712
-      },
-      "speed": "6.0",
-      "course": 157,
-      "heading": 252,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bab-el-Mandeb",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 127516674,
-      "name": "Vessel-4151",
-      "type": "Tanker",
-      "location": {
-        "lat": 26.0180045254839,
-        "lon": 56.73919010694149
-      },
-      "speed": "8.4",
-      "course": 304,
-      "heading": 35,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Hormuz",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 500924084,
-      "name": "Vessel-665",
-      "type": "Container",
-      "location": {
-        "lat": 0.44717879462401555,
-        "lon": 100.19213267129683
-      },
-      "speed": "11.3",
-      "course": 109,
-      "heading": 55,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Malacca",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 905693614,
-      "name": "Vessel-980",
-      "type": "Container",
-      "location": {
-        "lat": 41.253690894908026,
-        "lon": 29.20066495336633
-      },
-      "speed": "9.2",
-      "course": 177,
-      "heading": 75,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 902975943,
-      "name": "Vessel-5804",
-      "type": "Passenger",
-      "location": {
-        "lat": 41.180959752926725,
-        "lon": 29.29279479990355
-      },
-      "speed": "8.8",
-      "course": 203,
-      "heading": 143,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 558037750,
-      "name": "Vessel-3317",
-      "type": "Tanker",
-      "location": {
-        "lat": 31.05726735665309,
-        "lon": 32.22125364286711
-      },
-      "speed": "5.5",
-      "course": 309,
-      "heading": 353,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Suez Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 299665628,
-      "name": "Vessel-7761",
-      "type": "Cargo",
-      "location": {
-        "lat": 9.603713205072664,
-        "lon": -79.95329677164796
-      },
-      "speed": "0.1",
-      "course": 56,
-      "heading": 315,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 839638114,
-      "name": "Vessel-569",
-      "type": "Passenger",
-      "location": {
-        "lat": 3.352055610826026,
-        "lon": 101.74479548736113
-      },
-      "speed": "24.7",
-      "course": 140,
-      "heading": 225,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Malacca",
-      "status": "Moored"
-    },
-    {
-      "mmsi": 714178688,
-      "name": "Vessel-2364",
-      "type": "Cargo",
-      "location": {
-        "lat": 30.816895275149026,
-        "lon": 32.21756440057245
-      },
-      "speed": "14.9",
-      "course": 32,
-      "heading": 315,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Suez Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 316380383,
-      "name": "Vessel-5840",
-      "type": "Military",
-      "location": {
-        "lat": 41.15160036158562,
-        "lon": 28.834155180883208
-      },
-      "speed": "17.2",
-      "course": 124,
-      "heading": 155,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 157784011,
-      "name": "Vessel-4771",
-      "type": "Passenger",
-      "location": {
-        "lat": 41.21135035050431,
-        "lon": 29.07845937627089
-      },
-      "speed": "3.5",
-      "course": 301,
-      "heading": 198,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Moored"
-    },
-    {
-      "mmsi": 973034860,
-      "name": "Vessel-3787",
-      "type": "Container",
-      "location": {
-        "lat": 9.074183069679833,
-        "lon": -80.07740384039163
-      },
-      "speed": "7.3",
-      "course": 263,
-      "heading": 302,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Moored"
-    },
-    {
-      "mmsi": 939514348,
-      "name": "Vessel-9911",
-      "type": "Container",
-      "location": {
-        "lat": 9.368334444867624,
-        "lon": -79.51074687184425
-      },
-      "speed": "11.2",
-      "course": 296,
-      "heading": 55,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 730079189,
-      "name": "Vessel-696",
-      "type": "Tanker",
-      "location": {
-        "lat": 31.18139570106,
-        "lon": 32.85570748081414
-      },
-      "speed": "10.2",
-      "course": 121,
-      "heading": 280,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Suez Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 749668552,
-      "name": "Vessel-5722",
-      "type": "Tanker",
-      "location": {
-        "lat": 27.074783179021967,
-        "lon": 57.35732750414678
-      },
-      "speed": "14.3",
-      "course": 318,
-      "heading": 305,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Hormuz",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 938998378,
-      "name": "Vessel-8810",
-      "type": "Passenger",
-      "location": {
-        "lat": 9.320316954258065,
-        "lon": -80.14132403527029
-      },
-      "speed": "19.2",
-      "course": 128,
-      "heading": 131,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 809007639,
-      "name": "Vessel-2464",
-      "type": "Passenger",
-      "location": {
-        "lat": 2.615638656365329,
-        "lon": 101.26716717186443
-      },
-      "speed": "20.1",
-      "course": 333,
-      "heading": 151,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Malacca",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 235362389,
-      "name": "Vessel-6941",
-      "type": "Tanker",
-      "location": {
-        "lat": 9.05047925518367,
-        "lon": -79.57510060005704
-      },
-      "speed": "3.6",
-      "course": 208,
-      "heading": 352,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 782093392,
-      "name": "Vessel-7658",
-      "type": "Cargo",
-      "location": {
-        "lat": 25.470464684062204,
-        "lon": 57.27051169399146
-      },
-      "speed": "16.2",
-      "course": 45,
-      "heading": 51,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Hormuz",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 776265119,
-      "name": "Vessel-2887",
-      "type": "Container",
-      "location": {
-        "lat": 25.51269791149206,
-        "lon": 55.14798845513293
-      },
-      "speed": "8.8",
-      "course": 169,
-      "heading": 112,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Hormuz",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 483166763,
-      "name": "Vessel-8689",
-      "type": "Container",
-      "location": {
-        "lat": 41.013300220924634,
-        "lon": 29.04224873659185
-      },
-      "speed": "2.9",
-      "course": 317,
-      "heading": 42,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 346375516,
-      "name": "Vessel-5256",
-      "type": "Container",
-      "location": {
-        "lat": 41.49519069621825,
-        "lon": 29.38550264353103
-      },
-      "speed": "11.8",
-      "course": 332,
-      "heading": 254,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 226121889,
-      "name": "Vessel-8259",
-      "type": "Container",
-      "location": {
-        "lat": 9.494481209799037,
-        "lon": -79.4289356727351
-      },
-      "speed": "5.3",
-      "course": 276,
-      "heading": 94,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 254812995,
-      "name": "Vessel-8782",
-      "type": "Tanker",
-      "location": {
-        "lat": 41.019804022859624,
-        "lon": 29.242113210318166
-      },
-      "speed": "16.9",
-      "course": 32,
-      "heading": 312,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 947384845,
-      "name": "Vessel-9431",
-      "type": "Container",
-      "location": {
-        "lat": 11.479198091473716,
-        "lon": 43.95844581719303
-      },
-      "speed": "0.2",
-      "course": 267,
-      "heading": 215,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bab-el-Mandeb",
-      "status": "Moored"
-    },
-    {
-      "mmsi": 750181922,
-      "name": "Vessel-4285",
-      "type": "Military",
-      "location": {
-        "lat": 30.925278190359013,
-        "lon": 32.892890393502334
-      },
-      "speed": "23.4",
-      "course": 23,
-      "heading": 23,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Suez Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 883209175,
-      "name": "Vessel-8729",
-      "type": "Passenger",
-      "location": {
-        "lat": 13.577966392304257,
-        "lon": 43.52251254834396
-      },
-      "speed": "19.8",
-      "course": 192,
-      "heading": 94,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bab-el-Mandeb",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 748398429,
-      "name": "Vessel-6905",
-      "type": "Tanker",
-      "location": {
-        "lat": 41.44339911297797,
-        "lon": 28.830438386873602
-      },
-      "speed": "3.3",
-      "course": 9,
-      "heading": 134,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 347387906,
-      "name": "Vessel-5930",
-      "type": "Passenger",
-      "location": {
-        "lat": 26.957514584864096,
-        "lon": 56.4102921410521
-      },
-      "speed": "12.6",
-      "course": 228,
-      "heading": 142,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Hormuz",
-      "status": "Moored"
-    },
-    {
-      "mmsi": 675408315,
-      "name": "Vessel-257",
-      "type": "Cargo",
-      "location": {
-        "lat": 26.325111994694748,
-        "lon": 57.584266646393814
-      },
-      "speed": "23.5",
-      "course": 120,
-      "heading": 45,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Hormuz",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 499423507,
-      "name": "Vessel-1152",
-      "type": "Cargo",
-      "location": {
-        "lat": 31.020676275073455,
-        "lon": 31.581724885745867
-      },
-      "speed": "6.6",
-      "course": 82,
-      "heading": 188,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Suez Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 628466610,
-      "name": "Vessel-6651",
-      "type": "Passenger",
-      "location": {
-        "lat": 25.486116682580864,
-        "lon": 55.949257537281454
-      },
-      "speed": "22.5",
-      "course": 115,
-      "heading": 67,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Hormuz",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 284508085,
-      "name": "Vessel-562",
-      "type": "Military",
-      "location": {
-        "lat": 41.380753408839716,
-        "lon": 29.385520657220024
-      },
-      "speed": "21.0",
-      "course": 94,
-      "heading": 318,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 234927041,
-      "name": "Vessel-9620",
-      "type": "Tanker",
-      "location": {
-        "lat": 12.320478332338006,
-        "lon": 43.142570682298796
-      },
-      "speed": "11.7",
-      "course": 100,
-      "heading": 122,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bab-el-Mandeb",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 123897467,
-      "name": "Vessel-8161",
-      "type": "Military",
-      "location": {
-        "lat": 26.22240551557069,
-        "lon": 57.55612382544274
-      },
-      "speed": "8.9",
-      "course": 155,
-      "heading": 29,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Hormuz",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 326083912,
-      "name": "Vessel-1764",
-      "type": "Tanker",
-      "location": {
-        "lat": 13.629094025131105,
-        "lon": 43.060779034880504
-      },
-      "speed": "3.5",
-      "course": 244,
-      "heading": 112,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bab-el-Mandeb",
-      "status": "Moored"
-    },
-    {
-      "mmsi": 571413267,
-      "name": "Vessel-5431",
-      "type": "Military",
-      "location": {
-        "lat": 41.18402782145396,
-        "lon": 29.37025635397142
-      },
-      "speed": "1.0",
-      "course": 278,
-      "heading": 140,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 962926455,
-      "name": "Vessel-3600",
-      "type": "Cargo",
-      "location": {
-        "lat": 8.988562450941469,
-        "lon": -80.06251731140112
-      },
-      "speed": "3.1",
-      "course": 297,
-      "heading": 176,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Moored"
-    },
-    {
-      "mmsi": 368794624,
-      "name": "Vessel-2054",
-      "type": "Passenger",
-      "location": {
-        "lat": 3.347863529884087,
-        "lon": 101.79225409770507
-      },
-      "speed": "1.2",
-      "course": 289,
-      "heading": 208,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Malacca",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 217308919,
-      "name": "Vessel-9648",
-      "type": "Cargo",
-      "location": {
-        "lat": 41.23792945571762,
-        "lon": 29.286135500807397
-      },
-      "speed": "23.1",
-      "course": 44,
-      "heading": 142,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 704160770,
-      "name": "Vessel-5913",
-      "type": "Cargo",
-      "location": {
-        "lat": 13.408706191216577,
-        "lon": 44.48693128940569
-      },
-      "speed": "17.9",
-      "course": 14,
-      "heading": 139,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bab-el-Mandeb",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 243125827,
-      "name": "Vessel-1866",
-      "type": "Passenger",
-      "location": {
-        "lat": 27.439128092628433,
-        "lon": 56.37434833157195
-      },
-      "speed": "17.2",
-      "course": 33,
-      "heading": 11,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Hormuz",
-      "status": "Moored"
-    },
-    {
-      "mmsi": 537967445,
-      "name": "Vessel-2068",
-      "type": "Container",
-      "location": {
-        "lat": 9.137995786323158,
-        "lon": -79.76885369513889
-      },
-      "speed": "3.1",
-      "course": 91,
-      "heading": 213,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 974668402,
-      "name": "Vessel-1283",
-      "type": "Tanker",
-      "location": {
-        "lat": 25.59374240144019,
-        "lon": 56.95721372437552
-      },
-      "speed": "17.9",
-      "course": 231,
-      "heading": 149,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Hormuz",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 361101467,
-      "name": "Vessel-1688",
-      "type": "Passenger",
-      "location": {
-        "lat": 3.9825086530514255,
-        "lon": 102.54889418232113
-      },
-      "speed": "18.9",
-      "course": 295,
-      "heading": 2,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Malacca",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 478675414,
-      "name": "Vessel-6539",
-      "type": "Cargo",
-      "location": {
-        "lat": 26.03475198547671,
-        "lon": 56.49527142667038
-      },
-      "speed": "3.3",
-      "course": 255,
-      "heading": 147,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Hormuz",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 217980100,
-      "name": "Vessel-4848",
-      "type": "Tanker",
-      "location": {
-        "lat": 31.286499783798078,
-        "lon": 32.80566820420797
-      },
-      "speed": "19.5",
-      "course": 122,
-      "heading": 358,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Suez Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 383551586,
-      "name": "Vessel-2743",
-      "type": "Military",
-      "location": {
-        "lat": 8.766086590821745,
-        "lon": -79.84799865361393
-      },
-      "speed": "17.6",
-      "course": 84,
-      "heading": 65,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 742238195,
-      "name": "Vessel-8109",
-      "type": "Tanker",
-      "location": {
-        "lat": 11.728939373309114,
-        "lon": 42.8166469917333
-      },
-      "speed": "10.4",
-      "course": 191,
-      "heading": 272,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bab-el-Mandeb",
-      "status": "Moored"
-    },
-    {
-      "mmsi": 968712296,
-      "name": "Vessel-944",
-      "type": "Container",
-      "location": {
-        "lat": 12.878126879155992,
-        "lon": 42.29692655650948
-      },
-      "speed": "17.9",
-      "course": 162,
-      "heading": 359,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bab-el-Mandeb",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 363994863,
-      "name": "Vessel-6886",
-      "type": "Tanker",
-      "location": {
-        "lat": 9.316386221411967,
-        "lon": -79.60569398219066
-      },
-      "speed": "23.0",
-      "course": 50,
-      "heading": 190,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 745278415,
-      "name": "Vessel-2088",
-      "type": "Passenger",
-      "location": {
-        "lat": 2.2789867371548915,
-        "lon": 99.7809980535492
-      },
-      "speed": "12.3",
-      "course": 239,
-      "heading": 204,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Strait of Malacca",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 649278050,
-      "name": "Vessel-7850",
-      "type": "Tanker",
-      "location": {
-        "lat": 30.03619019651821,
-        "lon": 32.97161561869264
-      },
-      "speed": "23.3",
-      "course": 237,
-      "heading": 288,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Suez Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 591418555,
-      "name": "Vessel-280",
-      "type": "Passenger",
-      "location": {
-        "lat": 41.185695907199026,
-        "lon": 28.87772197011659
+        "lat": 25.38923182182502,
+        "lon": 56.528533426837974
       },
       "speed": "22.0",
-      "course": 174,
-      "heading": 8,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bosphorus",
-      "status": "Moored"
-    },
-    {
-      "mmsi": 208112928,
-      "name": "Vessel-7118",
-      "type": "Container",
-      "location": {
-        "lat": 29.862020650492084,
-        "lon": 32.7224941276311
-      },
-      "speed": "10.0",
-      "course": 60,
-      "heading": 338,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Suez Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 811918695,
-      "name": "Vessel-4201",
-      "type": "Tanker",
-      "location": {
-        "lat": 12.145316559429215,
-        "lon": 43.73481573236016
-      },
-      "speed": "13.3",
-      "course": 296,
-      "heading": 264,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bab-el-Mandeb",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 242093504,
-      "name": "Vessel-8304",
-      "type": "Container",
-      "location": {
-        "lat": 29.966536448573688,
-        "lon": 32.10998931355034
-      },
-      "speed": "9.8",
-      "course": 144,
-      "heading": 260,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Suez Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 104637457,
-      "name": "Vessel-9969",
-      "type": "Passenger",
-      "location": {
-        "lat": 13.469220100367286,
-        "lon": 44.26483921983712
-      },
-      "speed": "8.7",
-      "course": 209,
-      "heading": 90,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bab-el-Mandeb",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 447797427,
-      "name": "Vessel-1996",
-      "type": "Tanker",
-      "location": {
-        "lat": 13.123114338843292,
-        "lon": 42.50358193517129
-      },
-      "speed": "13.0",
-      "course": 296,
-      "heading": 102,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bab-el-Mandeb",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 564417853,
-      "name": "Vessel-2800",
-      "type": "Military",
-      "location": {
-        "lat": 9.223448374400196,
-        "lon": -80.02850324878901
-      },
-      "speed": "9.5",
-      "course": 191,
-      "heading": 244,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 603638822,
-      "name": "Vessel-9582",
-      "type": "Tanker",
-      "location": {
-        "lat": 8.83009644283102,
-        "lon": -79.53432789773521
-      },
-      "speed": "6.6",
-      "course": 281,
-      "heading": 109,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Panama Canal",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 313334082,
-      "name": "Vessel-6777",
-      "type": "Cargo",
-      "location": {
-        "lat": 12.17011571097845,
-        "lon": 43.72180237514927
-      },
-      "speed": "1.4",
-      "course": 211,
-      "heading": 311,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Bab-el-Mandeb",
-      "status": "Under way using engine"
-    },
-    {
-      "mmsi": 729898760,
-      "name": "Vessel-5093",
-      "type": "Passenger",
-      "location": {
-        "lat": 27.657358046269437,
-        "lon": 56.46413579523892
-      },
-      "speed": "5.6",
-      "course": 118,
-      "heading": 339,
-      "timestamp": "2026-09-18T11:34:59.931Z",
+      "course": 47,
+      "heading": 215,
+      "timestamp": "2026-09-18T15:38:39.679Z",
       "region": "Strait of Hormuz",
       "status": "Under way using engine"
     },
     {
-      "mmsi": 664826866,
-      "name": "Vessel-9196",
-      "type": "Cargo",
+      "mmsi": 853582107,
+      "name": "Vessel-3484",
+      "type": "Container",
       "location": {
-        "lat": 41.067274897264795,
-        "lon": 29.063032791856738
+        "lat": 27.70710989557177,
+        "lon": 55.90105243073399
       },
-      "speed": "12.4",
-      "course": 1,
-      "heading": 327,
-      "timestamp": "2026-09-18T11:34:59.931Z",
+      "speed": "1.9",
+      "course": 97,
+      "heading": 288,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Strait of Hormuz",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 825334273,
+      "name": "Vessel-4708",
+      "type": "Military",
+      "location": {
+        "lat": 41.28047029198648,
+        "lon": 28.911882999712965
+      },
+      "speed": "13.1",
+      "course": 315,
+      "heading": 244,
+      "timestamp": "2026-09-18T15:38:39.679Z",
       "region": "Bosphorus",
       "status": "Under way using engine"
     },
     {
-      "mmsi": 516940594,
-      "name": "Vessel-4128",
+      "mmsi": 522928632,
+      "name": "Vessel-9780",
+      "type": "Passenger",
+      "location": {
+        "lat": 41.46199978999706,
+        "lon": 28.851477419716176
+      },
+      "speed": "24.8",
+      "course": 242,
+      "heading": 326,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bosphorus",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 258465025,
+      "name": "Vessel-6908",
+      "type": "Tanker",
+      "location": {
+        "lat": 41.479515968009,
+        "lon": 29.321769193783034
+      },
+      "speed": "2.2",
+      "course": 199,
+      "heading": 151,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bosphorus",
+      "status": "Moored"
+    },
+    {
+      "mmsi": 535916196,
+      "name": "Vessel-8024",
       "type": "Military",
       "location": {
-        "lat": 8.831453490295601,
-        "lon": -79.96237769065688
+        "lat": 2.707730127128621,
+        "lon": 102.08388245109094
       },
-      "speed": "7.3",
-      "course": 156,
-      "heading": 224,
-      "timestamp": "2026-09-18T11:34:59.931Z",
+      "speed": "6.5",
+      "course": 39,
+      "heading": 193,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Strait of Malacca",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 289747057,
+      "name": "Vessel-3751",
+      "type": "Passenger",
+      "location": {
+        "lat": 1.0972121273619075,
+        "lon": 102.74231580236243
+      },
+      "speed": "5.7",
+      "course": 232,
+      "heading": 0,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Strait of Malacca",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 447144672,
+      "name": "Vessel-4814",
+      "type": "Cargo",
+      "location": {
+        "lat": 9.36383120962501,
+        "lon": -80.21136164067627
+      },
+      "speed": "1.9",
+      "course": 153,
+      "heading": 129,
+      "timestamp": "2026-09-18T15:38:39.679Z",
       "region": "Panama Canal",
       "status": "Under way using engine"
     },
     {
-      "mmsi": 890596115,
-      "name": "Vessel-6372",
-      "type": "Container",
+      "mmsi": 954437838,
+      "name": "Vessel-7661",
+      "type": "Tanker",
       "location": {
-        "lat": 1.9002020097645325,
-        "lon": 101.21486152879211
+        "lat": 0.9017789585482934,
+        "lon": 100.35290351048613
       },
-      "speed": "14.0",
-      "course": 203,
-      "heading": 47,
-      "timestamp": "2026-09-18T11:34:59.931Z",
+      "speed": "13.8",
+      "course": 207,
+      "heading": 42,
+      "timestamp": "2026-09-18T15:38:39.679Z",
       "region": "Strait of Malacca",
       "status": "Under way using engine"
     },
     {
-      "mmsi": 685027979,
-      "name": "Vessel-9487",
-      "type": "Cargo",
+      "mmsi": 260962389,
+      "name": "Vessel-42",
+      "type": "Container",
       "location": {
-        "lat": 30.897075975474472,
-        "lon": 33.256943158961555
+        "lat": 12.353741486814194,
+        "lon": 43.29933360886651
       },
-      "speed": "4.0",
-      "course": 72,
-      "heading": 76,
-      "timestamp": "2026-09-18T11:34:59.931Z",
-      "region": "Suez Canal",
+      "speed": "9.2",
+      "course": 172,
+      "heading": 92,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bab-el-Mandeb",
       "status": "Under way using engine"
     },
     {
-      "mmsi": 259419693,
-      "name": "Vessel-659",
+      "mmsi": 418463081,
+      "name": "Vessel-6530",
       "type": "Military",
       "location": {
-        "lat": 41.2352497810822,
-        "lon": 29.175177688959575
+        "lat": 27.811031781068493,
+        "lon": 56.992602189098214
       },
-      "speed": "7.8",
-      "course": 318,
-      "heading": 243,
-      "timestamp": "2026-09-18T11:34:59.931Z",
+      "speed": "3.2",
+      "course": 175,
+      "heading": 313,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Strait of Hormuz",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 676200665,
+      "name": "Vessel-1885",
+      "type": "Container",
+      "location": {
+        "lat": 9.507939324322782,
+        "lon": -80.19069718807222
+      },
+      "speed": "2.1",
+      "course": 80,
+      "heading": 284,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Panama Canal",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 960958943,
+      "name": "Vessel-6014",
+      "type": "Tanker",
+      "location": {
+        "lat": 9.556666194534241,
+        "lon": -79.35016384922127
+      },
+      "speed": "3.6",
+      "course": 142,
+      "heading": 135,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Panama Canal",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 210666154,
+      "name": "Vessel-3473",
+      "type": "Container",
+      "location": {
+        "lat": 11.396952731573759,
+        "lon": 42.84602601120423
+      },
+      "speed": "12.2",
+      "course": 176,
+      "heading": 188,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bab-el-Mandeb",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 658974264,
+      "name": "Vessel-9071",
+      "type": "Passenger",
+      "location": {
+        "lat": 9.527068546722369,
+        "lon": -79.50435222084013
+      },
+      "speed": "6.3",
+      "course": 16,
+      "heading": 163,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Panama Canal",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 401859490,
+      "name": "Vessel-3730",
+      "type": "Tanker",
+      "location": {
+        "lat": 12.86129809532522,
+        "lon": 43.725785994679434
+      },
+      "speed": "7.5",
+      "course": 166,
+      "heading": 339,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bab-el-Mandeb",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 548940060,
+      "name": "Vessel-8530",
+      "type": "Cargo",
+      "location": {
+        "lat": 40.94084443035425,
+        "lon": 29.31204082037485
+      },
+      "speed": "0.9",
+      "course": 188,
+      "heading": 131,
+      "timestamp": "2026-09-18T15:38:39.679Z",
       "region": "Bosphorus",
       "status": "Under way using engine"
     },
     {
-      "mmsi": 402280759,
-      "name": "Vessel-5891",
+      "mmsi": 343992105,
+      "name": "Vessel-2104",
       "type": "Container",
       "location": {
-        "lat": 2.731713443305929,
-        "lon": 100.09384676297203
+        "lat": 41.1507756210263,
+        "lon": 29.061060423137995
       },
-      "speed": "19.8",
-      "course": 358,
-      "heading": 198,
-      "timestamp": "2026-09-18T11:34:59.931Z",
+      "speed": "19.2",
+      "course": 39,
+      "heading": 3,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bosphorus",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 699675277,
+      "name": "Vessel-7058",
+      "type": "Cargo",
+      "location": {
+        "lat": 12.91378708947738,
+        "lon": 43.90397989226827
+      },
+      "speed": "17.1",
+      "course": 283,
+      "heading": 181,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bab-el-Mandeb",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 963427648,
+      "name": "Vessel-4972",
+      "type": "Passenger",
+      "location": {
+        "lat": 13.268943050400672,
+        "lon": 43.94166229007005
+      },
+      "speed": "13.7",
+      "course": 172,
+      "heading": 23,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bab-el-Mandeb",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 290440911,
+      "name": "Vessel-8652",
+      "type": "Passenger",
+      "location": {
+        "lat": 2.0711016984993478,
+        "lon": 102.31324051955383
+      },
+      "speed": "2.0",
+      "course": 246,
+      "heading": 253,
+      "timestamp": "2026-09-18T15:38:39.679Z",
       "region": "Strait of Malacca",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 222050747,
+      "name": "Vessel-319",
+      "type": "Container",
+      "location": {
+        "lat": 41.37768107250054,
+        "lon": 29.149140718187677
+      },
+      "speed": "21.1",
+      "course": 91,
+      "heading": 67,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bosphorus",
       "status": "Moored"
     },
     {
-      "mmsi": 350685206,
-      "name": "Vessel-9156",
+      "mmsi": 305093771,
+      "name": "Vessel-191",
       "type": "Passenger",
       "location": {
-        "lat": 12.237933152795552,
-        "lon": 43.1060892793219
+        "lat": 41.424086843418884,
+        "lon": 29.07514262187797
       },
-      "speed": "13.0",
-      "course": 22,
-      "heading": 295,
-      "timestamp": "2026-09-18T11:34:59.931Z",
+      "speed": "11.3",
+      "course": 100,
+      "heading": 263,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bosphorus",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 235081975,
+      "name": "Vessel-9653",
+      "type": "Container",
+      "location": {
+        "lat": 13.399245097868762,
+        "lon": 43.83684452041244
+      },
+      "speed": "15.6",
+      "course": 226,
+      "heading": 50,
+      "timestamp": "2026-09-18T15:38:39.679Z",
       "region": "Bab-el-Mandeb",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 376001761,
+      "name": "Vessel-5202",
+      "type": "Military",
+      "location": {
+        "lat": 12.844132904938082,
+        "lon": 42.63607254363992
+      },
+      "speed": "24.0",
+      "course": 266,
+      "heading": 284,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bab-el-Mandeb",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 325447902,
+      "name": "Vessel-7070",
+      "type": "Cargo",
+      "location": {
+        "lat": 13.070802534255233,
+        "lon": 42.63164561679684
+      },
+      "speed": "9.7",
+      "course": 259,
+      "heading": 344,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bab-el-Mandeb",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 705730059,
+      "name": "Vessel-5375",
+      "type": "Tanker",
+      "location": {
+        "lat": 25.736160878585775,
+        "lon": 57.09939074056075
+      },
+      "speed": "1.3",
+      "course": 73,
+      "heading": 122,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Strait of Hormuz",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 631711344,
+      "name": "Vessel-7534",
+      "type": "Military",
+      "location": {
+        "lat": 25.105260482048056,
+        "lon": 55.92804952865262
+      },
+      "speed": "7.8",
+      "course": 194,
+      "heading": 316,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Strait of Hormuz",
+      "status": "Moored"
+    },
+    {
+      "mmsi": 376508398,
+      "name": "Vessel-9799",
+      "type": "Cargo",
+      "location": {
+        "lat": 27.972150164356083,
+        "lon": 56.75241180532904
+      },
+      "speed": "22.7",
+      "course": 311,
+      "heading": 178,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Strait of Hormuz",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 220942437,
+      "name": "Vessel-6344",
+      "type": "Tanker",
+      "location": {
+        "lat": 13.777220789542366,
+        "lon": 44.275476012841025
+      },
+      "speed": "2.0",
+      "course": 216,
+      "heading": 282,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bab-el-Mandeb",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 155979954,
+      "name": "Vessel-4370",
+      "type": "Container",
+      "location": {
+        "lat": 30.473163765488945,
+        "lon": 32.29015546134258
+      },
+      "speed": "8.7",
+      "course": 166,
+      "heading": 273,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Suez Canal",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 834920112,
+      "name": "Vessel-2527",
+      "type": "Cargo",
+      "location": {
+        "lat": 30.61847035922912,
+        "lon": 32.55571615985963
+      },
+      "speed": "15.6",
+      "course": 262,
+      "heading": 128,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Suez Canal",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 451989471,
+      "name": "Vessel-9354",
+      "type": "Passenger",
+      "location": {
+        "lat": 27.32875373213185,
+        "lon": 54.93171236824437
+      },
+      "speed": "14.1",
+      "course": 250,
+      "heading": 67,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Strait of Hormuz",
+      "status": "Moored"
+    },
+    {
+      "mmsi": 443162857,
+      "name": "Vessel-2665",
+      "type": "Passenger",
+      "location": {
+        "lat": 26.80552784739188,
+        "lon": 55.828932391003
+      },
+      "speed": "13.7",
+      "course": 173,
+      "heading": 192,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Strait of Hormuz",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 957138568,
+      "name": "Vessel-1264",
+      "type": "Container",
+      "location": {
+        "lat": 12.087667422754187,
+        "lon": 42.69389707235949
+      },
+      "speed": "2.9",
+      "course": 125,
+      "heading": 304,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bab-el-Mandeb",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 636731717,
+      "name": "Vessel-491",
+      "type": "Military",
+      "location": {
+        "lat": 30.77165049249268,
+        "lon": 31.74195479429239
+      },
+      "speed": "1.3",
+      "course": 4,
+      "heading": 4,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Suez Canal",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 435938769,
+      "name": "Vessel-6410",
+      "type": "Cargo",
+      "location": {
+        "lat": 9.55010753600503,
+        "lon": -79.22920612119654
+      },
+      "speed": "19.6",
+      "course": 105,
+      "heading": 342,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Panama Canal",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 863956446,
+      "name": "Vessel-931",
+      "type": "Cargo",
+      "location": {
+        "lat": 31.327817709835642,
+        "lon": 31.58596139696116
+      },
+      "speed": "11.3",
+      "course": 144,
+      "heading": 185,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Suez Canal",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 840283269,
+      "name": "Vessel-7310",
+      "type": "Passenger",
+      "location": {
+        "lat": 25.788189895546132,
+        "lon": 55.403288241197615
+      },
+      "speed": "24.8",
+      "course": 259,
+      "heading": 68,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Strait of Hormuz",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 284756453,
+      "name": "Vessel-3123",
+      "type": "Container",
+      "location": {
+        "lat": 13.199700087058906,
+        "lon": 42.13815402306016
+      },
+      "speed": "12.4",
+      "course": 271,
+      "heading": 242,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bab-el-Mandeb",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 949161426,
+      "name": "Vessel-4327",
+      "type": "Container",
+      "location": {
+        "lat": 8.805015829227644,
+        "lon": -79.2871829120525
+      },
+      "speed": "9.3",
+      "course": 74,
+      "heading": 182,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Panama Canal",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 898029861,
+      "name": "Vessel-2420",
+      "type": "Cargo",
+      "location": {
+        "lat": 2.7695731953170775,
+        "lon": 99.96117251328589
+      },
+      "speed": "8.1",
+      "course": 189,
+      "heading": 322,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Strait of Malacca",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 127289117,
+      "name": "Vessel-7164",
+      "type": "Military",
+      "location": {
+        "lat": 25.158878435351006,
+        "lon": 54.77826778170335
+      },
+      "speed": "15.4",
+      "course": 261,
+      "heading": 91,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Strait of Hormuz",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 361927687,
+      "name": "Vessel-8475",
+      "type": "Cargo",
+      "location": {
+        "lat": 41.1608903326471,
+        "lon": 29.318055562779698
+      },
+      "speed": "2.1",
+      "course": 202,
+      "heading": 151,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bosphorus",
+      "status": "Moored"
+    },
+    {
+      "mmsi": 893255084,
+      "name": "Vessel-1237",
+      "type": "Container",
+      "location": {
+        "lat": 41.222573815122594,
+        "lon": 28.916185901822303
+      },
+      "speed": "21.1",
+      "course": 5,
+      "heading": 48,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bosphorus",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 943535223,
+      "name": "Vessel-6190",
+      "type": "Passenger",
+      "location": {
+        "lat": 40.929103594162264,
+        "lon": 29.294908511643584
+      },
+      "speed": "15.0",
+      "course": 61,
+      "heading": 116,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bosphorus",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 480068086,
+      "name": "Vessel-3884",
+      "type": "Container",
+      "location": {
+        "lat": 2.8562270027860626,
+        "lon": 102.19264094790921
+      },
+      "speed": "14.6",
+      "course": 276,
+      "heading": 332,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Strait of Malacca",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 143246068,
+      "name": "Vessel-5443",
+      "type": "Cargo",
+      "location": {
+        "lat": 41.02735475273106,
+        "lon": 29.240571468415766
+      },
+      "speed": "0.6",
+      "course": 76,
+      "heading": 317,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bosphorus",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 386763787,
+      "name": "Vessel-2942",
+      "type": "Passenger",
+      "location": {
+        "lat": 3.9020380888225583,
+        "lon": 101.73937438955306
+      },
+      "speed": "19.3",
+      "course": 241,
+      "heading": 330,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Strait of Malacca",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 433252726,
+      "name": "Vessel-7266",
+      "type": "Military",
+      "location": {
+        "lat": 31.47526191052889,
+        "lon": 31.561779509372286
+      },
+      "speed": "17.0",
+      "course": 48,
+      "heading": 170,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Suez Canal",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 755518730,
+      "name": "Vessel-9392",
+      "type": "Passenger",
+      "location": {
+        "lat": 41.43952201778063,
+        "lon": 28.850251680899557
+      },
+      "speed": "22.1",
+      "course": 67,
+      "heading": 145,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bosphorus",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 955634456,
+      "name": "Vessel-3246",
+      "type": "Container",
+      "location": {
+        "lat": 27.929549928221924,
+        "lon": 55.257749691702614
+      },
+      "speed": "21.8",
+      "course": 86,
+      "heading": 47,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Strait of Hormuz",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 884520654,
+      "name": "Vessel-7133",
+      "type": "Passenger",
+      "location": {
+        "lat": 27.51673894211955,
+        "lon": 56.06265270585465
+      },
+      "speed": "4.6",
+      "course": 260,
+      "heading": 358,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Strait of Hormuz",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 240098728,
+      "name": "Vessel-4904",
+      "type": "Passenger",
+      "location": {
+        "lat": 8.873689896351697,
+        "lon": -79.41128322503646
+      },
+      "speed": "22.5",
+      "course": 324,
+      "heading": 281,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Panama Canal",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 604148368,
+      "name": "Vessel-7934",
+      "type": "Cargo",
+      "location": {
+        "lat": 8.91603067332583,
+        "lon": -79.5579789706024
+      },
+      "speed": "13.3",
+      "course": 61,
+      "heading": 101,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Panama Canal",
+      "status": "Moored"
+    },
+    {
+      "mmsi": 735833844,
+      "name": "Vessel-4448",
+      "type": "Military",
+      "location": {
+        "lat": 41.0094659153309,
+        "lon": 29.073401429257974
+      },
+      "speed": "15.4",
+      "course": 4,
+      "heading": 129,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bosphorus",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 917091892,
+      "name": "Vessel-7144",
+      "type": "Cargo",
+      "location": {
+        "lat": 8.708086337091071,
+        "lon": -79.69410989268385
+      },
+      "speed": "11.1",
+      "course": 196,
+      "heading": 183,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Panama Canal",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 871394264,
+      "name": "Vessel-9501",
+      "type": "Container",
+      "location": {
+        "lat": 40.955009912073514,
+        "lon": 29.106683775365255
+      },
+      "speed": "20.0",
+      "course": 207,
+      "heading": 328,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bosphorus",
+      "status": "Moored"
+    },
+    {
+      "mmsi": 891706009,
+      "name": "Vessel-3507",
+      "type": "Container",
+      "location": {
+        "lat": 41.037201106428455,
+        "lon": 28.84835609044977
+      },
+      "speed": "8.4",
+      "course": 57,
+      "heading": 130,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bosphorus",
+      "status": "Moored"
+    },
+    {
+      "mmsi": 730601681,
+      "name": "Vessel-1302",
+      "type": "Military",
+      "location": {
+        "lat": 30.786238436139655,
+        "lon": 32.30980312906512
+      },
+      "speed": "5.2",
+      "course": 179,
+      "heading": 232,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Suez Canal",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 684689849,
+      "name": "Vessel-6289",
+      "type": "Military",
+      "location": {
+        "lat": 9.356664732093972,
+        "lon": -79.76937126183729
+      },
+      "speed": "15.5",
+      "course": 44,
+      "heading": 67,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Panama Canal",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 591086965,
+      "name": "Vessel-3709",
+      "type": "Military",
+      "location": {
+        "lat": 9.412838109330995,
+        "lon": -80.19060654649887
+      },
+      "speed": "20.6",
+      "course": 18,
+      "heading": 102,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Panama Canal",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 307630718,
+      "name": "Vessel-971",
+      "type": "Passenger",
+      "location": {
+        "lat": 12.597318063062946,
+        "lon": 42.63544989849241
+      },
+      "speed": "8.7",
+      "course": 308,
+      "heading": 37,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bab-el-Mandeb",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 842194425,
+      "name": "Vessel-2106",
+      "type": "Passenger",
+      "location": {
+        "lat": 11.672102675676712,
+        "lon": 43.899740505243685
+      },
+      "speed": "5.8",
+      "course": 263,
+      "heading": 300,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bab-el-Mandeb",
+      "status": "Moored"
+    },
+    {
+      "mmsi": 124964451,
+      "name": "Vessel-2314",
+      "type": "Military",
+      "location": {
+        "lat": 41.19976766558237,
+        "lon": 29.421946598948878
+      },
+      "speed": "20.1",
+      "course": 121,
+      "heading": 332,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Bosphorus",
+      "status": "Under way using engine"
+    },
+    {
+      "mmsi": 766807690,
+      "name": "Vessel-1972",
+      "type": "Cargo",
+      "location": {
+        "lat": 25.908323642268357,
+        "lon": 57.36860878981709
+      },
+      "speed": "24.9",
+      "course": 266,
+      "heading": 338,
+      "timestamp": "2026-09-18T15:38:39.679Z",
+      "region": "Strait of Hormuz",
       "status": "Under way using engine"
     }
   ]

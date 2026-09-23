@@ -1,127 +1,114 @@
 {
-  "bluf": "The dominant strategic reality is a two-front pressure convergence: Russian strategic strikes on Kyiv timed to the UN General Assembly and hardening US-Iran brinkmanship have injected a war premium into crude (Brent $130.80, +$9.55) even as equity and credit markets remain complacently calm (VIX 14.87, high-yield spreads at 2.66%). The immediate risk trajectory is escalatory — a collapse of the US-Iran mediator channel or a failed Trump-Xi summit would convert today's energy and trade friction into rapid market repricing within 72 hours. Concurrently, Tigray forces seizing airports in northern Ethiopia open a renewed African conflict front while Madrid's violent housing riots and a foiled plot against Manchester's Jewish community strain European internal security.",
+  "bluf": "The central strategic reality is a live US-Iran confrontation at a diplomatic inflection point: President Trump has threatened to 'annihilate' Iran absent a deal while President Pezeshkian defiantly refused to 'bend the knee' at the UN General Assembly, even as direct talks proceed with 'no breakthrough yet.' A war premium remains firmly embedded in energy markets with Brent near $115/bbl, yet equity and credit markets are dangerously complacent (VIX 14.2, tight high-yield spreads), leaving households acutely exposed to an oil-led inflation shock if diplomacy collapses. Secondary flashpoints - Ethiopia's unraveling Tigray peace deal, Yemeni offensives against the Houthis, and continued Israeli strikes into Syria - raise the probability of simultaneous multi-theater escalation over the next 72 hours.",
   "householdImpact": {
-    "energyAndFuel": "Crude oil is carrying a war premium — Brent near $131 and WTI near $107 a barrel — which reaches the gas pump within days to weeks, so expect noticeably higher gasoline and diesel prices at your next fill-up. Home heating and electric bills are cushioned for now because US natural gas remains normal at about $3/MMBtu, but if Middle East tension persists, utility costs could creep upward in coming billing cycles.",
-    "borrowingAndMortgages": "Bond markets are calm and the yield curve is normalizing, so mortgage rates, auto loans, and credit card APRs are holding steady rather than spiking, and lenders currently see low default risk. The catch: if the oil shock feeds into inflation, expect renewed upward pressure on new mortgages and revolving credit rates later this year.",
-    "groceriesAndSupplyChain": "Diesel at war-premium levels raises trucking and farming costs, which shows up in grocery prices with a lag of several weeks to months. Ongoing US-China trade friction and Europe's shifting trade deals with Southeast Asia keep import prices uneven, so expect continued volatility on electronics, clothing, and imported goods rather than an across-the-board spike.",
-    "jobsAndSavings": "Markets are quiet (VIX near 15) and credit conditions are easy, which supports hiring and keeps 401(k) balances steady for now. However, those same calm readings suggest investors are underpricing an oil or geopolitical shock — a sudden escalation could hit retirement portfolios quickly, so treat the current calm with caution rather than complacency."
+    "energyAndFuel": "With Brent crude near $115 a barrel carrying a war premium, expect gas pump prices to stay elevated (roughly $3.50-$4.00+ per gallon in many states), with diesel-dependent shipping and trucking costs bleeding into everything you buy. Home heating and electric bills get some relief from normal natural gas prices (~$2.90/MMBtu), but any collapse in US-Iran talks or a new strike could push oil and gasoline sharply higher within days.",
+    "borrowingAndMortgages": "Treasury yields jumped this week, keeping 30-year mortgage rates sticky in the high-6% to 7% range and auto loan and credit card APRs elevated. The silver lining: credit conditions remain loose (financial stress indices at accommodative lows), so banks are not tightening - but a Middle East escalation would push yields and borrowing costs up fast.",
+    "groceriesAndSupplyChain": "War-premium diesel and jet fuel raise the cost of trucking and air-freighting food, which slowly feeds into grocery prices, especially for imported and perishable goods. No major shipping chokepoint is currently closed, but Houthi threats in the Red Sea and widening Middle East travel advisories keep a risk premium baked into global freight and insurance costs.",
+    "jobsAndSavings": "Stocks slipped as oil rebounded and yields rose, so 401(k)s and retirement accounts may see choppy, headline-driven swings - though calm volatility (VIX 14) suggests no panic selling yet. Tight corporate bond spreads mean companies can still borrow cheaply to fund payroll and hiring, so layoff risk stays low unless the Iran standoff turns kinetic."
   },
   "threatMatrix": [
     {
       "theater": "Eastern Europe / Ukraine",
-      "status": "HIGH",
-      "trend": "ESCALATING",
-      "summary": "Russia conducted severe strikes on Kyiv — killing 2, wounding 22, and hitting gas stations and infrastructure — hours before Zelenskyy's UNGA address, signaling deliberate coercion of Ukraine's diplomatic platform."
+      "status": "ELEVATED",
+      "trend": "STABLE",
+      "summary": "Zelenskyy addresses the UNGA amid continued Russian strikes and diplomatic maneuvering over security guarantees; no frontline breakthrough signals detected in the past 24-48 hours."
     },
     {
       "theater": "Middle East & Red Sea",
-      "status": "HIGH",
+      "status": "CRITICAL",
       "trend": "VOLATILE",
-      "summary": "Trump publicly threatened to 'annihilate' the Tehran regime while US-Iran mediator channels operate at UNGA, Shin Bet disrupted a plot to assassinate Ben-Gvir, and Macron-Netanyahu clashes over the West Bank deepen diplomatic fractures."
+      "summary": "Trump's 'annihilate' ultimatum and Pezeshkian's defiant UNGA address frame a live US-Iran standoff with talks positive but unresolved, while Israeli strikes in Syria, ruined Lebanon border villages, stalled Gaza reconstruction, and Yemeni-Houthi fighting keep multiple escalation vectors open."
     },
     {
       "theater": "Indo-Pacific & Taiwan",
       "status": "GUARDED",
       "trend": "STABLE",
-      "summary": "The theater is militarily quiet but economically charged as Trump prepares to meet Xi with the trade war scorecard showing persistent US deficits against a Chinese surplus."
+      "summary": "No kinetic activity detected; renewed analytic focus on Seoul's deliberate strategic ambiguity over a Taiwan contingency underscores alliance-friction risk rather than imminent threat."
     },
     {
       "theater": "Defense & Cyber Domains",
       "status": "ELEVATED",
       "trend": "ESCALATING",
-      "summary": "OpenAI's transfer of advanced GPT-5.6 Sol cyber defense tools to Ukraine marks frontier AI's formal entry into active-warfare support, alongside UK ASW software modernization, the XM30 clean-sheet vehicle program, and a Hawk training jet crash at RAF Valley."
+      "summary": "The UK is standing up a new RAF squadron for satellite defense and offensive/defensive space operations, accelerating the militarization of orbit, while Microsoft's $10B+ Middle East digital-infrastructure push adds new dual-use cyber terrain."
     },
     {
       "theater": "Domestic Civil Unrest & Demonstrations",
-      "status": "ELEVATED",
-      "trend": "VOLATILE",
-      "summary": "Riot police fired teargas in Madrid during the violent eviction of an 87-year-old tenant amid a housing-crisis protest surge, while UK arrests over a plot targeting Manchester's Jewish community elevate communal security postures."
+      "status": "GUARDED",
+      "trend": "STABLE",
+      "summary": "GDELT monitoring shows no coordinated unrest surge; isolated housing-eviction protests in Madrid and a US press-freedom court battle over White House access are the notable friction points."
     },
     {
       "theater": "Global Energy & Trade Chokepoints",
       "status": "HIGH",
-      "trend": "ESCALATING",
-      "summary": "Brent crude surged $9.55 to $130.80/bbl on a war premium while financial conditions stay accommodative, and maritime/aviation tracking feeds returned zero tracks — a collection gap during elevated chokepoint risk."
+      "trend": "VOLATILE",
+      "summary": "Brent at $114.89/bbl and WTI at $96.41 embed a persistent war premium with a modest pullback; no chokepoint closures detected, but Hormuz and Red Sea risk keeps freight and war-risk insurance costs elevated."
     }
   ],
   "operationalSummary": [
-    "Kinetic & Frontline Operations: Russian forces executed severe strikes on Kyiv hours before Zelenskyy's UN General Assembly address, killing 2 and wounding 22 with gas stations and critical infrastructure struck — timing that signals deliberate information-warfare coordination against Ukraine's diplomatic messaging. In the Horn of Africa, Tigray forces seized the main airport in northern Ethiopia and engaged federal troops in Afar and Amhara under a newly announced anti-government alliance, raising fears of a full return to civil war. In the Palestinian theater, Shin Bet disrupted a Nablus-based cell plotting to assassinate National Security Minister Ben-Gvir. Separately, a UK Hawk training jet crashed near RAF Valley, Wales, with both crew reported to have ejected — a training-safety event, not hostile action.",
-    "Strategic Alliances & Diplomatic Posturing: UNGA Day 2 is the diplomatic center of gravity — Trump's address mixed boasts with threats including rhetoric about 'annihilating' Tehran even as US and Iranian officials communicate through mediators on the sidelines, while Pezeshkian and Zelenskyy address the assembly. Macron's West Bank remarks drew a 'grotesque' rebuke from Netanyahu and formal Israeli denunciations, straining E3-Israel relations. Trump proposed a $10 billion Middle East energy infrastructure fund and prepares to meet Xi amid trade-war scorecard framing; the UK suspended £120m annual Mauritius payments pending a Chagos Islands deal review after Trump's criticism, with Streeting conceding the deal 'can't go ahead' without US support. OpenAI's provision of GPT-5.6 Sol cyber defense tools to Ukraine institutionalizes frontier-AI vendors as wartime defense suppliers, while the UK MoD's VOYANT anti-submarine warfare software demonstration and the XM30 clean-sheet combat vehicle push signal allied modernization pipelines.",
-    "Geoeconomic, Market & Social Stability: Brent crude jumped $9.55 to $130.80/bbl and WTI to $107.02, both carrying an explicit war premium, while Henry Hub natural gas remains normal at $2.97 — concentrating inflation risk in transport fuels rather than utilities. Financial conditions remain deeply accommodative (NFCI -0.56, STLFSI -0.85), high-yield spreads are complacently tight at 2.66%, VIX is subdued at 14.87, and the 10Y-2Y curve is normalizing at +0.25 — a configuration that is underpricing geopolitical tail risk. USD/JPY at 156.87 (+1.02) signals renewed yen pressure. Social stability indicators show Madrid riot police using teargas during the eviction of an 87-year-old woman who had lived in her flat 71 years, exposing the fault line between Spain's eurozone-leading growth and acute housing inequality; in the UK, two arrests over a suspected plot targeting Manchester's Jewish community coincide with high-holiday sensitivities. NASA FIRMS logged 3,691 thermal anomalies consistent with seasonal burning, and maritime/AIS plus aviation feeds returned zero tracks — a monitoring gap that must be flagged during a period of elevated chokepoint risk."
+    "Kinetic activity is concentrated in the Middle East and Horn of Africa. Iran's president delivered his first UNGA address since what he described as an 'all-out war' launched by Washington and Israel, confirming a post-conflict but unresolved battlespace; the US delegation walked out as he accused America of terrorism. Israeli air activity continues against Syria - President al-Sharaa warned the strikes endanger fragile post-war recovery and demanded full sovereignty over all bases and an end to foreign military presence - while Lebanon's border villages remain in ruins from prior Israeli operations and Gaza crews are racing to evacuate war-damaged buildings after a deadly apartment-block collapse. In the Horn of Africa, Tigray authorities report drone strikes and the seizure of regional airports as seven armed groups form an alliance to overthrow the federal government, and Yemen's internationally recognized government is pressing claimed battlefield advances against the Houthis alongside a diplomatic push at the UN.",
+    "Diplomatically, the UNGA is functioning as the primary escalation-management venue as UNSC gridlock shifts political weight to the General Assembly. Secretary Rubio characterized US-Iran talks as 'positive' with 'no breakthrough yet' - significant chiefly because the two warring sides spoke at all - while Trump's 'Board of Peace' pledged only $2.45B of the roughly $35.2B Gaza requires for medium-term reconstruction, exposing a stalled peace implementation nearly a year after the agreement. Alliance signaling includes the UK's new RAF space-protection squadron, Seoul's continued strategic ambiguity on Taiwan contingencies, Jordan's public rebuke of Israeli actions in Syria, and State Department travel advisories warning of further Middle East escalation. Syria's demand for the removal of all foreign military forces places US, Turkish, and Israeli basing footprints on formal notice.",
+    "Markets are pricing geopolitical risk narrowly: Brent ($114.89, -1.26) and WTI ($96.41) carry a war premium but eased slightly, while equities fell on rebounding oil and jumping Treasury yields. Financial conditions remain complacent relative to headline risk - VIX at 14.21, high-yield OAS at a tight 2.68%, and both the NFCI (-0.56) and STLFSI (-0.91) accommodative - meaning any talk collapse or strike would force a violent repricing across assets. The dollar firmed (DXY 119.51) with USD/JPY at 156.87 renewing yen-weakness sensitivities; Germany's pledge to phase out fossil fuels by 2045 signals long-term European energy realignment; and Microsoft's $10B+ Middle East commitment shows tech capital hedging into the Gulf. Social stability indicators are quiet but not benign: Madrid housing-eviction protests, US press-freedom litigation, and a warned 'super El Nino' threatening 450,000 deaths across the Global South represent latent stress vectors on food security and migration."
   ],
   "keyDevelopments": [
     {
-      "headline": "Russian strikes hit Kyiv gas stations and infrastructure, killing 2 and wounding 22, hours before Zelenskyy's UN address (Kyiv Post / The Guardian)",
-      "theater": "Eastern Europe / Ukraine",
-      "significance": "The timing constitutes deliberate coercion of Ukraine's diplomatic messaging at UNGA and continues the campaign against fuel and logistics nodes ahead of winter.",
-      "impact": "Sustained strikes on energy and fuel infrastructure degrade both civilian resilience and military logistics; escalatory optics at the UN may accelerate allied weapons deliveries and long-range strike authorizations."
-    },
-    {
-      "headline": "US and Iran communicate through mediators at UNGA as Trump threatens to 'annihilate' the Tehran regime (The Jerusalem Post / The Guardian)",
+      "headline": "Iran's president tells UN Iran will never 'bend the knee,' calls US the true 'bully,' but signals readiness for dialogue 'without the language of force'; US delegation walks out (BBC / Guardian / Al Jazeera)",
       "theater": "Middle East & Red Sea",
-      "significance": "The dual track of maximum-pressure rhetoric plus active mediator channels keeps the escalation window open; any collapse of the channel raises strike probability sharply.",
-      "impact": "Regional actors, shipping insurers, and Gulf energy infrastructure remain on alert; the oil war premium partially prices this brinkmanship, and miscalculation would send Brent materially higher."
+      "significance": "Establishes Tehran's negotiating red lines and domestic posture after the US-Israel war; defiance paired with an open diplomacy channel preserves mutual off-ramps.",
+      "impact": "Keeps a narrow diplomatic window open; miscalculation in either capital could retrigger kinetic exchange and an immediate oil price spike."
     },
     {
-      "headline": "Trump to meet China's Xi as trade-war scorecard shows persistent US deficits against a Chinese surplus (Al Jazeera / France 24)",
-      "theater": "Indo-Pacific & Geoeconomics",
-      "significance": "The summit outcome will set the tariff trajectory for Q4; the resilience of Chinese consumer exports (e.g., beauty products) indicates Beijing's trade leverage is durable.",
-      "impact": "Tariff and export-control decisions will ripple through global supply chains, US import prices, and agricultural/energy export markets; failure would likely reprice equities and lift the dollar."
-    },
-    {
-      "headline": "Tigray forces seize main airport in northern Ethiopia and clash with government troops in Afar and Amhara under a new anti-government alliance (DW / BBC)",
-      "theater": "Sub-Saharan Africa / Horn of Africa",
-      "significance": "The TPLF's return to armed conflict risks regionalizing through Afar, Amhara, and potential Eritrean involvement, destabilizing the Red Sea hinterland.",
-      "impact": "High humanitarian-crisis risk, disruption of Ethiopian trade corridors, and a likely scramble by external powers with Red Sea maritime interests already under strain."
-    },
-    {
-      "headline": "OpenAI to provide Ukraine access to advanced GPT-5.6 Sol cyber defense tools under new deal (BBC)",
-      "theater": "Defense & Cyber Domains",
-      "significance": "A first-of-its-kind frontier-AI transfer to an active combatant state formalizes commercial AI labs as defense-industrial actors, rivaling Anthropic offerings.",
-      "impact": "Enhances Ukrainian cyber resilience and battlefield data processing; sets precedent likely to be mirrored by adversary AI-military integration and raises escalation questions in the cyber domain."
-    },
-    {
-      "headline": "Shin Bet thwarts Nablus terror cell plot to assassinate National Security Minister Ben-Gvir (Israel Hayom)",
+      "headline": "Rubio: US-Iran talks 'positive,' no breakthrough yet; 'significant' the two warring sides spoke at all (Al-Monitor)",
       "theater": "Middle East & Red Sea",
-      "significance": "Targeting of a cabinet-level figure by a West Bank cell indicates intent to trigger mass retaliation and collapse internal security calculations.",
-      "impact": "A successful assassination would have almost certainly triggered sweeping military operations and settler violence; the foiled plot temporarily lowers but does not eliminate the flashpoint risk."
+      "significance": "Confirms active direct engagement between Washington and Tehran for the first time since the conflict, with Trump's 'annihilate' ultimatum still looming.",
+      "impact": "Reduces near-term strike probability but leaves a hard coercive deadline hanging over any negotiation collapse within the 24-72 hour window."
     },
     {
-      "headline": "Riot police use teargas as 87-year-old woman is evicted from Madrid home of 71 years amid housing-crisis protests (The Guardian / BBC)",
-      "theater": "Domestic Civil Unrest (Europe)",
-      "significance": "Spain's growth-leader economy contrasts sharply with acute housing inequality; eviction flashpoints are producing violent street confrontations with national political resonance.",
-      "impact": "Risk of protest contagion to other European cities with housing stress; sustained unrest pressures the Spanish government toward rent regulation and tests policing thresholds."
+      "headline": "Trump's Board of Peace proposes $2.45B for Gaza reconstruction against an assessed $35.2B requirement (DW)",
+      "theater": "Middle East & Red Sea",
+      "significance": "A funding gap exceeding 90% reveals stalled peace implementation almost a year after the agreement was reached.",
+      "impact": "Prolongs the humanitarian crisis - underscored by the deadly apartment-block collapse and ongoing evacuation operations - and raises risk of renewed unrest and radicalization in Gaza."
     },
     {
-      "headline": "Two arrested over suspected terror plot targeting Manchester's Jewish community (Tribune Online / The Jewish Chronicle)",
-      "theater": "Global Security / Europe",
-      "significance": "Communal-targeted plotting timed around the Jewish high holidays elevates the threat picture for European Jewish communities and tests counterterrorism surge capacity.",
-      "impact": "Increased police and protective posture around community sites; potential copycat dynamics and communal-tension spillover in UK domestic politics."
+      "headline": "Syria's al-Sharaa demands end to all foreign military presence and sovereignty over all bases, warns Israeli attacks endanger recovery; Jordan slams Israel over Syria actions (Breaking Defense / Al Jazeera / JPost)",
+      "theater": "Middle East & Red Sea",
+      "significance": "Post-civil-war Syria is asserting sovereignty in a direct challenge to US, Turkish, and Israeli military footprints on its territory.",
+      "impact": "Sustained Israeli strike activity risks collapsing Damascus's delicate recovery and reshaping the regional basing architecture; Jordan's rebuke signals fraying Arab-Israeli de facto understandings."
     },
     {
-      "headline": "Brent crude jumps $9.55 to $130.80/bbl and WTI to $107.02 on war premium; Henry Hub gas stays normal at $2.97 (Market indicators)",
-      "theater": "Global Energy & Trade Chokepoints",
-      "significance": "The largest single macro signal in the dataset — sustained Brent above $130 pressures global inflation and complicates central-bank easing calculus despite calm financial conditions.",
-      "impact": "Higher pump and transport costs pass through to consumers within weeks; divergence between energy stress and complacent credit/equity markets creates repricing vulnerability."
+      "headline": "UK to launch new RAF military squadron to protect satellites and support offensive and defensive space operations (Guardian)",
+      "theater": "Defense & Cyber / Space",
+      "significance": "Formalizes Allied warfighting posture in orbit, including missile-warning and potential offensive counterspace missions.",
+      "impact": "Accelerates the space militarization dynamic and protects the GPS, communications, and financial-timing services that civilians and militaries depend on daily."
     },
     {
-      "headline": "UK confirms annual £120m Mauritius payments on hold while Chagos Islands deal is reviewed after Trump criticism (The Guardian)",
-      "theater": "Allies / Indo-Pacific",
-      "significance": "US-UK friction over the Diego Garcia basing architecture; London concedes the deal cannot proceed without US support, delaying strategic basing certainty.",
-      "impact": "Prolongs uncertainty over a critical Indian Ocean airbase arrangement and signals that allied defense agreements are now subject to Washington's transactional review."
+      "headline": "Ethiopia: seven armed groups form alliance to overthrow the government; Tigray airports reportedly seized; mutual offensive accusations and drone strikes test the 2022 Pretoria deal (Al Jazeera / BBC / DW)",
+      "theater": "Africa / Horn of Africa",
+      "significance": "The Pretoria peace framework is unraveling, with old enemies forming new alliances and local authorities seizing Tigray's airports.",
+      "impact": "Renewed major-war risk in the Horn carries severe humanitarian consequences and complicates Red Sea littoral security at a time of heightened chokepoint sensitivity."
+    },
+    {
+      "headline": "Yemeni government launches military and diplomatic push to reverse Houthi gains, claiming battlefield advances while internationalizing the anti-Houthi cause at the UN (Al Jazeera)",
+      "theater": "Middle East & Red Sea",
+      "significance": "A coordinated ground-plus-diplomacy campaign signals intent to roll back Houthi territorial control rather than freeze the conflict.",
+      "impact": "Raises the probability of renewed Houthi anti-shipping missile and drone attacks in the Red Sea and Bab al-Mandeb, with direct freight, insurance, and consumer price consequences."
+    },
+    {
+      "headline": "Wall Street falls as oil rebounds and Treasury yields jump amid simmering Middle East tensions (Reuters / WSJ)",
+      "theater": "Global Markets / Geoeconomics",
+      "significance": "Markets are balancing war-premium energy costs against rising rates while volatility indicators remain subdued - a widening gap between headline risk and priced risk.",
+      "impact": "Tighter financial conditions transmit directly to mortgages, auto loans, credit cards, and retirement portfolios even without new escalation."
     }
   ],
   "indicatorsAndWarnings": [
-    "Monitor for Russian follow-on mass strikes against Ukrainian energy-grid nodes within 24-72 hours as the heating season approaches; watch Zelenskyy's UNGA speech for new long-range weapons requests that could trigger Russian retaliation cycles.",
-    "Track the US-Iran mediator channel at UNGA: any public collapse, Iranian enrichment announcement, or IRGC posture change within 72 hours materially raises the probability of Israeli or US strike windows; watch Red Sea shipping for renewed Houthi targeting.",
-    "Trump-Xi summit deliverables are a binary trigger: a tariff-truce extension stabilizes markets, while escalation (rare-earth export controls, tariff hikes, or Taiwan language in statements) would likely reprice equities and lift the dollar within one trading session.",
-    "Ethiopia: watch for Tigray forces advancing on additional regional airports or a federal counteroffensive into Tigray proper; any Eritrean re-mobilization would signal regionalization of the conflict with Red Sea implications.",
-    "Energy trigger: sustained Brent above $130/bbl or any attack on Gulf energy infrastructure — contextualized by Trump's proposed $10B Middle East energy infrastructure fund — would extend the war premium into Q4 inflation prints and force central-bank repricing.",
-    "UK/Europe security: watch for further Manchester-related arrests, any MI5 threat-level change around Yom Kippur gatherings, and copycat plotting indicators across European capitals with Jewish community sites.",
-    "Madrid housing unrest: watch for protest spread to Barcelona and other cities and for emergency rent-regulation announcements; additional violent eviction operations risk weekly recurrence and national political crisis for the Spanish government.",
-    "Collection gap warning: maritime/AIS and aviation tracking feeds returned zero tracks during a period of elevated chokepoint and strike risk — restoration and validation of these feeds is a priority intelligence requirement before drawing negative conclusions about shipping or air activity."
+    "Monitor for a US-Iran negotiation breakdown or a hard deadline statement from Trump following Pezeshkian's refusal to 'bend the knee' - any collapse reopens a US/Israeli strike window within 24-72 hours.",
+    "Watch for further Israeli strikes into Syria or Lebanon that could trigger proxy retaliation by Hezbollah or Iraqi militias, and for al-Sharaa's sovereignty demands converting into armed resistance against foreign bases.",
+    "Track Tigray escalation markers: additional airport seizures, drone strikes on Mekelle, Eritrean or Amhara mobilization, or a federal emergency declaration signaling full breakdown of the Pretoria deal.",
+    "Monitor Houthi response to Yemeni government advances - any anti-shipping missile or drone launch against Red Sea transits would likely lift Brent above $120 and spike war-risk insurance premiums.",
+    "Set market tripwires: a sustained Brent break above $115-120 or a VIX close above 20 would signal repricing of escalation risk; conversely, a confirmed US-Iran breakthrough could collapse the war premium rapidly.",
+    "Watch UNGA sidelines diplomacy: Zelenskyy's address on security guarantees and any Russia-Iran or Russia-North Korea side meetings signaling deepened alignment against US interests.",
+    "Monitor for State Department travel advisory upgrades across Middle East destinations, which historically precede anticipated escalation windows by 24-72 hours."
   ],
   "date": "2026-09-23",
-  "generatedAt": "2026-09-23T12:53:11.694Z",
+  "generatedAt": "2026-09-23T17:39:56.980Z",
   "modelUsed": "z-ai/glm-5.3-flash"
 }

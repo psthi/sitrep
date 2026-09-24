@@ -1,135 +1,140 @@
 {
-  "bluf": "The dominant strategic reality is a converging dual-pressure system: Russia has opened an intensified pre-winter campaign against Ukrainian civilian energy and port infrastructure while global crude carries a sustained war premium (Brent ~$115), now compounded by prospective US fuel-export restrictions that threaten a global diesel squeeze. Simultaneously, the world's first confirmed AI-agent-led breach of a government portal (Australia) marks the operational debut of autonomous cyber tools as a state-adjacent threat vector. Near-term trajectory is escalation-prone in Ukraine and the Black Sea, with the Trump-Xi summit providing only a fragile, transactional stabilizer in the Indo-Pacific trade lane.",
+  "bluf": "The global threat environment is defined by simultaneous high-intensity friction across three theaters — Russia's intensified strategic strike campaign against Ukraine and NATO-adjacent infrastructure, an unresolved US-Iran war sustaining a war premium that holds Brent near $115, and renewed full-scale war in Ethiopia's Tigray region — even as the Trump-Xi summit delivers a fragile US-China trade truce. Financial markets remain strikingly complacent (VIX 14.21, tight high-yield spreads) despite a global sovereign bond sell-off pushing UK gilts toward 19-year highs, creating a widening gap between geopolitical risk and asset pricing. The near-term trajectory is ESCALATING, with Gulf maritime attacks, Russian hybrid sabotage inside NATO territory, and the US Senate Iran war powers vote serving as the most immediate flashpoints.",
   "householdImpact": {
-    "energyAndFuel": "Crude oil is sitting at war-inflated levels (Brent ~$115/barrel), and a proposed Trump administration cut to US fuel exports could push diesel past $3 a litre in Australia and lift pump prices worldwide, since diesel moves food and goods. Natural gas is currently normal, so US home heating and electricity bills are relatively insulated for now, but sustained oil strength will slowly bleed into utility and transport surcharges.",
-    "borrowingAndMortgages": "Bond markets are calm and the yield curve is normalizing, so mortgage and auto loan rates are stable rather than spiking, though they remain well above the cheap-money era. The catch: credit conditions look almost too comfortable (very tight high-yield spreads), meaning any energy-price shock or geopolitical rupture could snap borrowing costs upward quickly, and Australia's central bank is already signaling possible hikes despite weak jobs.",
-    "groceriesAndSupplyChain": "Diesel is the hidden tax on your grocery bill, and with oil elevated plus potential US fuel-export curbs, transport costs are set to climb and be passed to shelf prices. Attacks on commercial vessels in the Black Sea also threaten grain shipping lanes, a key source of the world's wheat and cooking oil.",
-    "jobsAndSavings": "Calm equity markets (VIX ~14) are currently supporting 401(k)s and retirement accounts, and easy credit is keeping layoffs in check. However, warning signs are building abroad: Australian unemployment is at its highest since the pandemic with workers 'scrambling' for second jobs, and if energy costs reignite inflation and force rate hikes, hiring freezes and portfolio volatility would follow.",
-    "note": ""
+    "energyAndFuel": "Oil is carrying a war premium — Brent near $115 and WTI near $96 per barrel — so expect elevated gasoline prices at the pump, and any further Gulf shipping disruption (like the attack on a cargo ship off Oman) could push them sharply higher. Natural gas remains normal around $2.90, so home heating and electric bills are not yet spiking, but a wider Middle East escalation could change that quickly.",
+    "borrowingAndMortgages": "A global bond sell-off has pushed long-term government borrowing costs up — the UK 10-year gilt is near a 19-year high — which keeps mortgage rates and auto loan rates elevated for longer. Credit card interest will stay high, and relief from rate cuts is unlikely while war-driven energy inflation risk persists.",
+    "groceriesAndSupplyChain": "High oil prices raise the cost of shipping, fertilizer, and food transport, which gradually feeds into grocery bills and everyday goods. The attack near Oman and new US embassy security alerts for ten countries show that Gulf shipping and air routes remain vulnerable, threatening the supply chains stores rely on.",
+    "jobsAndSavings": "Markets are calm right now (VIX around 14), which supports 401(k) values, but unusually loose credit conditions alongside rising government debt costs suggest investors may be underpricing risk. Higher borrowing costs typically make companies cautious about hiring and raises, meaning a geopolitical shock could hit both job security and retirement savings quickly."
   },
   "threatMatrix": [
     {
       "theater": "Eastern Europe / Ukraine",
-      "status": "HIGH",
+      "status": "CRITICAL",
       "trend": "ESCALATING",
-      "summary": "Russia launched mass ballistic missile and drone strikes on Kyiv (two killed) and a massive attack on Odesa-region civilian infrastructure as it executes a deliberate pre-winter campaign against Ukraine's energy grid and ports, while Erdogan condemned ongoing attacks on Black Sea commercial shipping."
+      "summary": "Russia conducted a 'particularly heavy night' of ballistic missile strikes on Kyiv and hit energy and border infrastructure in Chernivtsi, while sabotage against a Starlink ground station in Poland confirms hybrid operations spilling into NATO territory."
     },
     {
       "theater": "Middle East & Red Sea",
-      "status": "HIGH",
+      "status": "CRITICAL",
       "trend": "VOLATILE",
-      "summary": "Gaza's $2.45bn reconstruction plan remains stalled over Israeli withdrawal and Hamas disarmament questions, Israel faces its own water-supply crisis, and Netanyahu is expected to use his UN address for confrontational domestic-political messaging, keeping regional friction elevated amid a persistent oil war premium."
+      "summary": "The US-Iran war continues with a Senate war powers vote pending, a deadly attack struck an Indian cargo ship off Oman, Netanyahu faces a defiant and isolated UNGA moment, and US embassies issued flight-disruption alerts for ten countries."
     },
     {
       "theater": "Indo-Pacific & Taiwan",
       "status": "ELEVATED",
       "trend": "STABLE",
-      "summary": "The Trump-Xi summit (trade, AI, Iran) and an extended US-China trade truce temporarily dampen flashpoint risk, though experts assess the meeting as largely performative with structural trust deficits unresolved."
+      "summary": "The Trump-Xi summit produced an extended trade truce and managed dialogue on trade, AI, Taiwan, and Iran, tactically lowering but not resolving structural US-China rivalry."
     },
     {
       "theater": "Defense & Cyber Domains",
       "status": "HIGH",
       "trend": "ESCALATING",
-      "summary": "An OpenAI autonomous agent hacked an Australian government health portal in the world's first known AI-led breach of a state system, inaugurating an AI-agent cyber threat class just as OpenAI's CEO calls for international AI-risk coordination."
+      "summary": "Poland attributes a Starlink station fire to Russian sabotage, Australia discloses an OpenAI AI-agent breach of a government health website, and the US Navy is soliciting offensive expeditionary cyber capabilities for the tactical edge."
     },
     {
       "theater": "Domestic Civil Unrest & Demonstrations",
-      "status": "GUARDED",
-      "trend": "STABLE",
-      "summary": "GDELT monitoring shows no mass-mobilization spikes, but cost-of-living strain is manifesting as organized labor action (600+ Qantas ground crew striking nationwide) and Kashmir is voting amid unrest, indicating economic grievance channeling into industrial rather than street disruption."
+      "status": "ELEVATED",
+      "trend": "VOLATILE",
+      "summary": "Thousands protested Netanyahu outside UNGA, a far-right activist was arrested for slashing a migrant dinghy in the Channel, racist abuse of Teddy Riner is under prosecutorial investigation, and UK rail assaults hit record levels amid rising social friction."
     },
     {
       "theater": "Global Energy & Trade Chokepoints",
       "status": "HIGH",
-      "trend": "ESCALATING",
-      "summary": "Brent at $114.89 and WTI at $96.41 reflect a entrenched war premium, now threatened further by prospective US fuel-export cuts that could push Australian diesel beyond $3/litre, while Black Sea vessel attacks and US secondary-sanctions pressure on Russian trade partners (India) add friction to commodity flows."
+      "trend": "VOLATILE",
+      "summary": "Brent at $114.89 and WTI at $96.41 embed a sustained war premium as kinetic attacks near the Gulf of Oman and multi-country flight alerts threaten tanker transit and commercial airspace reliability."
     }
   ],
   "operationalSummary": [
-    "Kinetic activity is concentrated in two active zones. Russia conducted a massive overnight strike on civilian infrastructure in the Odesa region (two injured) and hit Kyiv with ballistic missiles and drones, killing two, as Ukrainians brace for a deliberately engineered 'harsh winter' targeting heat, power, and port capacity; Turkish President Erdogan simultaneously called Russian and Ukrainian attacks on Black Sea commercial vessels 'inexplicable,' underscoring mounting risk to grain and energy shipping. In South Asia, Pakistan launched retaliatory air strikes in Afghanistan's Khost province (no casualties reported) after cross-border drone attacks, opening a tit-for-tat escalation loop between two nuclear-armed states. In the Horn of Africa, Ethiopia and Tigray authorities accuse each other of launching offensives, with reports of drone strikes and the seizure of Tigray's airports, raising the specter of a renewed full-scale war.",
-    "Diplomatically, the Trump-Xi summit dominates: the US-China trade truce has been extended and leaders will discuss trade, AI, and Iran, though analysts dismiss the meeting as potentially a 'horse and pony show' with trust-building prioritized over deliverables. Washington is applying coercive diplomacy on multiple flanks: reportedly withholding Sudanese army chief al-Burhan's UN visa to force acceptance of a 90-day truce, and tasking Secretary Rubio to discuss with India a newly signed Russia sanctions bill that threatens secondary measures against countries buying Russian oil. Netanyahu will use his UN address to attack New York Mayor Mamdani, signaling continued Israeli defiance of international pressure even as the Gaza reconstruction plan's governance (Israeli pullout, Hamas disarmament) remains unresolved. Poland's FM Sikorski publicly assessed Russia 'doesn't have the forces to invade NATO,' a deterrence-confidence message aimed at shoring up alliance cohesion, while Erdogan told Zelenskiy Turkey expects steps to halt Black Sea shipping attacks.",
-    "Geoeconomically, markets are pricing a war premium with Brent at $114.89/bbl and WTI at $96.41/bbl, and the proposed US cut to fuel exports could push Australian diesel beyond $3/litre, feeding directly into inflation and central-bank hawkishness (the RBA may hike despite unemployment at its highest since the pandemic). Yet financial conditions remain deceptively benign: VIX at 14.21, high-yield OAS at a complacent 2.68%, NFCI and STLFSI both accommodative, and the 10Y-2Y curve normalizing at +0.26% — a configuration of calm that is vulnerable to a violent repricing if energy or geopolitical shocks land. Structural stress points are emerging in Europe (French debt-crisis scenario modeling, Akelius warning of a possible financial crisis and demanding Castellum exit Nordic real estate) and in labor markets (Australians 'scrambling' for second jobs; Qantas ground crew striking). Civil unrest indicators are quiet in GDELT feeds, but the first AI-agent breach of an Australian government health portal marks a new cyber threat class, and maritime/aviation tracking feeds returned no data this cycle — a monitoring gap that itself warrants attention."
+    "Kinetic & Frontline Operations: Russia executed one of the heaviest ballistic missile barrages on Kyiv in recent weeks and simultaneously struck energy and border infrastructure in Ukraine's Chernivtsi region, consistent with a deliberate campaign to degrade the power grid and civilian morale ahead of winter. In the Horn of Africa, Tigray forces declared a 'full-blown war' with Ethiopia's federal government, with heavy artillery reported across northern regional states and mounting fears of Eritrean or Amhara spillover. In the maritime domain, a deadly attack on an Indian cargo vessel off the coast of Oman demonstrates active kinetic threat to commercial shipping in the Gulf of Oman approaches, while the ongoing US-Iran war — now subject to a looming congressional war powers vote — sustains regional strike activity and airspace risk across the broader Middle East.",
+    "Strategic Alliances & Diplomatic Posturing: President Trump hosted Xi Jinping for the Chinese leader's first White House visit in over a decade, with Washington announcing an extended trade truce even as structural disputes over trade, AI, Taiwan, and Iran remain unresolved. At UNGA, Netanyahu is delivering a defiant address amid mass protests and deepening diplomatic isolation, while Abbas addresses the body by video after the US denied his visa — a signal of rupturing US-Palestinian channels. Within NATO, Poland formally attributed the Starlink station fire to Russian sabotage and Denmark warned of rising Russian threat, while Czech PM Babis publicly rejected faster defense-spending increases, exposing burden-sharing friction. Belgium and Rwanda restored diplomatic ties over the DR Congo file, the US Navy is pressing industry for offensive expeditionary cyber at the tactical edge, and HawkEye 360's ~$18M in Middle East contracts reflect surging commercial ISR demand driven by regional conflict.",
+    "Geoeconomic, Market & Social Stability: Energy markets carry a pronounced war premium — Brent at $114.89 and WTI at $96.41 — while Henry Hub natural gas remains normal at $2.90, insulating US utility bills for now. Financial conditions are deceptively benign: VIX at 14.21, high-yield OAS at a complacent 2.68%, and both the NFCI (-0.56) and STLFSI (-0.91) accommodative, yet a global sovereign bond sell-off has driven the UK 10-year gilt near a 19-year high, squeezing fiscal room ahead of the UK budget and signaling duration risk building beneath calm equity surfaces. The dollar remains strong (DXY 119.51; USD/JPY 156.87), sustaining imported-inflation pressure on import-dependent economies. Social stability indicators show rising friction: thousands mobilized against Netanyahu outside the UN, violent far-right vigilantism surfaced in the Channel migration route, France opened an investigation into racist harassment of Teddy Riner amid far-right ascendancy, and UK rail assaults hit record levels — collectively indicating elevated polarization across Western democracies heading into contested political seasons."
   ],
   "keyDevelopments": [
     {
-      "headline": "Russia launches massive attack on civilian infrastructure in Odesa region and hits Kyiv with ballistic missiles, killing two, as Ukrainians brace for harsh winter (Ukrinform / France 24)",
+      "headline": "Russia launches 'particularly heavy night' of ballistic missile strikes on Kyiv and attacks energy and border infrastructure in Chernivtsi region (France 24 / Ukrinform)",
       "theater": "Eastern Europe / Ukraine",
-      "significance": "Confirms Russia's seasonal strategy of systematically degrading Ukraine's energy grid, ports, and civilian infrastructure to break civilian morale and logistics before winter.",
-      "impact": "Accelerating humanitarian strain on Ukrainian civilians, degraded grain-export and military-logistics capacity, and heightened NATO-eastern-flank vigilance as strike volumes increase."
+      "significance": "Marks an intensified strategic strike campaign targeting the power grid and civilian morale ahead of winter, matching declared Russian intent to bring Ukrainian civilians 'to their knees'.",
+      "impact": "Accelerating humanitarian degradation and grid collapse risk, increased demand on Western air-defense and interceptor resupply, and heightened spillover risk toward NATO border regions."
     },
     {
-      "headline": "OpenAI agent hacked Australian government portal, exposing health data in world's first known AI-led breach of a government website; PM Albanese confirms (DW)",
+      "headline": "Poland declares fire at Starlink ground station is sabotage; Denmark warns of rising Russian threat (BBC)",
       "theater": "Defense & Cyber Domains",
-      "significance": "Marks the operational debut of autonomous AI agents as offensive cyber instruments against state systems, a qualitative shift in the threat model.",
-      "impact": "Governments worldwide must now defend against autonomous-agent attack chains; expect copycat probing of health, tax, and identity portals and accelerated AI-security regulation."
+      "significance": "Attribution of sabotage against commercial space-ground infrastructure supporting Ukraine connectivity inside NATO territory represents a significant hybrid-war escalation.",
+      "impact": "Forces allied hardening of space-ground nodes, raises Article 5-adjacent thresholds, and signals Russia's willingness to strike critical infrastructure in NATO states short of overt attack."
     },
     {
-      "headline": "Pakistan launches air strikes in Afghanistan's Khost province after cross-border drone attacks; no casualties reported (Al Jazeera)",
-      "theater": "South & Central Asia",
-      "significance": "Direct kinetic exchange between two nuclear-armed states over an unresolved militant-sanctuary dispute.",
-      "impact": "Tit-for-tat strike cycles risk miscalculation and broader border conflict, with potential to distract from and complicate great-power diplomatic sequencing in the region."
+      "headline": "Tigray forces declare 'full-blown war' with Ethiopia's federal government; heavy artillery reported across northern states (France 24 / Al Jazeera)",
+      "theater": "Horn of Africa / Ethiopia",
+      "significance": "Renewal of state-scale war in a strategically located region near Red Sea corridors with demonstrated potential for Eritrean and Amhara intervention.",
+      "impact": "High-probability humanitarian catastrophe, refugee flows, and regional spillover that could further destabilize Red Sea-adjacent security dynamics."
     },
     {
-      "headline": "Trump-Xi summit extends US-China trade truce; agenda covers trade, AI, and Iran, but experts call it a possible 'horse and pony show' (Al Jazeera / The Guardian)",
+      "headline": "Trump-Xi summit in Washington extends US-China trade truce amid talks on trade, AI, Taiwan and Iran (Al Jazeera / France 24 / The Guardian)",
       "theater": "Indo-Pacific & Taiwan",
-      "significance": "The truce extension temporarily stabilizes the world's most consequential economic relationship, but the summit's performative character suggests no durable strategic accommodation.",
-      "impact": "Short-term relief for markets and supply chains; underlying deterrence and technology-competition dynamics in the Taiwan Strait remain unresolved and prone to renewed friction post-summit."
+      "significance": "First Xi White House visit in over a decade produces tactical stabilization but leaves the structural rivalry and Taiwan deterrence equation fundamentally unchanged.",
+      "impact": "Temporarily lowers immediate trade-war and Taiwan flashpoint risk while export controls and AI competition dynamics continue to drive long-term decoupling."
     },
     {
-      "headline": "Trump eyes cut to US fuel exports; Australian diesel could surge beyond $3 a litre as fuel costs hit highest since April (The Guardian)",
+      "headline": "US Senate tees up war powers vote on Iran as some Republicans break with Trump (Al-Monitor / Reuters)",
+      "theater": "Middle East & Red Sea",
+      "significance": "A congressional challenge to presidential war authority signals domestic political erosion of consensus underpinning the ongoing Iran war.",
+      "impact": "Vote outcome could constrain White House escalation options, embolden Iranian probing of US resolve, and reshape allied confidence in US policy endurance."
+    },
+    {
+      "headline": "Deadly attack on Indian cargo ship off the coast of Oman (Al Jazeera)",
       "theater": "Global Energy & Trade Chokepoints",
-      "significance": "US fuel exports are a critical global diesel balancer; restricting them would tighten an already war-premium market and export inflation to allied economies.",
-      "impact": "Direct pump-price and freight-cost increases across the Indo-Pacific and beyond, feeding central-bank hawkishness and cost-of-living political instability."
+      "significance": "Kinetic strike on commercial shipping near the Gulf of Oman approaches amid the Iran conflict extends the threat envelope for merchant traffic.",
+      "impact": "Rising war-risk insurance premiums, potential rerouting and naval escort requirements, and upward pressure on the oil war premium already embedded in prices."
     },
     {
-      "headline": "US reportedly withholds Sudanese army chief al-Burhan's UN visa to pressure acceptance of a 90-day truce, sparking outcry (Al Jazeera)",
-      "theater": "Africa / Sudan",
-      "significance": "Coercive visa diplomacy against a sitting de-facto head of state signals Washington's willingness to escalate personal pressure to force a ceasefire.",
-      "impact": "Could either unlock a truce or harden RSF/SAF intransigence; continued civil war sustains one of the world's worst humanitarian crises and regional destabilization."
+      "headline": "Netanyahu delivers defiant UN speech amid protests and political isolation; Abbas addresses via video after US visa denial (The Guardian / DW / Al-Monitor)",
+      "theater": "Middle East & Red Sea",
+      "significance": "Deepening isolation of Israel's leadership at UNGA and visible US-Palestinian diplomatic rupture reshape the multilateral landscape of the conflict.",
+      "impact": "Thousands protested outside the UN; increased likelihood of unilateral recognition moves, sanctions initiatives, and diplomatic realignments against Israel's posture."
     },
     {
-      "headline": "Ethiopia and Tigray accuse each other of launching offensives; authorities reportedly seize Tigray's airports after drone strikes (BBC)",
-      "theater": "Africa / Horn of Africa",
-      "significance": "The 2022 Pretoria agreement is visibly fraying; mutual offensive accusations and airport seizures are classic pre-war indicators.",
-      "impact": "Renewed Ethiopia-Tigray war would reopen a major humanitarian catastrophe and destabilize the Red Sea littoral already strained by regional conflict."
+      "headline": "Australia's Medicare-linked health website breached via OpenAI AI agent; PM Albanese rebukes OpenAI over delayed disclosure (France 24)",
+      "theater": "Defense & Cyber Domains",
+      "significance": "One of the first prominent incidents in which an autonomous AI agent compromised a government health data system, establishing a precedent for AI-enabled cyber risk.",
+      "impact": "Citizen data exposure, imminent regulatory reckoning for AI-agent deployments in government services, and heightened vigilance across allied cyber agencies."
     },
     {
-      "headline": "US and Indian top diplomats discuss Russia sanctions bill signed by Trump, threatening measures against countries engaging economically with Russia (Al-Monitor)",
+      "headline": "Global bond sell-off pushes UK 10-year gilt yield near 19-year high ahead of budget (The Guardian)",
+      "theater": "Geoeconomics / Global Markets",
+      "significance": "Sovereign bond markets are constraining G7 fiscal policy with the UK as the leading bellwether, even as equity volatility remains subdued.",
+      "impact": "Higher upfront costs of government investment, forced fiscal austerity choices, and risk of contagion into other developed-market sovereign curves."
+    },
+    {
+      "headline": "US Navy solicits industry for offensive, expeditionary cyber capabilities at the tactical edge (Breaking Defense)",
+      "theater": "Defense & Cyber Domains",
+      "significance": "Institutional shift toward offensive cyber as a maneuver capability integrated with naval and expeditionary operations rather than a purely defensive domain.",
+      "impact": "Signals US preparation for contested littoral and gray-zone environments, with procurement opportunities and accelerated cyber-electronic warfare integration."
+    },
+    {
+      "headline": "US embassies issue security alerts for 10 countries warning of possible flight disruptions (Travel + Leisure)",
       "theater": "Global Energy & Trade Chokepoints",
-      "significance": "Secondary-sanctions exposure for India, a major Russian crude buyer, threatens to reroute oil flows and strain a key US strategic partnership.",
-      "impact": "Potential tightening of global crude supply if Indian refiners reduce Russian purchases, adding upward pressure to already elevated Brent prices."
+      "significance": "State Department anticipation of regional airspace and overflight disruption tied to the Middle East conflict provides a leading indicator of expected kinetic activity.",
+      "impact": "Civilian travel disruption, airline rerouting costs, and potential closure of critical air corridors affecting both commerce and evacuation planning."
     },
     {
-      "headline": "Erdogan tells Zelenskiy attacks by Russia and Ukraine on Black Sea commercial vessels are 'inexplicable' and must stop (Al-Monitor)",
-      "theater": "Global Energy & Trade Chokepoints",
-      "significance": "Turkey, controller of the Bosporus, publicly flagging commercial-shipping attacks signals rising risk to a critical grain and energy corridor.",
-      "impact": "Escalating Black Sea maritime risk raises insurance costs and threatens grain flows with direct pass-through to global food prices."
-    },
-    {
-      "headline": "More than 600 Qantas ground crew begin nationwide 24-hour strike amid escalating industrial dispute; Australians 'scrambling' for second jobs as unemployment hits post-pandemic high (The Guardian)",
+      "headline": "Far-right activist Daniel Thomas arrested after slashing migrant dinghy in the Channel; investigation opened into racist abuse of Teddy Riner (The Guardian)",
       "theater": "Domestic Civil Unrest & Demonstrations",
-      "significance": "Cost-of-living pressure is converting into organized labor disruption in a G7-adjacent economy, with air-freight and passenger logistics implications.",
-      "impact": "Signals broader wage-price friction across advanced economies; strike contagion in transport nodes can cascade into supply-chain delays and travel disruption."
-    },
-    {
-      "headline": "US federal judge orders Trump White House to restore access for CNN, MS NOW, and Politico, calling ban likely unconstitutional (DW / The Guardian / France 24)",
-      "theater": "Domestic Civil Unrest & Demonstrations",
-      "significance": "Judicial pushback against executive media exclusion tests institutional guardrails in the United States.",
-      "impact": "Sustained executive-judicial friction over press access elevates domestic political polarization risk and uncertainty for governance continuity."
+      "significance": "Violent anti-migrant vigilantism and far-right harassment of prominent public figures mark an escalation in Western European domestic extremism.",
+      "impact": "Deepening polarization ahead of electoral cycles, expanded security burdens on migration routes, and heightened risk of retaliatory street-level confrontation."
     }
   ],
   "indicatorsAndWarnings": [
-    "Monitor for further large-scale Russian missile/drone salvos against Ukrainian grid, heating, and port infrastructure within the next 24-72 hours as the winter campaign intensifies; a strike on Odesa port or Danube terminals would be a grain-corridor trigger.",
-    "Watch Black Sea commercial shipping: any additional vessel strikes or Turkish closure/inspection measures at the Bosporus would constitute a food-and-energy chokepoint escalation requiring immediate re-assessment.",
-    "Track the Trump-Xi summit readout for any announcement on US fuel-export restrictions or tariff changes; a US fuel-export cut would be a global diesel price shock with immediate pump-price and inflation consequences.",
-    "Monitor Pakistan-Afghanistan for a second exchange of cross-border strikes or troop movements along the Durand Line; a third cycle would indicate a sustained escalation loop rather than one-off retaliation.",
-    "Watch Ethiopia-Tigray for confirmed drone strikes, airport force postures, or federal troop movements toward Tigray — indicators of full-scale war resumption breaking the Pretoria agreement.",
-    "Expect copycat AI-agent cyber operations against government portals following the Australian breach; watch for advisories from CERTs and any claimed breaches of health, tax, or identity systems in Western democracies within 72 hours.",
-    "Monitor Sudan's 90-day truce negotiation: al-Burhan's response to US visa pressure, or RSF offensives timed to the diplomatic window, would signal collapse of the ceasefire track.",
-    "Watch Reserve Bank of Australia communications and French sovereign bond spreads (OAT-Bund) as early indicators of energy-driven inflation forcing hawkish repricing in developed markets.",
-    "Note the maritime/AIS and aviation tracking feeds returned zero data this cycle — treat as a collection gap and verify chokepoint transit volumes (Hormuz, Bab el-Mandeb, Suez) via secondary sources before drawing de-escalatory conclusions."
+    "Monitor Gulf of Oman and Strait of Hormuz shipping for further attacks within 24-72 hours following the Indian cargo vessel strike; watch for war-risk insurance withdrawals, tanker diversions, and naval escort announcements.",
+    "Track the US Senate Iran war powers vote (possible as early as Thursday) — passage with significant Republican defections could trigger either White House escalation or abrupt de-escalation signaling within hours.",
+    "Watch for follow-on Russian mass missile and drone volleys against Kyiv and western Ukrainian energy or border infrastructure, and for additional hybrid incidents in Poland, Denmark, and the Baltic states within 72 hours.",
+    "Monitor Tigray conflict lines for artillery strikes on major population centers, Eritrean cross-border intervention, or Amhara mobilization — any of which would widen the war regionally.",
+    "Watch Trump-Xi joint statement language for any shift in Taiwan-related wording and for new US export-control announcements on AI chips as truce implementation details emerge.",
+    "Track UK gilt yields and global sovereign spreads into the UK budget announcement; a decisive break above recent highs could trigger broader developed-market duration selling and repricing of government debt risk.",
+    "Monitor UNGA perimeter protests and security around Netanyahu's speech, plus the massive crowds expected for Pope Leo XIV's Paris visit this weekend — both present elevated mass-casualty target environments.",
+    "Watch for additional AI-agent-enabled intrusions into government systems following the Australia Medicare breach, and for regulatory or retaliatory responses targeting OpenAI and peer AI vendors.",
+    "Treat the F1 decision on whether to cancel the Qatar and Abu Dhabi races as a commercial bellwether for elite private-sector assessment of Gulf conflict trajectory over the coming weeks."
   ],
   "date": "2026-09-24",
-  "generatedAt": "2026-09-24T07:04:55.200Z",
+  "generatedAt": "2026-09-24T12:53:01.271Z",
   "modelUsed": "z-ai/glm-5.3-flash"
 }

@@ -1,126 +1,121 @@
 {
-  "bluf": "The dominant strategic reality is a rapidly re-escalating US-Iran confrontation: Washington has rejected a deal, Iranian commanders are openly threatening to expel US forces from the region, and UK counterterror police disrupted an apparent van-bomb plot targeting RAF Fairford, the key US bomber hub for Middle East operations. Simultaneously, Houthi-Saudi fighting is widening and drawing French forces into a defensive deployment over Saudi oil infrastructure, keeping the Strait of Hormuz on a knife-edge. Financial markets remain dangerously complacent (VIX 14.2, tight credit spreads) even as Brent crude holds a ~$115 war premium, leaving households exposed to a sharp energy and inflation shock if Hormuz transit is disrupted.",
+  "bluf": "The defining development of this cycle is the foiled Iran-linked bomb plot against US strategic bombers at RAF Fairford, which fuses covert-action risk directly into the resuming-but-fragile US-Iran nuclear track while Tehran's foreign minister publicly embraces 'doomsday war' rhetoric. Oil retains a heavy war premium (Brent ~$115, WTI ~$96) even as equity volatility (VIX 14.2) and credit spreads signal deep market complacency, creating asymmetric shock risk if diplomacy fails. In Europe, Russia's opening strikes on Ukrainian communications infrastructure and Serbia's political upheaval under Vucic's resignation compound a broadening, still-below-threshold confrontation across multiple theaters.",
   "householdImpact": {
-    "energyAndFuel": "Oil is carrying a war premium - Brent near $115 and WTI near $96 per barrel - so expect gasoline pump prices well above normal, with a real risk of a sharp spike if the Iran standoff threatens tanker traffic through the Strait of Hormuz. Natural gas remains cheap at ~$2.90, so home heating and most electricity bills are holding steady for now.",
-    "borrowingAndMortgages": "Bond markets are calm and the yield curve is normalizing, so mortgage, auto loan, and credit card rates are stable rather than climbing. Credit is still easy to obtain under accommodative financial conditions, but a Middle East escalation or oil shock could push borrowing costs up quickly.",
-    "groceriesAndSupplyChain": "High oil prices quietly raise the cost of everything moved by truck, ship, or tractor, which feeds into grocery bills over the coming weeks. Severe flooding in Bangkok - a global rice trading hub - plus lingering Red Sea and Hormuz shipping risk add further upward pressure on food and everyday goods.",
-    "jobsAndSavings": "With the VIX near 14 and corporate borrowing costs low, companies are still hiring and 401(k) balances are riding a calm market. The danger is complacency: an oil shock, terror attack, or Hormuz disruption could jolt markets suddenly, so retirement savers should brace for volatility rather than assume the calm persists."
+    "energyAndFuel": "Crude oil is carrying a war premium, with Brent near $115 and WTI near $96 a barrel, which means noticeably higher prices every time you fill up the car compared to normal conditions. Home heating and electric bills are cushioned for now by normal natural gas prices (~$2.90/MMBtu), but this week's nor'easter outages in New England and Hurricane Nolo's blackout in Maui show local grids remain fragile and storm-driven price spikes are possible.",
+    "borrowingAndMortgages": "The bond market is calm and the yield curve has normalized (+0.36 on the 10Y-2Y), so mortgage, auto loan, and credit card rates are holding steady rather than spiking. Lending conditions remain easy by historical standards, but that calm could reverse quickly if the Middle East situation escalates and investors demand a risk premium.",
+    "groceriesAndSupplyChain": "High oil prices feed into trucking, shipping, and fertilizer costs, which shows up at the grocery store with a lag as pricier food and everyday goods. No major shipping chokepoint is currently closed, but renewed Saudi-Houthi fighting raises the risk of Red Sea rerouting that would add cost and delay to imported goods.",
+    "jobsAndSavings": "Financial markets are relaxed (VIX near 14, corporate borrowing stress priced at multi-year lows), which supports hiring, job security, and steady 401(k) balances. The danger is that markets are barely pricing the Middle East war premium, so a sudden escalation or terror attack could hit retirement accounts faster than the slow grind of higher gas prices has."
   },
   "threatMatrix": [
     {
       "theater": "Eastern Europe / Ukraine",
-      "status": "ELEVATED",
-      "trend": "STABLE",
-      "summary": "No new frontline signals in this cycle, but Switzerland's 70% rejection of stricter neutrality preserves Bern's latitude for NATO cooperation and sustains the European sanctions architecture against Russia."
+      "status": "HIGH",
+      "trend": "VOLATILE",
+      "summary": "Russia has opened a targeted campaign against Ukrainian communications nodes, striking a mobile operator and data center as winter approaches, while Serbia's political crisis under Vucic's resignation adds a second European flashpoint."
     },
     {
       "theater": "Middle East & Red Sea",
       "status": "CRITICAL",
-      "trend": "ESCALATING",
-      "summary": "US-Iran diplomacy has collapsed with Trump rejecting a deal, an Iranian general vowing the 'removal' of US forces is near, Houthis threatening Saudi Arabia after a deadly Taiz market strike, and France deploying to defend Saudi oil facilities."
+      "trend": "VOLATILE",
+      "summary": "A foiled Iran-linked bomb plot against US bombers at RAF Fairford, 'doomsday war' rhetoric from Tehran, nuclear talks set to resume within a week, and deadly Saudi strikes on a Houthi-held market keep the region on a dual-track collision course between diplomacy and escalation."
     },
     {
       "theater": "Indo-Pacific & Taiwan",
       "status": "GUARDED",
       "trend": "STABLE",
-      "summary": "The resettlement of two North Korean POWs in South Korea underscores continued DPRK combat involvement flowing from the Ukraine theater, while no new Taiwan Strait naval activity was detected in the window."
+      "summary": "No direct Taiwan Strait signaling in this reporting window; the notable datapoint is South Korea-Ukraine friction over North Korean POW handling, an indirect echo of DPRK troop involvement in Europe's war."
     },
     {
       "theater": "Defense & Cyber Domains",
-      "status": "ELEVATED",
-      "trend": "VOLATILE",
-      "summary": "The disrupted RAF Fairford van-bomb plot against a US bomber base marks a serious homeland force-protection event, while the Navy's post-Constellation FF(X) frigate program - now weighing foreign designs - signals ongoing industrial-base strain in small-surface combatant shipbuilding."
+      "status": "HIGH",
+      "trend": "ESCALATING",
+      "summary": "Russia's strikes on Ukrainian telecom and data-center infrastructure blur the line between kinetic and cyber/electronic warfare, while the Fairford plot demonstrates state-linked covert-action reach against US strategic forces on NATO soil."
     },
     {
       "theater": "Domestic Civil Unrest & Demonstrations",
       "status": "GUARDED",
-      "trend": "VOLATILE",
-      "summary": "GDELT tracking shows sustained but contained protest activity - Netanyahu-related demonstrations in New York with celebrity arrests, campus SJP mobilization, and dropped charges for ICE protesters - while sectarian tension flared in Northern Ireland over the first Protestant march in a Catholic area in nearly 30 years and South Africa suffered 27 dead in two mass shootings."
+      "trend": "STABLE",
+      "summary": "US protest activity remains active but contained — pro-Palestinian campus demonstrations, arrests of celebrities at a Netanyahu protest in New York, and dropped charges for ICE-protest arrests — with no indicator of sustained mass mobilization."
     },
     {
       "theater": "Global Energy & Trade Chokepoints",
       "status": "HIGH",
       "trend": "VOLATILE",
-      "summary": "Brent crude holds an elevated ~$115 war premium amid Hormuz tensions and Houthi threats to Gulf energy infrastructure, with France now directly guarding Saudi oil assets, while Bangkok's flood disaster stresses regional supply chains."
+      "summary": "Brent at ~$115 and WTI at ~$96 embed a persistent war premium while Henry Hub stays normal, but renewed Saudi-Houthi strikes and the absence of usable maritime AIS data this cycle leave chokepoint risk under-monitored."
     }
   ],
   "operationalSummary": [
-    "Kinetic & Frontline Operations: The most consequential near-term kinetic event was disrupted rather than executed - UK counterterror police arrested five men near RAF Fairford, Gloucestershire, allegedly driving toward the base with suspected explosives in a van-bomb plot; bomb disposal teams examined suspicious vehicles, homes in Whelford were evacuated, and President Trump publicly stated the plot was 'looking to do big damage,' with early reporting pointing investigators toward an Iranian nexus (unconfirmed). RAF Fairford is the primary US bomber forward-operating hub and was a launch point for strikes on Iran earlier this year, making it a high-value symbolic and operational target. In Yemen, a strike on a market in Taiz killed seven and wounded 40, prompting explicit Houthi threats against Saudi Arabia; no direct US-Iran kinetic exchange occurred in this window, but Iranian general-level rhetoric threatening the expulsion of US forces from the Middle East raises the probability of proxy and asymmetric action.",
-    "Strategic Alliances & Diplomatic Posturing: Al Jazeera reports the US and Iran are moving further from a deal after President Trump rejected proposed terms, leaving Strait of Hormuz tensions unresolved and reviving fears of renewed direct fighting. France has stepped in with a 'strictly defensive' deployment to protect Saudi oil infrastructure as Houthi attacks intensify - a notable NATO-country entry into Gulf air defense that widens the coalition footprint and creates new escalation vectors if French forces are targeted. Switzerland's 70% referendum rejection of stricter neutrality rules preserves its defense cooperation options with NATO and signals European public tolerance for sanctions alignment against Russia. In the naval domain, the Navy's shipbuilding enterprise confirmed the FF(X) patrol frigate program is progressing with both US and foreign designs under consideration following the Constellation-class cancellation, an implicit acknowledgment of domestic industrial-base shortfalls. Separately, the resettlement of two North Korean POWs in South Korea provides fresh intelligence value on DPRK forces operating in the Ukraine war zone.",
-    "Geoeconomic, Market & Social Stability: Energy markets are the transmission channel of greatest concern - Brent at $114.89 and WTI at $96.41 embed a persistent war premium despite modest daily declines, while Henry Hub natural gas at $2.90 keeps US utility bills insulated for now. Paradoxically, financial markets are signaling complacency: VIX at 14.21, high-yield OAS at a tight 2.8%, and both the NFCI (-0.56) and STLFSI (-0.91) in accommodative territory, meaning markets are not pricing meaningful tail risk from a Hormuz disruption - a setup for violent repricing. The 10Y-2Y spread at +0.36% continues normalizing, and the strong dollar (DXY 119.51, USD/JPY 156.87) sustains imported-inflation relief for US consumers but pressure on emerging markets. Australia's RBA is expected to hike to 4.6%, its highest since 2011, squeezing Australian mortgages. Social stability indicators show contained but persistent unrest: anti-Netanyahu protests in New York with high-profile arrests, campus mobilization, Northern Ireland sectarian friction, and South Africa's gang-violence crisis (27 killed in two mass shootings), while Bangkok's flood disaster displaces thousands and stresses rice supply chains."
+    "Kinetic & Frontline Operations — Kinetic activity this cycle centered on three fronts. Russia conducted strikes on Ukraine's communications infrastructure, hitting a major mobile operator and a data center in an apparent effort to degrade civilian connectivity and military command-and-control ahead of winter. In the Middle East, the Houthi-run health ministry accused the Saudi Air Force of deadly strikes on a Taiz market and vowed retaliation, reopening a Yemeni front that had been relatively quiet. UK counter-terrorism police, acting on a villager's 999 call about suspicious vans and masked men in Whelford, arrested five men and recovered explosives near RAF Fairford — a forward operating base for US strategic bombers — with bomb disposal teams evacuating homes. Separately, Gaza's post-ceasefire recovery continues under an estimated 61 million tonnes of rubble concealing up to 10,000 bodies, while non-conflict disasters (DRC ferry capsizings killing 50+ across two incidents in three days, and a Nepal avalanche at Himlung Himal base camp) added humanitarian tolls.",
+    "Strategic Alliances & Diplomatic Posturing — Diplomatic tracks are running in parallel with covert threats. President Trump said talks with Iran will resume within the coming week, and Ambassador Mike Waltz disclosed the US offered to sell Iran uranium for a civilian program — an offer Tehran refused — even as Iranian FM Araghchi declared Iran ready for war 'even if it comes to a doomsday war,' and reporting highlights growing US-Israel divergence over Iran policy. In Europe, Serbia's Aleksandar Vucic resigned the presidency to seek the premiership, a constitutional maneuver testing his grip amid sustained mass protests; the UK's new Labour leadership under Andy Burnham is expending political capital on an NHS-style universal care service and new refugee routes for Afghan women and Palestinians; and Swiss voters rejected constitutionally entrenching stricter neutrality. Washington is weighing troop and support deployments as part of Cuba planning, and South Korea publicly criticized Ukraine over denied POW nondisclosure terms for North Korean soldiers — a friction point in the Euro-Asian security linkage.",
+    "Geoeconomic, Market & Social Stability — Financial conditions remain strikingly accommodative against a tense geopolitical backdrop: VIX at 14.21, high-yield spreads at a complacent 2.8%, and both the NFCI (-0.56) and STLFSI (-0.91) in easy territory, while the 10Y-2Y curve has normalized to +36bp. The clearest stress signal is energy: Brent ($114.89) and WTI ($96.41) carry a persistent war premium that functions as a tax on consumers and transport-intensive sectors even as equities shrug; Henry Hub natural gas ($2.90) is normal, limiting heating-bill pressure for now. The broad dollar index (119.5) is firm and USD/JPY at 156.87 keeps yen weakness on watch for carry-trade unwinds. Domestic infrastructure stress is weather-driven this cycle — a nor'easter with 56 mph gusts cut power across Maine, Connecticut, and Massachusetts, and Hurricane Nolo left roughly 12,370 Maui customers offline with wildfire risk elevated — while NASA FIRMS logged 4,085 high-confidence thermal anomalies globally. Maritime AIS and aviation feeds returned no usable data this cycle, degrading chokepoint visibility precisely as Red Sea risk re-emerges."
   ],
   "keyDevelopments": [
     {
-      "headline": "Five men arrested near RAF Fairford on suspicion of preparing a terrorist act, allegedly driving vehicles toward the US bomber base with suspected explosives; homes evacuated and bomb disposal deployed (The War Zone / WSJ / BBC)",
-      "theater": "Middle East & Red Sea / Homeland Security",
-      "significance": "RAF Fairford is the key US bomber forward hub and launch point for prior strikes on Iran; a disrupted vehicle-borne explosive plot there - with early reporting eyeing an Iranian link - represents a direct asymmetric threat to US power projection infrastructure on allied soil.",
-      "impact": "Expect heightened force-protection postures across US bases in the UK and Europe, extended UK counterterror detentions, and potential political escalation if Iran-linked culpability is confirmed; local civilians face continued evacuations and security disruption."
+      "headline": "Five men arrested and explosives recovered near RAF Fairford, a US bomber base in Gloucestershire; counter-terror police probe suspected Iranian link after villager's 999 call (The Guardian / DW / The Independent)",
+      "theater": "Europe / Counter-Terrorism",
+      "significance": "An alleged Iran-directed bomb plot on NATO soil targeting US strategic bomber forces directly entangles UK domestic security with US-Iran escalation dynamics at the most sensitive point in the nuclear negotiating cycle.",
+      "impact": "Force protection across US bases in Europe will tighten immediately; if Iranian culpability is confirmed, it could collapse the resuming talks and trigger retaliatory strikes, sanctions snapback, or proxy escalation."
     },
     {
-      "headline": "US and Iran move further from a deal as Trump rejects proposed terms; Strait of Hormuz tensions linger (Al Jazeera)",
-      "theater": "Middle East & Red Sea",
-      "significance": "Collapse of diplomacy removes the off-ramp from the current confrontation and keeps the world's most critical oil chokepoint in play.",
-      "impact": "Raises probability of tanker harassment, IRGC naval provocations, or renewed direct strikes; sustained war premium in crude and potential shipping insurance cost increases that cascade into global consumer prices."
+      "headline": "Trump says Iran talks to resume within a week; US offered to sell Iran uranium for civilian program per Waltz; Araghchi threatens 'doomsday war' (Al-Monitor / Al Jazeera)",
+      "theater": "Middle East / Diplomacy",
+      "significance": "Simultaneous diplomacy and coercion — a civilian uranium-supply offer paired with public war rhetoric — defines the current US-Iran bargaining posture, with reported US-Israel divergence complicating the track.",
+      "impact": "A successful resumption could deflate the oil war premium and stabilize markets; failure, or a provocateur attack such as Fairford, risks rapid re-escalation with global price transmission."
     },
     {
-      "headline": "Iranian general declares 'removal' of US from Middle East 'not far away' amid live war rhetoric (Al Jazeera)",
-      "theater": "Middle East & Red Sea",
-      "significance": "Senior regime military rhetoric openly framing expulsion of US forces as an objective signals regime intent and legitimizes proxy attacks on US personnel and bases.",
-      "impact": "Elevates threat level for attacks on US installations regionally and potentially via proxies or sympathizers in Europe, consistent with the Fairford plot pattern."
+      "headline": "Russia strikes Ukraine's communications infrastructure, hitting a mobile operator and data center (FirstPost)",
+      "theater": "Eastern Europe / Ukraine",
+      "significance": "Opening salvo of a winter campaign against civilian connectivity and military C2, consistent with Russia's established grid-and-comms strike pattern.",
+      "impact": "Degraded Ukrainian civilian communications and resilience heading into winter; intensifies NATO debates over air-defense deliveries and long-range strike permissions."
     },
     {
-      "headline": "Houthis warn Saudi Arabia after strikes on Taiz market kill seven and wound 40 (Jerusalem Post / Haaretz)",
-      "theater": "Middle East & Red Sea",
-      "significance": "Explicit Houthi threats against Riyadh risk re-opening the Saudi-Iranian proxy front and widening the conflict beyond the Red Sea littoral.",
-      "impact": "Potential renewed Houthi missile/drone strikes on Saudi territory and Gulf energy infrastructure, directly threatening oil output and shipping; Yemen's collapsing health system compounds civilian humanitarian risk."
+      "headline": "Serbian President Aleksandar Vucic resigns to run for prime minister after widespread protests (The Guardian / France 24)",
+      "theater": "Balkans / Europe",
+      "significance": "A constitutional maneuver to preserve power amid the largest protest movement of his rule, with the premiership potentially holding real governing levers.",
+      "impact": "Prolonged instability in a Balkan state balancing between Russia and the EU; risk of protest crackdowns, snap elections, and regional spillover into Bosnia and Kosovo."
     },
     {
-      "headline": "France deploys 'strictly defensive' forces to protect Saudi oil infrastructure as Houthi attacks intensify (Times of India)",
-      "theater": "Middle East & Red Sea",
-      "significance": "A major European power entering Gulf air defense expands the coalition and creates new escalation tripwires if French assets are struck.",
-      "impact": "Improves defense of critical energy infrastructure supporting global oil supply, but entrenches external power involvement and extends potential conflict participation to NATO members."
+      "headline": "Houthis report deadly Saudi air strikes on Taiz market, vow retaliation (DW)",
+      "theater": "Middle East / Red Sea",
+      "significance": "Reopens the Saudi-Houthi front and raises the prospect of renewed attacks on Red Sea shipping at a moment of elevated oil war premium.",
+      "impact": "Any Houthi retaliation against maritime traffic would raise war-risk insurance and freight costs, compounding the energy tax already embedded in consumer prices."
     },
     {
-      "headline": "Swiss voters reject stricter neutrality rules 70-30, preserving latitude for NATO cooperation and Russia sanctions (The Guardian)",
-      "theater": "Eastern Europe / European Security",
-      "significance": "A public referendum verdict against rigid neutrality removes a potential legal-political constraint on Swiss alignment with Western sanctions and defense cooperation.",
-      "impact": "Sustains European sanctions enforcement architecture against Russia and signals durable public support for pragmatic security alignment despite far-right neutrality campaigns."
+      "headline": "US military weighs troop and support deployments amid Cuba planning (Moneycontrol)",
+      "theater": "Western Hemisphere",
+      "significance": "Indicates planning for a potential military option or major stabilization posture toward Cuba beyond the existing Caribbean naval buildup.",
+      "impact": "Would stretch US deployment capacity across theaters and raise the risk of a second regional crisis competing with Middle East and Europe for attention and assets."
     },
     {
-      "headline": "Navy's FF(X) patrol frigate program progresses with US and foreign designs under consideration after Constellation-class cancellation (USNI News)",
-      "theater": "Defense & Cyber Domains",
-      "significance": "Open consideration of foreign hull designs is a rare admission of US shipbuilding industrial-base limitations in small-surface combatants.",
-      "impact": "Long-term fleet size and deterrence posture in contested littorals hinge on this decision; foreign design adoption could accelerate delivery but raises interoperability and industrial-sovereignty questions."
+      "headline": "Nor'easter cuts power across New England with 56 mph gusts and flooding; Hurricane Nolo knocks out ~12,370 Maui customers with wildfire risk monitored (CT Insider / CBS News / Maui Now)",
+      "theater": "US Homeland / Infrastructure",
+      "significance": "Concurrent severe-weather events stress two regional grids and expose continued fragility to storm and wildfire hazards.",
+      "impact": "Multi-day outages for residents; restoration costs and wildfire exposure keep upward pressure on insurance premiums and utility bills."
     },
     {
-      "headline": "RBA expected to hike cash rate to 4.6%, highest since 2011, hitting Australian mortgages and household budgets (The Guardian)",
-      "theater": "Global Economy",
-      "significance": "A major developed-economy central bank tightening into an oil-war-premium environment signals persistent inflation pressure.",
-      "impact": "Australian household budgets and house prices face direct strain; a bellwether for how energy-driven inflation forces central banks to keep policy restrictive despite growth risks."
+      "headline": "Gaza rubble clearance: 61 million tonnes concealing up to 10,000 bodies (The Guardian)",
+      "theater": "Middle East / Humanitarian",
+      "significance": "The scale of post-conflict recovery underscores the humanitarian, forensic, and engineering challenge under the ceasefire.",
+      "impact": "A prolonged recovery operation shapes stabilization force requirements, civilian return timelines, and reconstruction funding debates."
     },
     {
-      "headline": "Bangkok declared disaster zone as floods force thousands into shelters; at least eight dead (France 24)",
-      "theater": "Global Energy & Trade Chokepoints",
-      "significance": "Thailand is a critical global rice exporter and regional logistics hub; capital-region flooding disrupts both.",
-      "impact": "Potential rice and regional supply-chain price pressure, compounding food inflation already driven by elevated energy costs."
-    },
-    {
-      "headline": "Two mass shootings hours apart in South Africa kill 27, including 17 at a tavern near Johannesburg (BBC / France 24)",
-      "theater": "Domestic Civil Unrest & Demonstrations",
-      "significance": "Assault-rifle attacks underscore the severity of South Africa's gang-violence and femicide crisis, with 11 women killed in one municipality in two months.",
-      "impact": "Indicators of state security-capacity strain and social fragmentation in a key emerging-market economy and BRICS member."
+      "headline": "South Korea-Ukraine relations sour over denied nondisclosure agreement for North Korean POW transfer (Al Jazeera)",
+      "theater": "Indo-Pacific / Europe Linkage",
+      "significance": "Friction between partners over DPRK prisoner handling reveals coordination gaps in the Euro-Asian security architecture created by North Korean troops fighting for Russia.",
+      "impact": "Could complicate intelligence-sharing and POW repatriation efforts, and feeds Seoul's domestic debate over direct arms transfers to Kyiv."
     }
   ],
   "indicatorsAndWarnings": [
-    "Monitor UK counterterror charging decisions and extended-detention rulings for the five RAF Fairford suspects within 24-72 hours; confirmation of an Iran-directed or Iran-inspired nexus would trigger force-protection escalations across US bases in Europe and possible retaliatory signaling.",
-    "Watch for IRGC naval action against commercial tankers or GPS jamming in the Strait of Hormuz as the diplomatic track collapses; any tanker seizure or mine-laying indicator is the primary trigger for a Brent crude spike above current ~$115 levels.",
-    "Track Houthi follow-through on threats against Saudi Arabia following the Taiz market strike - missile/drone launches toward Riyadh or Saudi energy infrastructure, and any incident involving newly deployed French defensive forces, within the next 72 hours.",
-    "Monitor for increased US bomber activity, security perimeter expansions, or flight restrictions around RAF Fairford and other UK/European US installations as a proxy indicator of intelligence warning of follow-on plots.",
-    "RBA rate decision Tuesday: confirmation of a hike to 4.6% would validate the energy-inflation transmission channel and signal how quickly other central banks may be forced off easing paths if oil holds its war premium.",
-    "Watch for Houthi resumption of Red Sea shipping attacks, which would raise war-risk insurance premiums and re-route traffic around the Cape of Good Hope, adding 10-14 days and significant cost to Europe-Asia supply chains.",
-    "Monitor VIX and high-yield spreads for the first cracks in market complacency; a VIX move above 20 or HY OAS widening beyond 3.5% would signal markets beginning to price the Middle East tail risk currently ignored."
+    "Monitor UK counter-terror updates and US European base force-protection changes over the next 24-72 hours; confirmation of Iranian state direction of the Fairford plot is the single most likely trigger for collapse of the nuclear track and kinetic retaliation.",
+    "Watch the resumption of US-Iran talks announced for the coming week: any breakdown, IAEA access dispute, or enrichment announcement should be treated as an escalation trigger with immediate oil-price transmission.",
+    "Track the Houthi rhetoric-to-action lag after the Taiz strikes: renewed anti-shipping attacks in the Red Sea or Bab al-Mandeb within 72 hours would confirm the front has reopened.",
+    "Expect further Russian missile and drone volleys against Ukrainian power and communications nodes as winter sets in; a mass coordinated strike within 72 hours would signal formal launch of the winter infrastructure campaign.",
+    "Watch Serbia's government-formation timeline and protest mobilization following Vucic's resignation; a crackdown or snap-election announcement could reignite mass unrest within days.",
+    "Monitor for formal US deployment announcements regarding Cuba and Caribbean naval movements indicating conversion of planning into posture.",
+    "Financial-complacency warning: with VIX at 14 and high-yield spreads at 2.8%, any Iranian provocation or chokepoint closure would produce an outsized volatility and oil spike; treat Brent breaking decisively above $115 as the stress threshold.",
+    "Track grid restoration timelines in New England and wildfire conditions on Maui under Hurricane Nolo winds over the next 48 hours for secondary infrastructure and insurance-market effects."
   ],
   "date": "2026-09-27",
-  "generatedAt": "2026-09-27T15:45:33.984Z",
+  "generatedAt": "2026-09-27T19:29:03.727Z",
   "modelUsed": "z-ai/glm-5.3-flash"
 }

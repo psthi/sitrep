@@ -1,121 +1,139 @@
 {
-  "bluf": "Russia has opened its winter campaign with the largest strike on Ukraine's energy grid since spring while combat-testing a new warhead on a jet-powered drone, and the Gulf-Israel aviation axis was shaken by an attempted terror downing of an Israeli-bound airliner forced to land in Saudi Arabia. Oil retains a substantial war premium (Brent ~$115/bbl) even as equity volatility stays subdued, revealing a widening gap between geopolitical risk and market complacency. The immediate trajectory is ESCALATING in Eastern Europe and VOLATILE across the Middle East, with Iran strike risk, West Bank entrenchment, and a Palestinian electoral realignment compounding an already fragile two-theater security environment.",
+  "bluf": "The United States remains in an active war against Iran, and is surging major naval power into the region as the Theodore Roosevelt Carrier Strike Group and Makin Island ARG deploy back-to-back, while Tehran-linked activity at RAF Fairford and a thwarted jihadist cockpit attack on a Dubai-Tel Aviv flight demonstrate the conflict's expanding reach onto NATO soil and into civil aviation. Oil retains an elevated war premium (Brent ~$114/bbl, easing), Houthi threats to Bab el-Mandeb persist, and Russia's explicit nuclear warning over Kaliningrad has opened a second volatile theater. Near-term risk trajectory is ESCALATING in the Middle East, yet financial markets remain deceptively calm (VIX 16), leaving households exposed chiefly through sustained fuel prices and any sudden chokepoint closure.",
   "householdImpact": {
-    "energyAndFuel": "Crude oil is carrying a war premium — Brent near $115 and WTI near $96 per barrel — so expect continued high prices at the gas pump, with any Middle East or Russia-Ukraine escalation likely to push them higher quickly. US natural gas remains normal (~$2.90/MMBtu), which helps keep home heating and electric bills stable for now, though winter demand and attacks on energy grids abroad could tighten supply.",
-    "borrowingAndMortgages": "Bond markets are calm — the yield curve is normalizing and credit stress is moderate — so mortgage, auto loan, and credit card rates should stay elevated but stable rather than spike. The Fed's decision to loosen bank stress tests could gradually ease lending conditions, modestly improving loan availability.",
-    "groceriesAndSupplyChain": "Persistently high oil prices feed into trucking, shipping, and fertilizer costs, which slowly pushes up grocery bills even though no major maritime chokepoint is currently closed. Italy's move to cap gasoline and diesel prices is an early warning that energy costs are straining European consumers and could foreshadow broader price interventions.",
-    "jobsAndSavings": "With stock volatility subdued (VIX ~16) and credit conditions healthy, retirement accounts and hiring face no immediate stress, and the Fed's bank-friendly stress-test overhaul supports lending and job creation. The main risk is a sudden geopolitical shock — an oil spike or successful terror attack — that could quickly reverse market calm and dent 401(k) values."
+    "energyAndFuel": "Oil is carrying a war premium - Brent at ~$114 and WTI at ~$96 per barrel - so expect noticeably higher gas pump prices than normal, though today's $3-6 drop offers modest near-term relief. Natural gas remains normal at ~$3.18/MMBtu, so home heating and most electric bills are holding steady for now unless Red Sea fighting disrupts Gulf energy shipments.",
+    "borrowingAndMortgages": "Bond markets are calm and the yield curve is normalizing, so mortgage and auto loan rates are stable rather than spiking despite the war. Credit card and personal loan rates remain elevated but steady, with lender risk gauges (high-yield spreads ~3.1%) showing no signs of panic or credit tightening.",
+    "groceriesAndSupplyChain": "Sustained $100+ oil feeds directly into trucking and shipping costs, which slowly pushes up grocery and everyday goods prices. Houthi threats around Bab el-Mandeb keep war-risk insurance and rerouting costs elevated on Asia-Europe lanes, adding gradual price pressure on imported food and consumer items.",
+    "jobsAndSavings": "Markets are calm (VIX ~16) and credit conditions are accommodative, which supports steady hiring and stable 401(k) balances. The main household risk is a sudden chokepoint closure or strike on oil infrastructure, which could jolt stocks and retirement savings quickly."
   },
   "threatMatrix": [
     {
       "theater": "Eastern Europe / Ukraine",
       "status": "HIGH",
-      "trend": "ESCALATING",
-      "summary": "Russia conducted its largest strike on Ukrainian energy infrastructure since spring across 11 regions, forcing emergency blackouts in Kyiv and three oblasts while combat-testing a new warhead on a jet-powered drone."
+      "trend": "VOLATILE",
+      "summary": "Russia explicitly warns NATO of a possible nuclear response if Kaliningrad is cut off, claiming the alliance is preparing an air and naval blockade of the Baltic Sea."
     },
     {
       "theater": "Middle East & Red Sea",
-      "status": "HIGH",
-      "trend": "VOLATILE",
-      "summary": "An attempted downing of an Israeli-bound flydubai airliner, intensifying West Bank settler violence, a new Hamas-PIJ-Dahlan electoral bloc, and warnings that pressure on Iran could trigger an attack on Israel keep the region on a hair trigger despite US peace talks."
+      "status": "CRITICAL",
+      "trend": "ESCALATING",
+      "summary": "The US-Iran war continues with carrier rotations into CENTCOM, Israeli strikes in Gaza killing civilians, Houthi attacks prompting Saudi re-mobilization in Yemen, a thwarted jihadist attack on a Dubai-Tel Aviv flight, and Iranian attribution for the Fairford airbase incident in the UK."
     },
     {
       "theater": "Indo-Pacific & Taiwan",
       "status": "GUARDED",
       "trend": "STABLE",
-      "summary": "No direct military signaling or coercive naval activity detected in the current window; the theater remains quiet with China's visible activity dominated by non-military events."
+      "summary": "No direct Taiwan Strait flashpoints in the past 24-48 hours; the West Coast carrier surge could position forces for either Middle East or Pacific tasking as the PrSM long-range strike program accelerates."
     },
     {
       "theater": "Defense & Cyber Domains",
       "status": "ELEVATED",
-      "trend": "ESCALATING",
-      "summary": "Russia's combat test of a new jet-drone warhead marks a weapons-development milestone, while the Bank of England's call for a 'right to intervene' in AI and 44,000+ objections to Palantir's NHS data platform highlight accelerating state concern over AI and data-security governance."
+      "trend": "STABLE",
+      "summary": "US Army awards PrSM Inc 4 prototype contracts to five firms including Anduril and RTX, Saronic breaks ground on the Port Alpha autonomous-shipyard in Texas, and the FTC opens an AI-safety probe alongside a White House voluntary AI accord."
     },
     {
       "theater": "Domestic Civil Unrest & Demonstrations",
       "status": "ELEVATED",
       "trend": "VOLATILE",
-      "summary": "US anti-ICE mobilization is broadening — including a GOP senator publicly urging the administration to rethink its immigration crackdown — while PTI road blockades in Islamabad and Northern Ireland's Garvaghy Road standoff show parallel unrest flashpoints abroad."
+      "summary": "French youth clashes with police over school blockades leave hundreds detained, while US anti-ICE mobilization, midterm-season voter-fraud indictments, and immigration enforcement flashpoints sustain domestic protest energy."
     },
     {
       "theater": "Global Energy & Trade Chokepoints",
       "status": "HIGH",
       "trend": "VOLATILE",
-      "summary": "Brent holds a war premium near $115/bbl and WTI near $96 despite no active chokepoint closure, Russia's grid strikes add supply-side risk, and Italy's fuel price caps signal consumer-level strain spreading through Europe."
+      "summary": "Brent holds an elevated war premium at ~$114/bbl (down $6 on the day) as Houthi threats to Bab el-Mandeb and a Syrian gas pipeline explosion that disabled three power plants keep supply risk elevated."
     }
   ],
   "operationalSummary": [
-    "Kinetic & Frontline Operations: Russia executed its largest overnight strike on Ukrainian energy infrastructure since spring, hitting 11 regions and forcing emergency power outages in Kyiv and three other regions, while simultaneously combat-testing a new warhead on a jet-powered drone — a notable weapons-employment milestone for its long-range strike complex. In the Middle East, a flydubai pilot stabbed his co-pilot and apparently attempted to crash the aircraft carrying mostly Israeli passengers before passengers overpowered him and the jet made an emergency landing in Saudi Arabia, with Israeli leadership treating it as an attempted terror attack. In the West Bank, hundreds of Israelis marched through newly rebuilt northern settlements as the ICRC condemned settler violence following an assault on a Palestinian family in Jalud, and in Ethiopia, escalating fighting in Tigray has killed at least 52 civilians and spread to neighboring regions, stranding tourists in Lalibela.",
-    "Strategic Alliances & Diplomatic Posturing: NATO Secretary General Rutte publicly downplayed any imminent threat to alliance territory while affirming readiness for Russian aggression, as Ukraine's total war costs head toward $155bn this year against an unresolved $27bn budget shortfall that will test Western fiscal resolve. Netanyahu's framing of the flydubai incident as attempted terror — contested by his opposition as 'cheap politics' and met with delayed, skeptical coverage in Gulf media — risks straining the UAE-Saudi-Israel security architecture, while a new Hamas–Palestinian Islamic Jihad–Dahlan electoral coalition signals Palestinian political realignment ahead of PLC elections. Analyst warnings that mounting pressure on Iran could produce an attack on Israel despite ongoing US peace talks, Macron's Madrid call for a 'stronger Europe,' the Fed's stress-test overhaul favoring large banks, and BoE Governor Bailey's demand for intervention powers over rogue AI collectively underscore a strategic environment where deterrence, finance, and technology governance are converging.",
-    "Geoeconomic, Market & Social Stability: Oil markets carry a persistent war premium — Brent at $114.89/bbl and WTI at $96.41/bbl — even as Henry Hub natural gas stays normal at $2.90/MMBtu and equity volatility remains subdued (VIX 16.04), a complacency gap between geopolitical risk and market pricing. Credit conditions are accommodative: the 10Y-2Y spread is normalizing at +0.37%, high-yield spreads are moderate at 3.08%, and both financial-stress indices sit in benign territory, supporting lending and risk appetite. Social stability indicators show friction at the household level: Italy has imposed fuel price caps, Australian home values fell 5.2% amid a broader European housing crisis fueling political mobilization, US anti-ICE activism is scaling, and Islamabad saw PTI road blockades — while NASA FIRMS logged 4,040 thermal anomalies globally, consistent with routine baseline fire activity rather than an anomalous conflict signature."
+    "Kinetic activity is concentrated in the US-Iran war and its periphery. The five-ship Theodore Roosevelt CSG and three-ship Makin Island ARG deployed back-to-back from the West Coast, with Forbes confirming continued US Navy carrier rotation into the Middle East - the largest concurrent surface surge of the conflict. British PM Burnham stated there are 'strong indications' of Iranian involvement in Sunday's security incident near RAF Fairford, a US staging base for the war, marking the first attribution of Iranian-linked activity on NATO soil. Israel labeled the Flydubai FZ1073 cockpit stabbing - in which the co-pilot stabbed the captain in an attempted crash before passengers subdued him and the jet diverted to Saudi Arabia - a 'jihadist terrorist attack attempt.' Israeli strikes across Gaza killed at least eight civilians, settler violence struck a Palestinian family in Jalud, and troops teargassed residents west of Hebron. A gas pipeline explosion disabled three Syrian power plants, and renewed fighting in Ethiopia raises Horn of Africa spillover fears linked to Bab el-Mandeb threats.",
+    "Strategically, Crown Prince Mohammed bin Salman declared Saudi Arabia 'will not compromise' on security as the Houthis 'choose chaos,' with Riyadh and the Yemeni government calling for closer ties to counter Houthi attacks - formally re-opening the Saudi-Yemen front and widening the coalition war footprint. The UK's Iranian attribution for Fairford tests NATO consultation mechanisms and could pull European allies deeper into the conflict, while Russia's warning of a possible nuclear response if Kaliningrad is isolated injects nuclear-threshold rhetoric into the Baltic. NATO Defence College coursework on burden-shifting reflects allied strain as the US concentrates forces on Iran. Politically, the Trump administration is diverting $175M in State Department human rights funds toward far-right causes abroad, the DoJ issued ten more noncitizen-voting indictments amid midterm campaigning, and five EU states are advancing an African deportation center for 2027 - all signals of intensifying domestic-international political entanglement.",
+    "Geoeconomically, Brent eased $6.01 to $113.96/bbl and WTI fell $3.21 to $96.16 - a partial de-escalation discount but still a firm war premium - while Henry Hub gas remains normal at $3.18/MMBtu, insulating US utility bills for now. Financial conditions are unusually calm for a wartime footing: VIX at 16.04, high-yield OAS at a moderate 3.08%, NFCI (-0.55) and STLFSI (-0.81) both accommodative, and the 10Y-2Y spread normalizing at +0.37%; the broad dollar index holds at 120.33 with USD/JPY at 157.18 keeping the yen soft. Social stability indicators show French school-blockade riots with hundreds detained, sustained US anti-ICE cultural mobilization, and PTI container blockades in Islamabad. Sensor note: maritime/AIS chokepoint feeds returned no data and OpenSky tracked 0 flights, creating a temporary blind spot on chokepoint transit and air-traffic verification; NASA FIRMS logged 4,632 thermal anomalies globally, consistent with background agricultural and conflict-zone burning."
   ],
   "keyDevelopments": [
     {
-      "headline": "Pilot stabs co-pilot and apparently attempts to crash Israel-bound flydubai flight; passengers subdue him before emergency landing in Saudi Arabia (BBC / The Guardian / Reuters)",
-      "theater": "Middle East & Red Sea / Aviation Security",
-      "significance": "First attempted mass-casualty downing of the Gulf-Israel commercial air link; directly tests insider-threat screening and the UAE-Saudi-Israel security cooperation framework.",
-      "impact": "If confirmed as externally directed terror, expect Gulf-wide airspace restrictions, hardened cockpit protocols, and possible diplomatic rupture or retaliation; the mostly Israeli passenger manifest raises escalation stakes considerably."
+      "headline": "Theodore Roosevelt CSG (5 ships) and Makin Island ARG (3 ships) deploy back-to-back from West Coast; US Navy continues Middle East carrier rotation (The War Zone / Forbes)",
+      "theater": "Middle East & Red Sea / Global Naval Posture",
+      "significance": "Largest concurrent naval surge of the US-Iran war, signaling sustained or escalating commitment to the CENTCOM area of operations.",
+      "impact": "Expands US strike capacity against Iran and the Houthis, strengthens deterrence, but raises escalation risk and force-protection demands in contested Red Sea and Gulf waters."
     },
     {
-      "headline": "Russia launches largest attack on Ukrainian energy infrastructure since spring, hitting 11 regions and triggering emergency blackouts in Kyiv and three other regions (BBC / shelter.in.ua)",
-      "theater": "Eastern Europe / Ukraine",
-      "significance": "Marks the opening of Russia's winter campaign to break Ukrainian grid resilience and civilian morale ahead of deep-winter conditions.",
-      "impact": "Deepens humanitarian strain, accelerates Ukraine's $155bn war-cost burden, and raises pressure on Western air-defense and energy-resilience aid deliveries."
+      "headline": "UK PM Burnham says there are 'strong indications' Iran was involved in the Fairford airbase security incident (France 24)",
+      "theater": "Europe / US-Iran War",
+      "significance": "First attribution of Iranian-linked activity on NATO soil connected to a US war-staging base.",
+      "impact": "Could trigger NATO Article 4 consultations, UK retaliatory or expulsive measures, and widened European exposure to Iranian proxy retaliation."
     },
     {
-      "headline": "Russia combat-tests new warhead on jet-powered drone during strike operations (shelter.in.ua)",
-      "theater": "Defense & Cyber Domains",
-      "significance": "Signals a new generation of long-range precision strike capability entering operational testing against Ukrainian defenses.",
-      "impact": "Improves Russian penetration of air defenses and may prompt NATO countermeasure development and additional sanctions responses."
+      "headline": "Flydubai FZ1073 cockpit stabbing: co-pilot stabbed captain in attempted crash on Dubai-Tel Aviv flight; Israel calls it a 'jihadist terrorist attack attempt' (Al Jazeera / Reuters / The Statesman)",
+      "theater": "Middle East / Aviation Security",
+      "significance": "Most serious insider-threat penetration of a Gulf-Israel commercial cockpit since the war began; passengers averted mass-casualty event.",
+      "impact": "Expect tightened aviation security, possible route suspensions on UAE-Israel corridors, and heightened insider-threat screening across Gulf carriers."
     },
     {
-      "headline": "NATO Secretary General Rutte: no imminent threat to alliance territory but alliance prepared for Russian aggression (The Guardian)",
-      "theater": "Eastern Europe / NATO Deterrence",
-      "significance": "Deliberate de-escalatory public signaling aimed at calming European populations while maintaining readiness posture.",
-      "impact": "Reassures markets and publics but leaves open miscalculation risk as Russia's strike tempo and weapons testing accelerate."
+      "headline": "Russia warns NATO of possible nuclear response if Kaliningrad is cut off, claiming alliance is preparing Baltic air-naval blockade (Al Jazeera)",
+      "theater": "Eastern Europe / Baltic",
+      "significance": "Explicit nuclear-threshold rhetoric tied to Baltic access scenarios.",
+      "impact": "Raises miscalculation risk during NATO exercises and naval patrols; likely prompts allied force-protection reviews and Russian signaling exercises."
     },
     {
-      "headline": "Hamas, Palestinian Islamic Jihad, and Mohammed Dahlan form electoral coalition ahead of PLC elections (The Jerusalem Post)",
-      "theater": "Middle East & Red Sea / Palestinian Politics",
-      "significance": "An unprecedented cross-factional bloc could reshape Palestinian governance and post-war political arrangements.",
-      "impact": "Complicates Israeli and US political horizon planning and may alter West Bank-Gaza power dynamics if elections proceed."
+      "headline": "MBS: Saudi Arabia 'will not compromise' on security as Houthis choose 'chaos'; Riyadh and Yemen government call for closer regional ties (Al Jazeera / Middle East Eye)",
+      "theater": "Middle East & Red Sea",
+      "significance": "Formal Saudi re-commitment to the Yemen front amid US-Iran war.",
+      "impact": "Opens a second coalition front against the Houthis, improving Bab el-Mandeb security prospects but widening the regional war footprint and refugee flows."
     },
     {
-      "headline": "ICRC says settler violence makes Palestinian life 'untenable' after assault on family in Jalud; hundreds march through rebuilt northern West Bank settlements (The Guardian / Al-Monitor)",
-      "theater": "Middle East & Red Sea / West Bank",
-      "significance": "Settler mobilization and normalization of evacuated outposts signal territorial entrenchment and rising daily friction.",
-      "impact": "Raises risk of a wider West Bank conflagration that could draw in Palestinian factions, Jordan, and international peacekeeping pressure."
+      "headline": "Horn of Africa fears spillover as renewed Ethiopian fighting raises civil-war risk; Bab el-Mandeb threats cited as fuse (France 24)",
+      "theater": "Africa / Red Sea Flank",
+      "significance": "Potential renewed civil war in Africa's second-most-populous state, linked to Red Sea conflict dynamics.",
+      "impact": "Refugee outflows, strain on the counter-Houthi coalition, and risk of a domino effect across Eritrea, Somalia, and Sudan."
     },
     {
-      "headline": "Analysis: mounting pressure on Iran could lead to attack on Israel despite US peace talks (The Jerusalem Post)",
-      "theater": "Middle East & Red Sea / Iran",
-      "significance": "Warns that escalation drivers are outpacing diplomatic channels even as negotiations continue.",
-      "impact": "Any Iranian strike would spike oil prices further and likely trigger Israeli retaliation, re-igniting regional conflict and Red Sea maritime risk."
+      "headline": "Syrian gas pipeline explosion knocks out three power plants (Middle East Eye)",
+      "theater": "Middle East / Energy Infrastructure",
+      "significance": "Attack on critical energy infrastructure amid regional war conditions.",
+      "impact": "Deepens Syria's humanitarian and electricity crisis; possible sabotage spillover demonstrating infrastructure vulnerability across the theater."
     },
     {
-      "headline": "Tigray fighting escalates, killing 52 civilians and spreading to neighboring regions; tourists stranded in Lalibela (BBC)",
-      "theater": "Africa / Horn of Africa",
-      "significance": "Renewed large-scale conflict in Ethiopia threatens wider regional destabilization and a fresh humanitarian crisis.",
-      "impact": "Endangers civilians and tourism corridors, strains African Union mediation capacity, and risks new refugee flows."
+      "headline": "Israeli strikes across Gaza kill at least eight; ICRC says settler violence makes Palestinian life 'untenable' after Jalud family assault (Al Jazeera / The Guardian)",
+      "theater": "Middle East / Israel-Palestine",
+      "significance": "Sustained kinetic activity and escalating settler violence alongside the wider war.",
+      "impact": "Civilian casualties sustain regional tension, fuel recruitment for attacks like the Flydubai attempt, and complicate US coalition diplomacy."
     },
     {
-      "headline": "Fed votes to overhaul bank stress tests in victory for big banks; BoE's Bailey calls for 'right to intervene' in AI (Indianapolis Business Journal / The Guardian)",
-      "theater": "Global Finance & Technology Governance",
-      "significance": "Major central banks are simultaneously loosening bank capital scrutiny and moving to assert control over AI-driven systemic risk.",
-      "impact": "Eases near-term credit conditions but embeds long-tail systemic risk if AI-driven market disruptions outpace regulatory intervention tools."
+      "headline": "US Army awards PrSM Inc 4 prototype OTAs to Anduril, Castelion, Lockheed Martin, RTX, and Mach Industries (Breaking Defense)",
+      "theater": "Defense Industrial Base",
+      "significance": "Diversification of the long-range precision-strike munitions pipeline to non-traditional vendors.",
+      "impact": "Accelerates deep-strike magazine growth for both Pacific and Middle East contingencies; signals industrial-mobilization posture."
+    },
+    {
+      "headline": "Saronic breaks ground on Port Alpha shipyard in Brownsville, Texas (Breaking Defense)",
+      "theater": "Defense Industrial Base / Naval Power",
+      "significance": "Greenfield US shipyard dedicated to autonomous naval vessel production.",
+      "impact": "Long-term expansion of US naval mass and unmanned fleet capacity, addressing fleet-size gaps against peer navies."
+    },
+    {
+      "headline": "Brent eases $6.01 to $113.96/bbl and WTI to $96.16, retaining an elevated war premium (Market Data)",
+      "theater": "Global Energy & Trade Chokepoints",
+      "significance": "Markets pricing partial de-escalation while supply risk from Bab el-Mandeb and Iranian infrastructure remains live.",
+      "impact": "Pump prices stay elevated for consumers; a chokepoint closure or strike on energy infrastructure would re-spike prices above $120/bbl rapidly."
+    },
+    {
+      "headline": "Trump administration diverts $175M in State Department human rights funds to far-right causes abroad; DoJ indicts 10 more on noncitizen-voting charges amid midterm campaigning (The Guardian)",
+      "theater": "Domestic / Political-Geoeconomic",
+      "significance": "Redefinition of US human rights policy and election-season legal-political escalation.",
+      "impact": "Friction with European allies, domestic polarization risk, and potential blowback to US soft-power leverage during wartime."
     }
   ],
   "indicatorsAndWarnings": [
-    "Monitor for Iranian or proxy retaliation against Israeli targets over the next 24-72 hours — any strike window opening as US-Iran peace talks stall would immediately push Brent above $115-120/bbl.",
-    "Watch for Russian follow-on mass strikes on Ukrainian grid nodes and further operational use of the new jet-drone warhead; Kyiv blackout duration exceeding 48 hours signals a sustained winter attrition campaign.",
-    "Track the flydubai investigation closely: confirmation of external direction or organizational affiliation would trigger Gulf-wide aviation security measures, possible airspace closures, and acute UAE-Israel diplomatic strain.",
-    "Watch West Bank flashpoints — additional settler marches, Jalud-type assaults, or PLC election scheduling announcements — for triggers of large-scale Palestinian unrest or de facto annexation steps.",
-    "Monitor Ukraine's $27bn funding-gap negotiations; failure to close the shortfall within days would raise sovereign stress and pressure European bond and aid coalitions.",
-    "Watch for additional European fuel price controls following Italy's gasoline/diesel caps — an early indicator of energy-driven political intervention spreading across the EU.",
-    "Track PTI protest escalation in Islamabad: container blockades could evolve into mass confrontation with security forces within 24-72 hours.",
-    "Monitor Tigray conflict spread toward Lalibela and Amhara corridors for further civilian casualties, tourist evacuations, and possible regional military intervention."
+    "Monitor Houthi anti-shipping missile/drone attack windows in Bab el-Mandeb and the southern Red Sea over the next 24-72 hours following MBS's 'no compromise' statement; Saudi coalition strikes inside Yemen are likely and could provoke Houthi retaliation against Gulf energy or shipping targets.",
+    "Watch for UK/NATO response to the Fairford Iranian attribution within 72 hours - possible diplomatic expulsions, Article 4 consultations, or Iranian proxy retaliation against US bases in Europe.",
+    "Track destination and tasking announcements for the Theodore Roosevelt CSG and Makin Island ARG; arrival in the CENTCOM area of operations would signal strike-window preparation or major escalation sequencing against Iran.",
+    "Watch Russian Baltic Fleet activity, Kaliningrad-specific exercises, or Russian strategic nuclear signaling drills following Moscow's nuclear warning; any NATO Baltic naval maneuver could become a miscalculation flashpoint.",
+    "Expect tightened aviation security measures, potential route suspensions, or flight bans on UAE-Israel and Gulf commercial corridors after the Flydubai jihadist attack attempt; watch for copycat insider or cockpit threats.",
+    "Monitor Brent crude for a re-spike above $120/bbl if Bab el-Mandeb transits are attacked or Iranian energy infrastructure is struck; sustained easing below $110 would signal market-assessed de-escalation.",
+    "Monitor Ethiopian federal-offensive developments for cross-border spillover into Eritrea, Somalia, or Sudan, and any Houthi exploitation of Horn of Africa instability to threaten the Red Sea flank.",
+    "Domestic watch: French school-blockade escalation and US midterm-season flashpoints (ICE enforcement, voter-fraud indictments, anti-ICE mobilization) for wider mobilization or localized civil disturbances over the next 48-72 hours."
   ],
   "date": "2026-09-30",
-  "generatedAt": "2026-09-30T15:33:20.208Z",
+  "generatedAt": "2026-09-30T20:28:35.666Z",
   "modelUsed": "z-ai/glm-5.3-flash"
 }

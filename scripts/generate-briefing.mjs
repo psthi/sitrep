@@ -65,8 +65,8 @@ async function main() {
     } catch (_) {}
   }
 
-  const prompt = `You are a Senior Geopolitical, Defense, and Macroeconomic Intelligence Analyst producing an unclassified Situation Report (SITREP).
-Your audience includes defense/policy analysts who demand operational rigor and strategic precision, as well as informed everyday citizens who need clear, plain-English explanations of how global events directly impact their household, wallet, and daily life.
+  const prompt = `You are a Senior Editor for a popular global news newsletter (similar to Morning Brew or Axios).
+Your audience includes informed everyday citizens who need clear, plain-English explanations of how global events directly impact their household, wallet, and daily life. You must avoid military jargon, acronyms, and overly dense geopolitical speak.
 
 Review these latest ingested signals from the past 24-48 hours:
 ${headlinesList}
@@ -86,70 +86,47 @@ ${maritimeSummary}
 Review Aviation/OpenSky global tracking:
 ${aviationSummary}
 
-Synthesize these defense signals, economic indicators, and civil unrest metrics into a unified intelligence briefing adhering strictly to the JSON schema below.
+Synthesize these defense signals, economic indicators, and civil unrest metrics into a unified, easy-to-read daily newsletter adhering strictly to the JSON schema below.
 
 JSON SCHEMA REQUIREMENT:
 {
-  "bluf": "2-3 sentence Bottom Line Up Front. State the single most significant strategic reality and immediate risk trajectory clearly and authoritatively.",
+  "theBigPicture": "2-3 sentence summary of the most important global events over the last 24 hours, written in plain English, explaining why it matters today.",
   "householdImpact": {
-    "energyAndFuel": "1-2 plain-English sentences explaining what current oil/gas prices and geopolitical tensions mean for filling up a car at the gas pump and home electric/heating utility bills.",
-    "borrowingAndMortgages": "1-2 plain-English sentences explaining how current bond yields and borrowing conditions affect mortgage rates, auto loans, and credit card interest.",
-    "groceriesAndSupplyChain": "1-2 plain-English sentences explaining how maritime chokepoints, trade friction, or energy costs are impacting food prices, grocery bills, and everyday consumer goods.",
-    "jobsAndSavings": "1-2 plain-English sentences explaining what market volatility and corporate credit conditions mean for job security, hiring, and 401(k)/retirement savings."
+    "energyAndFuel": "1-2 plain-English sentences explaining what current oil/gas prices and tensions mean for gas pump prices and home energy bills.",
+    "borrowingAndMortgages": "1-2 plain-English sentences explaining how current economic conditions affect mortgage rates, auto loans, and credit cards.",
+    "groceriesAndSupplyChain": "1-2 plain-English sentences explaining how shipping issues or inflation are impacting food prices and grocery bills.",
+    "jobsAndSavings": "1-2 plain-English sentences explaining what the market means for job security and 401(k)/retirement savings."
   },
-  "threatMatrix": [
+  "globalFlashpoints": [
     {
-      "theater": "Eastern Europe / Ukraine",
-      "status": "CRITICAL" | "HIGH" | "ELEVATED" | "GUARDED" | "MODERATE",
-      "trend": "ESCALATING" | "VOLATILE" | "STABLE" | "DE-ESCALATING",
-      "summary": "1-sentence operational summary of frontline dynamics or escalatory posture."
+      "region": "Eastern Europe / Ukraine",
+      "status": "Elevated" | "Volatile" | "Stable",
+      "summary": "1-sentence plain-English summary of what's happening."
     },
     {
-      "theater": "Middle East & Red Sea",
-      "status": "CRITICAL" | "HIGH" | "ELEVATED" | "GUARDED" | "MODERATE",
-      "trend": "ESCALATING" | "VOLATILE" | "STABLE" | "DE-ESCALATING",
-      "summary": "1-sentence summary of regional friction, strikes, or maritime chokepoints."
+      "region": "Middle East & Red Sea",
+      "status": "Elevated" | "Volatile" | "Stable",
+      "summary": "1-sentence plain-English summary of what's happening."
     },
     {
-      "theater": "Indo-Pacific & Taiwan",
-      "status": "CRITICAL" | "HIGH" | "ELEVATED" | "GUARDED" | "MODERATE",
-      "trend": "ESCALATING" | "VOLATILE" | "STABLE" | "DE-ESCALATING",
-      "summary": "1-sentence summary of deterrence posture, exercises, or naval movements."
+      "region": "Indo-Pacific & Taiwan",
+      "status": "Elevated" | "Volatile" | "Stable",
+      "summary": "1-sentence plain-English summary of what's happening."
     },
     {
-      "theater": "Defense & Cyber Domains",
-      "status": "CRITICAL" | "HIGH" | "ELEVATED" | "GUARDED" | "MODERATE",
-      "trend": "ESCALATING" | "VOLATILE" | "STABLE" | "DE-ESCALATING",
-      "summary": "1-sentence summary of cyber/electronic warfare, space, or major arms transfers."
-    },
-    {
-      "theater": "Domestic Civil Unrest & Demonstrations",
-      "status": "CRITICAL" | "HIGH" | "ELEVATED" | "GUARDED" | "MODERATE",
-      "trend": "ESCALATING" | "VOLATILE" | "STABLE" | "DE-ESCALATING",
-      "summary": "1-sentence summary of recent protests, riots, or social mobilization trends."
-    },
-    {
-      "theater": "Global Energy & Trade Chokepoints",
-      "status": "CRITICAL" | "HIGH" | "ELEVATED" | "GUARDED" | "MODERATE",
-      "trend": "ESCALATING" | "VOLATILE" | "STABLE" | "DE-ESCALATING",
-      "summary": "1-sentence summary of energy prices (oil/gas), maritime transit, sanctions impact, or critical commodity security."
+      "region": "Domestic Civil Unrest",
+      "status": "Elevated" | "Volatile" | "Stable",
+      "summary": "1-sentence plain-English summary of notable protests or disruptions."
     }
   ],
-  "operationalSummary": [
-    "Paragraph 1: Kinetic & Frontline Operations — specific strikes, ground maneuvering, air/drone activity, naval engagements, and weapons employment.",
-    "Paragraph 2: Strategic Alliances & Diplomatic Posturing — defense pacts, munitions pipelines, sanctions enforcement, deterrence signals, and political pressures.",
-    "Paragraph 3: Geoeconomic, Market & Social Stability — integration of current oil/commodity prices, credit spreads, currency pressures, supply chain vulnerabilities, and domestic civil unrest."
-  ],
-  "keyDevelopments": [
+  "topStories": [
     {
-      "headline": "Full event description with (Source)",
-      "theater": "Theater / Domain name",
-      "significance": "Why this matters in operational or strategic terms.",
-      "impact": "What this means for regional stability, civilians, or military calculus."
+      "headline": "Clear, engaging headline for a major event",
+      "whyItMatters": "A brief 1-2 sentence explanation of the impact without jargon."
     }
   ],
-  "indicatorsAndWarnings": [
-    "Specific warning / trigger event to monitor over the next 24-72 hours (e.g. troop build-ups, planned diplomatic ultimatums, scheduled weapons tests, or retaliatory strike windows)."
+  "whatWeAreWatching": [
+    "Specific upcoming event or trend to keep an eye on over the next few days, in plain English."
   ]
 }
 
@@ -179,7 +156,7 @@ Ensure all fields including householdImpact are fully populated. Output valid JS
         messages: [
           {
             role: "system",
-            content: "You are an elite geopolitical, military, and macroeconomic intelligence watch officer. You output strictly valid, well-formed JSON conforming to the requested schema. No commentary, no preamble."
+            content: "You are a Senior Editor for a daily global news newsletter. You output strictly valid, well-formed JSON conforming to the requested schema. No commentary, no preamble."
           },
           { role: "user", content: prompt }
         ],

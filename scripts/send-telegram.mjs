@@ -58,10 +58,10 @@ async function sendTelegramBriefing() {
     return;
   }
 
-  // Build Theater Threat Matrix lines
-  const threatLines = (briefing.threatMatrix || [])
-    .map(t => `• <b>${t.theater}</b>: <code>[${t.status}]</code> ${t.trend ? `<i>(${t.trend})</i>` : ''}`)
-    .join("\n");
+  // Build Flashpoints
+  const flashpointLines = (briefing.globalFlashpoints || [])
+    .map(t => `• <b>${t.region}</b>: <i>${t.status}</i>. ${t.summary}`)
+    .join("\n\n");
 
   // Build Household Impact
   let householdBlock = "";
@@ -74,7 +74,7 @@ async function sendTelegramBriefing() {
     if (h.jobsAndSavings) items.push(`💼 <b>Jobs & Savings:</b> ${h.jobsAndSavings}`);
 
     if (items.length > 0) {
-      householdBlock = `🛒 <b><u>CIVILIAN & HOUSEHOLD IMPACT (WHAT THIS MEANS FOR YOU)</u>:</b>\n${items.join("\n\n")}\n\n`;
+      householdBlock = `💡 <b><u>HOW THIS AFFECTS YOU</u>:</b>\n${items.join("\n\n")}\n\n`;
     }
   }
 
@@ -91,44 +91,44 @@ async function sendTelegramBriefing() {
       const hySpread = metrics.find(m => m.id === "BAMLH0A0HYM2");
 
       const parts = [];
-      if (brent) parts.push(`🛢️ <b>Brent:</b> $${brent.value}/bbl`);
-      if (vix) parts.push(`📈 <b>VIX:</b> ${vix.value}`);
+      if (brent) parts.push(`🛢️ <b>Oil:</b> $${brent.value}/bbl`);
+      if (vix) parts.push(`📉 <b>VIX:</b> ${vix.value}`);
       if (yield10y2y) parts.push(`📊 <b>10Y2Y:</b> ${yield10y2y.value > 0 ? '+' : ''}${yield10y2y.value}%`);
       if (hySpread) parts.push(`💳 <b>HY OAS:</b> ${hySpread.value}%`);
       if (dxy) parts.push(`💵 <b>DXY:</b> ${dxy.value}`);
 
       if (parts.length > 0) {
-        econBlock = `📉 <b><u>GEOECONOMIC SURVEILLANCE</u>:</b>\n${parts.join(" • ")}\n\n`;
+        econBlock = `📈 <b><u>MARKET SNAPSHOT</u>:</b>\n${parts.join(" • ")}\n\n`;
       }
     } catch (_) {}
   }
 
-  // Build Key Developments
-  const devLines = (briefing.keyDevelopments || briefing.topStories || []).slice(0, 4)
-    .map(d => `▫️ <b>${d.headline}</b>\n   ↳ <i>${d.significance}</i>`)
+  // Build Top Stories
+  const devLines = (briefing.topStories || []).slice(0, 4)
+    .map(d => `▫️ <b>${d.headline}</b>\n   ↳ <i>${d.whyItMatters}</i>`)
     .join("\n\n");
 
-  // Build Indicators & Warnings
-  const iwLines = (briefing.indicatorsAndWarnings || []).slice(0, 3)
-    .map(w => `⚠️ <i>${w}</i>`)
+  // Build What We Are Watching
+  const iwLines = (briefing.whatWeAreWatching || []).slice(0, 3)
+    .map(w => `👀 <i>${w}</i>`)
     .join("\n");
 
   // Format full message
   const fullMessage = `
-🎯 <b>SITREP // OPERATIONAL INTELLIGENCE BRIEFING</b>
-📅 <i>${briefing.date || new Date().toISOString().split("T")[0]}</i> • <code>UNCLASSIFIED // OSINT</code>
+🌍 <b>THE DAILY WORLD UPDATE</b>
+📅 <i>${briefing.date || new Date().toISOString().split("T")[0]}</i>
 
-⚡ <b><u>BOTTOM LINE UP FRONT (BLUF)</u>:</b>
-${briefing.bluf || briefing.summary || "No active summary available."}
+📰 <b><u>THE BIG PICTURE</u>:</b>
+${briefing.theBigPicture || "No active summary available."}
 
-📊 <b><u>REGIONAL THREAT MATRIX</u>:</b>
-${threatLines || "• No active threat indicators"}
+${householdBlock}🗺️ <b><u>GLOBAL FLASHPOINTS</u>:</b>
+${flashpointLines || "• No active flashpoints"}
 
-${householdBlock}${econBlock}📍 <b><u>KEY DEVELOPMENTS</u>:</b>
-${devLines || "• No active developments listed"}
+${econBlock}📌 <b><u>TOP STORIES</u>:</b>
+${devLines || "• No top stories listed"}
 
-${iwLines ? `\n🚨 <b><u>INDICATORS & WARNINGS (24–72H)</u>:</b>\n${iwLines}\n` : ''}
-🔗 <a href="https://psthi.github.io/sitrep/">View Live Command Dashboard</a>
+${iwLines ? `\n👀 <b><u>WHAT WE'RE WATCHING NEXT</u>:</b>\n${iwLines}\n` : ''}
+🔗 <a href="https://psthi.github.io/sitrep/">View Live Dashboard</a>
 `.trim();
 
   const chunks = splitMessage(fullMessage, 3800);

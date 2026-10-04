@@ -62,7 +62,8 @@ jobs:
           fi
           NOW=$(date -u +%s)
           DIFF=$((NOW - LAST_SENT))
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ $DIFF -ge 28800 ]; then
+          # 84600 seconds is 23.5 hours. We use this instead of 86400 (24h) to prevent the schedule from slowly drifting later each day.
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ $DIFF -ge 84600 ]; then
             echo "send=true" >> $GITHUB_OUTPUT
             echo $NOW > data/last-telegram.txt
           else
